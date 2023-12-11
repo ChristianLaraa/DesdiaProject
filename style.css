@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", cursive;
-    font-size: small;
+    font-size: x-small;
 }
 
 body {
@@ -166,32 +166,33 @@ body {
     position: absolute;
     top: 0;
 }
+
 .content{
-    width: 60%;
-    margin: 160px auto 0;
+    width: 80%;
+    margin: 15% auto 0;
     font-size: larger;
     text-align: center;
     color: #fff;
 }
 .content h1{
-    font-size: 60px;
+    font-size: 5vw;
     font-family: 'Times New Roman', Times, serif;
 
 }
 .content h3{
-    font-size: 35px;
+    font-size: 2.5vw;
     width: 80%;
-    margin: 20px auto 100px;
+    margin: 2vw auto 5vw;
     line-height: 25px;
 }
 button{
     display: block;
-    width: 200px ;
-    padding: 15px 0;
+    width: 15vw ;
+    padding: 1vw 0;
     margin: 0 auto;
-    border-radius: 25px;
+    border-radius: 2vw;
     font-weight: bold;
-    border: 2px solid #2AEC88;
+    border: 0.5vw solid #2AEC88;
     background-color: #2AEC88;
     color: #000;
     cursor: pointer;
@@ -200,4 +201,115 @@ button{
 button:hover{
     background: transparent;
     border: 2px solid #fff;
+}
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+        margin: 30% auto 0;
+    }
+
+    .content h1 {
+        font-size: 8vw;
+    }
+
+    .content h3 {
+        font-size: 4vw;
+        margin: 3vw auto 5vw;
+    }
+
+button {
+        width: 50vw;
+        padding: 5vw 0;
+        border-radius: 5vw;
+        border: 1vw solid #2AEC88;
+    }
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%; /* Cambiar al porcentaje o a un valor específico según tus necesidades */
+    max-width: 1200px; /* Puedes establecer un ancho máximo si lo deseas */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+}
+.card {
+    background: white;
+    width: 270px;
+    height: 380px;
+    margin: 10px;
+    border-radius: 15px;
+
+}
+.card-image {
+    background-color: #2AEC88;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.car-1 {
+    background-image: url('images/spotifywrapped.jpg');
+
+}
+.car-2 {
+    background-image: url('images/cruzcafunemex.jpeg');
+}
+.car-3 {
+    background-image: url('images/malillar.webp');
+}
+.car-4 {
+background-image: url('images/edc.jpeg') ;
+}
+.car-5 {
+    background-image: url('images/sayonara.jpeg');
+}
+.car-6 {
+    background-image: url('images/frankr.jpeg') ;
+}
+.car-7 {
+    background-image: url('images/tinometrop.png');
+}
+.car-8 {
+    background-image: url('images/rdb.jpeg');
+}
+.card h2{
+    padding: 10px;
+}
+.card p {
+    padding: 10px;
+}
+/*
+.card a{
+    display: inline-block;
+    padding: 7px 40px;
+    margin: 20px 65px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    background-color: #2AEC88;
+    border: 2px solid #ec7e2a;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+*/
+.card a{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.card a:hover {
+    background-color: #fff;
+    color: #2d2aec;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+.card:hover {
+    background-color: #02060c;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
 }

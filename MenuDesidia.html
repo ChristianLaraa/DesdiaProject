@@ -23,11 +23,11 @@
             
             
             <nav class="navbar">  <!-- Barra de navegacion ELEMENTOS DEL MENU-->
-    <a href="#" style="--i:0;" > Incio </a>
-    <a href="#" style="--i:1;" > Reseñas </a>
-    <a href="#" style="--i:3;" > Recomendaciones </a>
-    <a href="#" style="--i:2;" > Playlist </a>
-    <a href="#" style="--i:4;" > Eventos </a>
+    <a href="MenuDesidia.html" style="--i:0;" > Incio </a>
+    <a href="Resenas.html" style="--i:1;" > Reseñas </a>
+    <a href="Recomendaciones.html" style="--i:3;" > Recomendaciones </a>
+    <a href="Playlist.html" style="--i:2;" > Playlist </a>
+    <a href="Eventos.html" style="--i:4;" > Eventos </a>
     </nav>
         </header>
         
@@ -35,26 +35,28 @@
         <div class="slider">
             <img src="images/imagenBanner1Proto.webp" id="slideImg">     
         </div>
-      <div class = "overlay">   
+    <div class = "overlay">   
         <div class = "content">
             <h1> Desidia mx</h1>
             <h3>Donde la apatia encuentra su hogar</h3>
         </div>
-      <div>
-        <button type = "button">Comenzar</button>
+    <div>
+        <button id = "scrollButton" type = "button">Comenzar</button>
         </button>
-      </div>
-      </div>  
     </div>
-  <script>
+    </div>  
+    </div>
+    <div id="sectionToScroll">
+    </div>
+<script>
     var slideImg = document.getElementById("slideImg");
 
     var images = new Array (
-        "images/imagenBannerProto1.webp",
+        "images/edc.jpeg",
         "images/proto2.jpeg",
-        "images/proto3.jpeg",
-        "images/imagenBanner1Proto.webp",
-        "images/imagenBannerProto4.webp"
+        "images/proto3.jpeg",   //Remplazar iagenes y escalar para wue se adecuen al tamaño de la pantalla
+        "images/proto4.jpeg",
+        "images/proto5.jpeg",
     );
     var len = images.length;
     var i = 0; 
@@ -67,8 +69,37 @@
         i++;
         setTimeout('slider()', 3000);
     }
-  </script>  
+    document.getElementById("scrollButton").addEventListener("click", function() {
+        //ID de la seccio a desplazar
+        var sectionId = 'sectionToScroll';
 
+        //Obtener la referencia de la seccion
+        var targetSection = document.getElementById(sectionId);
+
+        //Hacer scroll hasta la seccion
+        targetSection.scrollIntoView({behavior: "smooth"});
+    })
+</script>  
+    <section class = "container">
+    <div class = "card">
+        <a href="Eventos.html"></a>
+        <div class = "card-image car-1"></div>
+        <h2>Spotify Wrapped</h2>
+        <p>Spotify Wrapped es una campaña anual de Spotify que muestra a los usuarios sus estadísticas de escucha de música del año. La campaña se lanzó por primera vez en 2016 y se ha convertido en un evento anual para los usuarios de Spotify.</p>
+    </div>
+    <section class = "container">
+        <div class="card">
+            <a href="#"></a>
+            <div class="card-image car-2"></div>
+            <h2>Cruz Cafune en México</h2>
+            <p>Cruz cafune regresa a cdmx para presentar su tour MMCD</p>
+        </div>
+
+
+
+
+
+    </section>
     </body>
     </html>
 
