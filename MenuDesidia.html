@@ -8,6 +8,8 @@
         <title> DESIDIA mx </title>
         <link rel="stylesheet" href="style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hover.css/css/hover-min.css">
     </head>
 
     <body onload="slider()">
@@ -30,7 +32,7 @@
     <a href="Eventos.html" style="--i:4;" > Eventos </a>
     </nav>
         </header>
-        
+    <!-- Primer slider --> 
     <div class="banner">
         <div class="slider">
             <img src="images/imagenBanner1Proto.webp" id="slideImg">     
@@ -52,7 +54,7 @@
     var slideImg = document.getElementById("slideImg");
 
     var images = new Array (
-        "images/edc.jpeg",
+        "images/imagenBanner2Proto.png",
         "images/proto2.jpeg",
         "images/proto3.jpeg",   //Remplazar iagenes y escalar para wue se adecuen al tamaño de la pantalla
         "images/proto4.jpeg",
@@ -80,26 +82,94 @@
         targetSection.scrollIntoView({behavior: "smooth"});
     })
 </script>  
-    <section class = "container">
+
+
+    <section class = "container">  <!-- Containers Noticias, remplazadas cada 2 o 3 dias  -->
     <div class = "card">
-        <a href="Eventos.html"></a>
-        <div class = "card-image car-1"></div>
-        <h2>Spotify Wrapped</h2>
-        <p>Spotify Wrapped es una campaña anual de Spotify que muestra a los usuarios sus estadísticas de escucha de música del año. La campaña se lanzó por primera vez en 2016 y se ha convertido en un evento anual para los usuarios de Spotify.</p>
-    </div>
-    <section class = "container">
+        <a href="#">
+            <div class = "card-image car-1"></div>
+        </a>
+            <h2>Spotify Wrapped</h2>
+            <p>Spotify Wrapped es una campaña anual de Spotify que muestra a los usuarios sus estadísticas de escucha de música del año. La campaña se lanzó por primera vez en 2016 y se ha convertido en un evento anual para los usuarios de Spotify.</p>
+        </div>
         <div class="card">
-            <a href="#"></a>
+        <a href="#">
             <div class="card-image car-2"></div>
+        </a>
             <h2>Cruz Cafune en México</h2>
             <p>Cruz cafune regresa a cdmx para presentar su tour MMCD</p>
         </div>
-
-
-
-
-
+        <div class="card">
+        <a href="#">
+            <div class="card-image car-3"></div>
+        </a>
+            <h2>¿Es el momento del Regaeton en México?</h2>
+            <p>Los mas importantes artistas de este genero se presentaron en el coca-cola flow fest y dejaron en claro que si es el momento de esta oleada en nuestro pais</p>
+        </div>
+        <div class="card">
+        <a href="#">
+            <div class="card-image car-4"></div>
+        </a>
+            <h2>EDC anuncia cartel de su edicion 2024</h2>
+            <p>El festival mas grande de musica electronica en el mundo anuncia su cartel para su edicion 2024</p>
+        </div>
+        <div class = "card">
+        <a href="#">
+            <div class = "card-image car-5"></div>
+        </a>
+            <h2>El amor-odio de Alvaro Diaz y Sayonara</h2>
+            <p>El problema que existe entre Alvarito y Universal deja incierto el futuro de su proyrcto tan esperado para sus fans</p>
+        </div>
+        <div class="card">
+            <a href="#">
+            <div class="card-image car-6"></div>
+        </a>
+            <h2>¿Frank Ocean y Rosalia en una colaboracion?</h2>
+            <p>Los rumores de una colaboracion entre estos dos artistas se hacen cada vez mas fuertes</p>
+        </div>
+        <div class="card">
+        <a href="#">
+            <div class="card-image car-7"></div>
+        </a>
+            <h2>Tino el pinguino regresa con El Horror</h2>
+            <p>El rapero de la cdmx presenta su nuevo trabajo en el teatro metropolitan frente a 4 mil personas</p>
+        </div>
+        <div class="card">
+        <a href="#">
+            <div class="card-image car-8"></div>
+        </a>
+            <h2>Red Bull Batalla 2024</h2>
+            <p>16 Freestylers compiten para alcanzar la gloria en colombia</p>
     </section>
+<div class="section">
+    <div class="container2">
+        <div class="content-section">
+            <div class="title">
+                <h1> Sobre nosotros. </h1>
+            </div>
+            <div class="content">
+                <h3>Desidia mx es un proyecto creado por un par de amigos, con el fin de impulsar el gusto por la musica y 
+                    la cultura a todos los horizontes posibles, 
+                    navegando por distintos géneros como lo son el rock, rap, r&b, pop, reggaeton etc.</h3>
+                <p>Desidia mx una pagina web que aloja un mar de perspectivas, opiniones, recomendaciones y noticias para el mundo.</p>
+                <p>desidiaproject@gmail.com</p>
+                <div class="button2">
+                    <a href="#">Leer mas</a>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href=""><i class="fa fa-instagram fa-2x"></i></a>
+                    <a href=""><i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+                <div class="image-section hvr-wobble-horizontal">
+                    <img src="images/about.jpeg" alt="Imagen de la seccion sobre nosotros.">
+                </div>
+    </div>
+</div>
+
     </body>
     </html>
 

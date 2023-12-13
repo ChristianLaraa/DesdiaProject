@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 
+/*Primer slider y navbar*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", cursive;
-    font-size: x-small;
+    font-size: xx-small;
 }
 
 body {
@@ -143,6 +144,8 @@ body {
     transition-delay: calc(.15s * var(--i));
 }
 }
+
+/*Primer slider del menu con el boton para desplazar*/
 .banner{
     width: 100%;
     height: 100vh;
@@ -194,7 +197,7 @@ button{
     font-weight: bold;
     border: 0.5vw solid #2AEC88;
     background-color: #2AEC88;
-    color: #000;
+    color: #ffffff;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -227,6 +230,7 @@ button {
 }
 
 
+/*contenedores donde se encuentra las noticias e imagenes*/
 .container {
     display: flex;
     justify-content: center;
@@ -312,4 +316,150 @@ background-image: url('images/edc.jpeg') ;
     cursor: pointer;
     transform: scale(1.03);
     transition: all 1s ease;
+}
+
+/* Container About us*/
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+.container2{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* Agrega la clase hvr-wobble-horizontal para aplicar el efecto */
+.image-section.hvr-wobble-horizontal:hover {
+    animation: hvr-wobble-horizontal 1s ease-in-out both;
+}
+/* Define la animación (tomada de Hover.css) */
+@keyframes hvr-wobble-horizontal {
+    16.65% {
+        transform: translateX(8px);
+    }
+    33.3% {
+        transform: translateX(-6px);
+    }
+    49.95% {
+        transform: translateX(4px);
+    }
+    66.6% {
+        transform: translateX(-2px);
+    }
+    83.25% {
+        transform: translateX(1px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+}
+.content-section .content h3{
+    margin-top: 20px;
+    color: #d4d1d1;
+    font-size: 13px;
+}
+.content-section .content p{
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #a7a7a7;
+
+}
+.content-section .content .button2{
+    margin-top: 20px;
+
+
+}
+.content-section .content .button2 a{
+    background-color: #2AEC88;
+    padding: 5px 18px;
+    border-radius: 35px; 
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.content-section .content .button2 a:hover{
+    background-color: #2d2aec;
+    color:#fff;
+    transform: scale(1.1);
+
+}
+.content-section .social{
+    
+    margin:20px 0;
+    text-align: center;
+
+}
+.content-section .social i{
+    color:#2AEC88;
+    font-size: 34px;
+    padding:0px 10px;
+}
+.content-section .social i:hover{
+    color:#2d2aec;
+}
+@media screen and (max-width: 768px){
+    .container2{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .content-section .title{
+        text-align: center;
+        font-size: 60px;
+    }
+    .content-section .content .button2{
+        text-align: center;
+    }
+    .content-section .content .button2 a{
+    padding: 9px 30px;
+    font-size: 18px;
+    }
+    .content-section .social{
+        text-align: center;
+    }
 }
