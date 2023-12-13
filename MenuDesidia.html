@@ -57,7 +57,7 @@
     var images = new Array (
         "images/imagenBanner2Proto.png",
         "images/proto2.jpeg",
-        "images/proto3.jpeg",   //Remplazar iagenes y escalar para wue se adecuen al tamaño de la pantalla
+        "images/proto3.jpeg",   //Remplazar imagenes y escalar para wue se adecuen al tamaño de la pantalla
         "images/proto4.jpeg",
         "images/proto5.jpeg",
     );
@@ -83,6 +83,101 @@
         targetSection.scrollIntoView({behavior: "smooth"});
     })
 </script>  
+   
+
+<div class="img-slider">
+    <div class="slide active">
+        <img src="images/vultures.jpeg" alt="">
+        <div class="info">
+            <h2>Vultures el nuevo album de Kanye West en colaboracion con Ty Dolla $ing</h2>
+            <p>Kanye West regresa presnetando repentinamentew su nuevo album vultures</p>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="images/sayonara.jpeg" alt="">
+        <div class="info">
+            <h2>Sanyonara y Alvaro Diaz</h2>
+            <p>Alvaro diaz esta congelado en Universal por lo que no se tiene fecha de su tan esperado proyecto "Sayonara".</p>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="images/spotifywrapped.jpg" alt="">
+        <div class="info">
+            <h2>Spotify Wrapped</h2>
+            <p>Spotify Wrapped es una campaña anual de Spotify que muestra a los usuarios sus estadísticas de escucha de música del año. 
+                La campaña se lanzó por primera vez en 2016 y se ha convertido en un evento anual para los usuarios de Spotify.</p>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="images/edc.jpeg" alt="">
+        <div class="info">
+            <h2>EDC anuncia su cartel</h2>
+            <p>El festival mas grande de musica electronica en el mundo anuncia su cartel para su edicion 2024</p>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="images/cruzcafunemex.jpeg" alt="">
+        <div class="info">
+            <h2>Cruz cafune se presenta en mexico</h2>
+            <p>Cruz Cafuné ha colaborado con otros artistas de la escena musical española y ha lanzado varios proyectos en solitario. Algunas de sus canciones más conocidas incluyen "Maracucho Bueno Muere Chiquito", "Amor de Pobre" y "Pétalos". 
+                Su estilo a menudo fusiona elementos de rap, trap y música urbana, y ha logrado atraer a un público diverso.</p>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    var slides = document.querySelectorAll('.img-slider .slide'); // Corrige el selector para que coincida con la clase
+    var btns = document.querySelectorAll('.img-slider .navigation .btn');
+    let currentSlide = 0;
+
+    // Función para navegación Manual
+    function manualNav(manual) {
+        slides.forEach((slide) => {
+            slide.classList.remove('active');
+        });
+        btns.forEach((btn) => {
+            btn.classList.remove('active');
+        });
+        slides[manual].classList.add('active');
+        btns[manual].classList.add('active');
+        currentSlide = manual;
+    }
+
+    btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+            manualNav(i);
+        });
+    });
+
+    // Asociar evento click a los botones de navegación
+    var repeat = function () {
+        let i = 0;
+
+        var repeater = () => {
+            setTimeout(function () {
+                slides[i].classList.remove('active');
+                btns[i].classList.remove('active');
+                i++;
+                if (i >= slides.length) {
+                    i = 0;
+                }
+                slides[i].classList.add('active');
+                btns[i].classList.add('active');
+                repeater();
+            }, 5000);
+        }
+        repeater();
+    }
+    repeat();
+</script>
 
 
     <section class = "container">  <!-- Containers Noticias, remplazadas cada 2 o 3 dias  -->
@@ -143,7 +238,7 @@
             <div class="card-image car-8"></div>
         </a>
             <h2>Red Bull Batalla 2024</h2>
-            <p>16 Freestylers compiten para alcanzar la gloria en colombia</p>
+        <p>16 Freestylers compiten para alcanzar la gloria en colombia</p>
     </section>
 <div class="section">
     <div class="container2">
@@ -162,7 +257,7 @@
                 </div>
                 <div class="social">
                     <a href=""><i class="fa fa-facebook fa-2x"></i></a>
-                    <a href=""><i class="fa fa-instagram fa-2x"></i></a>
+                    <a href="https://www.instagram.com/desidia.mx/"><i class="fa fa-instagram fa-2x"></i></a>
                     <a href=""><i class="fa fa-twitter fa-2x"></i></a>
                     
                 </div>
