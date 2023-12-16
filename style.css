@@ -13,9 +13,8 @@
 
 body {
     min-height: 100vh;
-    background: url('backgroundProviDesidia.png') no-repeat; 
+    background: url('backgroundProviDesidia.png') no-repeat center center fixed; 
     background-size: cover;
-    background-position: center;
 
 }
 
@@ -145,89 +144,153 @@ body {
 }
 }
 
-/*Primer slider del menu con el boton para desplazar*/
-.banner{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
+/*Primer slider novedades*/
 .slider{
-    width: 100%;
     height: 100vh;
-    position: absolute;
-    top: 0;
+    margin-top: -50px;
+    position: relative;
 }
-#slideImg1{
-    width: 90%;
+.slider .list .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.slider .list .item img{
+    width: 100%;
     height: 100%;
+    object-fit: cover;
 }
-.overlay{
+.slider .list .item::after{
+    content: '';
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    height: 100%;
     position: absolute;
-    top: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        to top, #000 40%, transparent
+    );
 }
-
-.content{
-    width: 80%;
-    margin: 15% auto 0;
-    font-size: larger;
-    text-align: center;
+.slider .list .item .content{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 500px;
+    max-width: 80%;
+    z-index: 1;
+}
+.slider .list .item .content p:nth-child(1){
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.slider .list .item .content p{
+    font-size: 20px;
     color: #fff;
+    margin: 0;
 }
-.content h1{
-    font-size: 5vw;
-    font-family: 'Times New Roman', Times, serif;
 
+.slider .list .item .content h2{
+    font-size: 100px;
+    color: #fff;
+    margin: 0;
 }
-.content h3{
-    font-size: 2.5vw;
-    width: 80%;
-    margin: 2vw auto 5vw;
-    line-height: 25px;
+.slider .list .item.active{
+    opacity: 1;
+    z-index: 10;
 }
-button{
-    display: block;
-    width: 15vw ;
-    padding: 1vw 0;
-    margin: 0 auto;
-    border-radius: 2vw;
-    font-weight: bold;
-    border: 0.5vw solid #2AEC88;
-    background-color: #2AEC88;
-    color: #ffffff;
-    cursor: pointer;
-    transition: 0.5s;
-}
-button:hover{
-    background: transparent;
-    border: 2px solid #fff;
-}
-@media (max-width: 768px) {
-    .content {
-        width: 90%;
-        margin: 30% auto 0;
+@keyframes showContent {
+    to{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
     }
-
-    .content h1 {
-        font-size: 8vw;
-    }
-
-    .content h3 {
-        font-size: 4vw;
-        margin: 3vw auto 5vw;
-    }
-
-button {
-        width: 50vw;
-        padding: 5vw 0;
-        border-radius: 5vw;
-        border: 1vw solid #2AEC88;
-    }
-
 }
+.slider .list .item.active p:nth-child(1),
+.slider .list .item.active h2,
+.slider .list .item.active p:nth-child(3){
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s .7s ease-in-out 1 forwards;
+}
+.slider .list .item.active h2{
+    animation-delay: 1s;
+}
+.slider .list .item.active p:nth-child(3){
+    animation-duration: 1.3s;
+}
+.arrows{
+    position: absolute;
+    top: 30%;
+    right: 50px;
+    z-index: 100;
+}
+.arrows button{
+    background-color: #eee5;
+    border: none;
+    font-family: monospace;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: x-large;
+    color: #eee;
+    transition: .5s;
+}
+.arrows button:hover{
+    background-color: #eee;
+    color: black;
+}
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    z-index: 11;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 250px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    overflow: auto;
+    justify-content: center;
+}
+.thumbnail::-webkit-scrollbar{
+    width: 0;
+}
+.thumbnail .item{
+    width: 150px;
+    height: 220px;
+    filter: brightness(.5);
+    transition: .5s;
+    flex-shrink: 0;
+}
+.thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.thumbnail .item.active{
+    filter: brightness(1.5);
+}
+.thumbnail .item .content{
+    position: absolute;
+    inset: auto 10px 10px 10px;
+}
+@media screen and (max-width: 678px) {
+    .thumbnail{
+        justify-content: start;
+    }
+    .slider .list .item .content h2{
+        font-size: 60px;
+    }
+    .arrows{
+        top: 10%;
+    }
+}
+
+
 /*Segundo Slider posibles noticias*/
 .img-slider{
     position: relative;
@@ -295,7 +358,7 @@ button {
     background: #2AEC88;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 320px) {
+@media (max-width: 400px) {
     .img-slider{
         width: 320px;
         height: 200px;
@@ -305,11 +368,11 @@ button {
         padding: 5px 10px;
 }
     .img-slider .slide .info h2{
-        font-size: 25px;
+        font-size: 20px;
     }
     .img-slider .slide .info p{
-        width: 90%;
-        font-size: 11px;
+        width: auto;
+        font-size: 9px;
     }
     .img-slider .navigation{
         bottom: 10px;
@@ -348,14 +411,14 @@ button {
     border-radius: 15px 15px 0 0;
 }
 .car-1 {
-    background-image: url('images/spotifywrapped.jpg');
+    background-image: url('images/top20Desidia.png');
 
 }
 .car-2 {
-    background-image: url('images/cruzcafunemex.jpeg');
+    background-image: url('images/reggaetonMex.jpeg');
 }
 .car-3 {
-    background-image: url('images/malillar.webp');
+    background-image: url('images/proyecto24.jpeg');
 }
 .car-4 {
 background-image: url('images/edc.jpeg') ;

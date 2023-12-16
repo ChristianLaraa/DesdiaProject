@@ -33,64 +33,170 @@
     <a href="Eventos.html" style="--i:4;" > Eventos </a>
     </nav>
         </header>
-    <!-- Primer slider --> 
-    <div class="banner">
         <div class="slider">
-            <img src="images/imagenBanner1Proto.webp" id="slideImg">     
+            <!-- list Items -->
+            <div class="list">
+                <div class="item active">
+                    <img src="images/proto2.jpeg">
+                    <div class="content">
+                        <p>Desidia mx</p>
+                        <h2>Slider 01</h2>
+                        <p id="p2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/proto3.jpeg">
+                    <div class="content">
+                        <p>Desidia mx</p>
+                        <h2>Slider 02</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/proto4.jpeg">
+                    <div class="content">
+                        <p>Desidia mx</p>
+                        <h2>Slider 03</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/elmadrileno.jpeg">
+                    <div class="content">
+                        <p>Desidia mx</p>
+                        <h2>Slider 04</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/latinmafiaconcierto.jpeg">
+                    <div class="content">
+                        <p>Desidia mx</p>
+                        <h2>Slider 05</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- button arrows -->
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <!-- thumbnail -->
+            <div class="thumbnail">
+                <div class="item active">
+                    <img src="images/proto2.jpeg">
+                    <div class="content">
+                        Name Slider
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/proto3.jpeg">
+                    <div class="content">
+                        Name Slider
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/proto4.jpeg">
+                    <div class="content">
+                        Name Slider
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/elmadrileno.jpeg">
+                    <div class="content">
+                        Name Slider
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/latinmafiaconcierto.jpeg">
+                    <div class="content">
+                        Name Slider
+                    </div>
+                </div>
+            </div>
         </div>
-    <div class = "overlay">   
-        <div class = "content">
-            <h1> Desidia mx</h1>
-            <h3>Donde la apatia encuentra su hogar</h3>
-        </div>
-    <div>
-        <button id = "scrollButton" type = "button">Comenzar</button>
-        </button>
-    </div>
-    </div>  
-    </div>
-    <div id="sectionToScroll">
-    </div>
 <script>
-    var slideImg = document.getElementById("slideImg");
+    let items = document.querySelectorAll('.slider .list .item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+let thumbnails = document.querySelectorAll('.thumbnail .item');
 
-    var images = new Array (
-        "images/imagenBanner2Proto.png",
-        "images/proto2.jpeg",
-        "images/proto3.jpeg",   //Remplazar imagenes y escalar para wue se adecuen al tamaño de la pantalla
-        "images/proto4.jpeg",
-        "images/proto5.jpeg",
-    );
-    var len = images.length;
-    var i = 0; 
-
-    function slider (){
-        if(i > len-1){
-            i=0;
-        }
-        slideImg.src = images[i];
-        i++;
-        setTimeout('slider()', 3000);
+// config param
+let countItem = items.length;
+let itemActive = 0;
+// event next click
+next.onclick = function(){
+    itemActive = itemActive + 1;
+    if(itemActive >= countItem){
+        itemActive = 0;
     }
-    document.getElementById("scrollButton").addEventListener("click", function() {
-        //ID de la seccio a desplazar
-        var sectionId = 'sectionToScroll';
+    showSlider();
+}
+//event prev click
+prev.onclick = function(){
+    itemActive = itemActive - 1;
+    if(itemActive < 0){
+        itemActive = countItem - 1;
+    }
+    showSlider();
+}
+// auto run slider
+let refreshInterval = setInterval(() => {
+    next.click();
+}, 5000)
+function showSlider(){
+    // remove item active old
+    let itemActiveOld = document.querySelector('.slider .list .item.active');
+    let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
+    itemActiveOld.classList.remove('active');
+    thumbnailActiveOld.classList.remove('active');
 
-        //Obtener la referencia de la seccion
-        var targetSection = document.getElementById(sectionId);
+    // active new item
+    items[itemActive].classList.add('active');
+    thumbnails[itemActive].classList.add('active');
 
-        //Hacer scroll hasta la seccion
-        targetSection.scrollIntoView({behavior: "smooth"});
+    // clear auto time run slider
+    clearInterval(refreshInterval);
+    refreshInterval = setInterval(() => {
+        next.click();
+    }, 5000)
+}
+
+// click thumbnail
+thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener('click', () => {
+        itemActive = index;
+        showSlider();
     })
-</script>  
-   
+})
+
+
+</script>
+
+    
 
 <div class="img-slider">
     <div class="slide active">
-        <img src="images/vultures.jpeg" alt="">
+        <img src="images/yeTy.jpeg" alt="">
         <div class="info">
-            <h2>Vultures el nuevo album de Kanye West en colaboracion con Ty Dolla $ing</h2>
-            <p>Kanye West regresa presnetando repentinamentew su nuevo album vultures</p>
+            <h2>Ye (Vultures)</h2>
+            <p>El album colaborativo de Kanye y Ty Dolla, se pospone hasta visperas de año nuevo.</p>
         </div>
     </div>
     <div class="slide">
@@ -104,8 +210,7 @@
         <img src="images/spotifywrapped.jpg" alt="">
         <div class="info">
             <h2>Spotify Wrapped</h2>
-            <p>Spotify Wrapped es una campaña anual de Spotify que muestra a los usuarios sus estadísticas de escucha de música del año. 
-                La campaña se lanzó por primera vez en 2016 y se ha convertido en un evento anual para los usuarios de Spotify.</p>
+            <p>Spotify Wrapped es una campaña anual de Spotify que muestra a los us.</p>
         </div>
     </div>
     <div class="slide">
@@ -119,8 +224,7 @@
         <img src="images/cruzcafunemex.jpeg" alt="">
         <div class="info">
             <h2>Cruz cafune se presenta en mexico</h2>
-            <p>Cruz Cafuné ha colaborado con otros artistas de la escena musical española y ha lanzado varios proyectos en solitario. Algunas de sus canciones más conocidas incluyen "Maracucho Bueno Muere Chiquito", "Amor de Pobre" y "Pétalos". 
-                Su estilo a menudo fusiona elementos de rap, trap y música urbana, y ha logrado atraer a un público diverso.</p>
+            <p>Cruz Cafuné ha colaborado con otros artistas de la escena musical españo</p>
         </div>
     </div>
     <div class="navigation">
@@ -172,7 +276,7 @@
                 slides[i].classList.add('active');
                 btns[i].classList.add('active');
                 repeater();
-            }, 5000);
+            }, 10000);
         }
         repeater();
     }
@@ -185,9 +289,8 @@
         <a href="#">
             <div class = "card-image car-1"></div>
         </a>
-            <h2>Spotify Wrapped</h2>
-            <p>Spotify Wrapped es una campaña anual de Spotify que muestra a los usuarios sus estadísticas de escucha de música del año. 
-                La campaña se lanzó por primera vez en 2016 y se ha convertido en un evento anual para los usuarios de Spotify.</p>
+            <h2>Top 20 mejores albumes del 2023:</h2>
+            <p>Concluye el año y con el los proyectos musicales, conceptuales y artisticos; Desidia mx presenta su seleccion. </p>
                 
         </div>
         
@@ -195,15 +298,15 @@
         <a href="#">
             <div class="card-image car-2"></div>
         </a>
-            <h2>Cruz Cafune en México</h2>
-            <p>Cruz cafune regresa a cdmx para presentar su tour MMCD</p>
+            <h2>¿Es este por fin el mejor momento del Reggaeton en México?</h2>
+            <p>Analizamos el fenomeno que experimenta este genero en nuestro país, las posibles causas y todo lo bueno que esta dejando en la industria.</p>
         </div>
         <div class="card">
         <a href="#">
             <div class="card-image car-3"></div>
         </a>
-            <h2>¿Es el momento del Regaeton en México?</h2>
-            <p>Los mas importantes artistas de este genero se presentaron en el coca-cola flow fest y dejaron en claro que si es el momento de esta oleada en nuestro pais</p>
+            <h2>Proyectos más esperados para el proximó 2024.</h2>
+            <p>Varios artistas nos han dejado a la expectativa de sus futuros proyectos, dejandonos previews de algunos de ellos, recapitulamos a los que para Desidia mx, son más ambiociosos, interesantes, creativos e inovadores.</p>
         </div>
         <div class="card">
         <a href="#">
