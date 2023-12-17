@@ -12,19 +12,14 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hover.css/css/hover-min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
     </head>
-
     <body onload="slider()">
-
         <header class="header">
             <a href = "#" class="logo"> DESIDIA mx </a>  <!-- Logo de DESIDIA mx POSTERIOREMENTE REMPLAZADO POR IMAGEN--> 
-
             <input type="checkbox" id="check">
             <label for="check" class="icons">
                 <i class='bx bx-menu' id="menu-icon"></i>
                 <i class='bx bx-x' id="close-icon"></i>
             </label>
-            
-            
             <nav class="navbar">  <!-- Barra de navegacion ELEMENTOS DEL MENU-->
     <a href="MenuDesidia.html" style="--i:0;" > Incio </a>
     <a href="Resenas.html" style="--i:1;" > Reseñas </a>
@@ -40,10 +35,9 @@
                     <img src="images/proto2.jpeg">
                     <div class="content">
                         <p>Desidia mx</p>
-                        <h2>Slider 01</h2>
+                        <h2>Little Jesus</h2>
                         <p id="p2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                            Little Jesus en concierto en el foro indie rocks, presentando su nuevo album "Los Años Maravillosos" Esta es una prueba de texto para ver como se ve el texto en el slider.
                         </p>
                     </div>
                 </div>
@@ -102,44 +96,43 @@
                 <div class="item active">
                     <img src="images/proto2.jpeg">
                     <div class="content">
-                        Name Slider
+                        <p> Little Jesus  </p>
                     </div>
                 </div>
                 <div class="item">
                     <img src="images/proto3.jpeg">
                     <div class="content">
-                        Name Slider
+                    <p>  Name Slider </p>
                     </div>
                 </div>
                 <div class="item">
                     <img src="images/proto4.jpeg">
                     <div class="content">
-                        Name Slider
+                        <p>Name Slider </p>
                     </div>
                 </div>
                 <div class="item">
                     <img src="images/elmadrileno.jpeg">
                     <div class="content">
-                        Name Slider
+                    <p>Name Slider</p>
                     </div>
                 </div>
                 <div class="item">
                     <img src="images/latinmafiaconcierto.jpeg">
                     <div class="content">
-                        Name Slider
+                    <p> Slider</p>
                     </div>
                 </div>
             </div>
         </div>
 <script>
     let items = document.querySelectorAll('.slider .list .item');
-let next = document.getElementById('next');
-let prev = document.getElementById('prev');
-let thumbnails = document.querySelectorAll('.thumbnail .item');
-
+    let next = document.getElementById('next');
+    let prev = document.getElementById('prev');
+    let thumbnails = document.querySelectorAll('.thumbnail .item');
 // config param
-let countItem = items.length;
-let itemActive = 0;
+    let countItem = items.length;
+    let itemActive = 0;
 // event next click
 next.onclick = function(){
     itemActive = itemActive + 1;
@@ -319,8 +312,8 @@ thumbnails.forEach((thumbnail, index) => {
         <a href="#">
             <div class = "card-image car-5"></div>
         </a>
-            <h2>El amor-odio de Alvaro Diaz y Sayonara</h2>
-            <p>El problema que existe entre Alvarito y Universal deja incierto el futuro de su proyrcto tan esperado para sus fans</p>
+            <h2>¿Es la decada de la música méxicana?</h2>
+            <p>México ha demostrado en los ultimos años que tiene mucho talento inovando en la escena en generos como: corridos tumbados, indie/rock, reggaeton.</p>
         </div>
         <div class="card">
             <a href="#">
