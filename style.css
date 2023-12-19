@@ -24,11 +24,18 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 10%;
+    height: 6.8rem;
+    padding: 1.5rem 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    overflow: hidden;
+    perspective: 1000pxx;
+}
+/* Efecto de transición para todos los elementos dentro de .header */
+.header * {
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .header::before{
@@ -64,6 +71,11 @@ body {
     text-decoration: none;
     font-weight: 700;
 }
+/* Efecto para el logo cuando el cursor pasa por encima */
+.logo:hover {
+    color: rgb(42, 236, 158);  /* color deseado */
+    transform: scale(1.1); /* Cambia la escala según sea necesario */
+}
 
 .navbar a {
     font-size: 2rem;
@@ -72,6 +84,12 @@ body {
     font-weight: 500;
     margin-left: 2.5rem;
 }
+/* Efecto para los enlaces de la barra de navegación cuando el cursor pasa por encima */
+.navbar a:hover {
+    color:#2AEC88; /* color deseado */
+    transform: scale(1.1); /* Ajusta la escala según sea necesario */
+}
+
 
 #check {
     display: none;
@@ -88,6 +106,10 @@ body {
 
 /*BREAKPOINTS*/
 
+.icons #menu-icon,
+.icons #close-icon {
+    font-size: 3.2rem; /* Adjust the size as needed */
+}
 @media (max-width: 992px){
     .header{
         padding: 1.3rem 5%;
