@@ -24,6 +24,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 9999;
+    overflow: hidden;
 }
 
 .pre-loader {
@@ -38,11 +39,21 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #021031, #090367);
+    background: linear-gradient(to right, #1c0217, #040437);
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+    filter: blur(10px);
+}
+
+.loader.show {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
 }
 
 .loader-content {
@@ -53,26 +64,26 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 400px;
+    width: 80%;
+    max-width: 400px;
     z-index: 2;
     color: #fff;
-    transition: all 0.5s ease; /* Agregué una transición suave para los cambios */
 }
 
 .count {
     font-size: 24px;
     text-align: center;
     margin-bottom: 10px;
-    font-weight: bold; /* Hice la letra más gruesa */
+    font-weight: bold;
 }
 
 .copy {
     font-family: "PP Editorial Old";
-    font-size: 30px;
+    font-size: 4vw;
     text-transform: uppercase;
     line-height: 1.2;
-    letter-spacing: 2px; /* Añadí espacio entre las letras */
-    transition: all 0.5s ease; /* Agregué una transición suave para los cambios */
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
 }
 
 .ml16 {
@@ -92,11 +103,25 @@ body {
     height: 100%;
     z-index: -1;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    backdrop-filter: blur(20px);
+    transition: all 0.5s ease;
 }
 
 .loader-bg {
-    background: url(images/DesidiaLogo.png) no-repeat center center fixed;
-    transition: all 0.5s ease; /* Agregué una transición suave para los cambios */
+    background: radial-gradient(circle at 20% 50%, #1b0116, transparent 50%),
+                radial-gradient(circle at 80% 50%, #010126, transparent 50%);
+    background-size: 300% 100%;
+    background-position: 0 0, 100% 0;
+    animation: loaderBgAnimation 2s linear infinite;
+}
+
+@keyframes loaderBgAnimation {
+    0% {
+        background-position: 0 0, 100% 0;
+    }
+    100% {
+        background-position: 100% 0, 0 0;
+    }
 }
 .header {
     position: fixed;
