@@ -1,2 +1,2 @@
-Colaboradores <br>
+Colaboradores: <br>
 Christian Lara
