@@ -8,7 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", cursive;
-    font-size: xx-small;
+    font-size: xx-small;                                                                                                    
 }
 
 body {
@@ -123,153 +123,154 @@ body {
         background-position: 100% 0, 0 0;
     }
 }
+
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 6.8rem;
-    padding: 1.5rem 6%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    overflow: hidden;
-    perspective: 1000pxx;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 6.8rem;
+padding: 1.5rem 6%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+
 }
-/* Efecto de transición para todos los elementos dentro de .header */
-.header * {
+.header *{
     transition: color 0.3s ease, transform 0.3s ease;
 }
-
 .header::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, .1); 
-    backdrop-filter: blur(20px); 
-    z-index: -1;
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, .1); 
+backdrop-filter: blur(15px); 
+z-index: -1;
 }
 
 .header::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
-    transition: .5s;
+content: '';
+position: absolute;
+top: 0;
+left: -100%;
+width: 100%;
+height: 100%;
+background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+transition: .5s;
 }
 
 .header:hover::after{
-    left: 100%;
+left: 100%;
 }
 
 .logo {
-    font-size: 2rem;
-    color: rgb(255, 255, 255); 
-    text-decoration: none;
-    font-weight: 700;
+font-size: 2rem;
+color: rgb(255, 255, 255); 
+text-decoration: none;
+font-weight: 700;
 }
-/* Efecto para el logo cuando el cursor pasa por encima */
 .logo:hover {
-    color: rgb(42, 236, 158);  /* color deseado */
-    transform: scale(1.1); /* Cambia la escala según sea necesario */
+    color: #2AEC88;
+    transform: scale(1.1);
 }
-
 .navbar a {
-    font-size: 2rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 2.5rem;
+font-size: 2rem;
+color: #fff;
+text-decoration: none;
+font-weight: 500;
+margin-left: 2.5rem;
 }
-/* Efecto para los enlaces de la barra de navegación cuando el cursor pasa por encima */
 .navbar a:hover {
-    color:#2AEC88; /* color deseado */
-    transform: scale(1.1); /* Ajusta la escala según sea necesario */
+    color: #2AEC88;
+    transform: scale(1.1);
 }
-
-
 #check {
-    display: none;
+display: none;
 }
 
 .icons {
-    position: absolute;
-    right: 5%;
-    font-size: 2.8rem;
-    color: #fff;
-    cursor: pointer;
-    display: none;
+position: absolute;
+right: 5%;
+font-size: 2.8rem;
+color: #fff;
+cursor: pointer;
+display: none;
 }
 
 /*BREAKPOINTS*/
 
 .icons #menu-icon,
 .icons #close-icon {
-    font-size: 3.2rem; /* Adjust the size as needed */
+    font-size: 3.2rem;
+}
+.icons #menu-icon:hover{
+    color: #2AEC88;
+
+}
+.icons #close-icon:hover{
+    color: #2AEC88;
+
 }
 @media (max-width: 992px){
-    .header{
-        padding: 1.3rem 5%;
-    }
+.header{
+    padding: 1.3rem 5%;
+}
 }
 
 @media (max-width: 768px){
-    .icons {
-        display: inline-flex;
-    }
+.icons {
+    display: inline-flex;
+}
 
-    #check:checked~.icons #menu-icon {
-        display: none;
-    }
-
-.icons #close-icon {    /* REVISAR*/
+#check:checked~.icons #menu-icon {
     display: none;
 }
 
-    #check:checked~.icons #close-icon {
-        display: block;
-    }
-
-.navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background: rgba(0, 0, 0, .1);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    overflow: hidden;
-    transition: .3s ease;
+.icons #close-icon {    /* REVISAR*/
+display: none;
 }
 
-    #check:checked~.navbar {
-        height: 17.7rem;
-    }
+#check:checked~.icons #close-icon {
+    display: block;
+}
+
+.navbar {
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+height: 0;
+background: rgba(0, 0, 0, .1);
+backdrop-filter: blur(15px);
+box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+overflow: hidden;
+transition: .3s ease;
+}
+
+#check:checked~.navbar {
+    height: 17.7rem;
+}
 
 .navbar a {
-    display: block;
-    font-size: 1.1rem;
-    margin: 1.5rem 0;
-    text-align: center;
-    transform: translateY(-50px);
-    opacity: 0;
-    transition: .3s ease;
+display: block;
+font-size: 1.1rem;
+margin: 1.5rem 0;
+text-align: center;
+transform: translateY(-50px);
+opacity: 0;
+transition: .3s ease;
 }
 
 #check:checked ~ .navbar a {
-    transform: translateY(0);
-    opacity: 1;
-    transition-delay: calc(.15s * var(--i));
+transform: translateY(0);
+opacity: 1;
+transition-delay: calc(.15s * var(--i));
 }
-}
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 
 /*Primer slider novedades*/
 .slider{
