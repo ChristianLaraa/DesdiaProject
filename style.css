@@ -514,8 +514,8 @@ font-weight: 700;
     margin: 0 auto; 
 }
 .card {
-    background: #17032C;
-    color:  #ffffff;
+    background:  #A9C4D3;
+    color:  black;
     width: 270px; 
     height: auto;  
     margin: 10px;
@@ -582,8 +582,8 @@ background-image: url('images/mexa.webp') ;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
 }
 .card:hover {
-    background-color:  #A293C4;
-    color: black;
+    background-color:  #0C2A3B;
+    color: white;
     cursor: pointer;
     transform:  scale(1.05);
     transition: all 0.5s ease; /* Ajustado para una transición más suave */
