@@ -13,7 +13,7 @@
 body {
     min-height: 100vh;
     /*background: url('backgroundProviDesidia.png') no-repeat center center fixed; */
-    background-color: #000;
+    background-color: #000000;
     background-size: cover;
 }
 /*Loader y contenido "carga de pagina" ------------------ */
@@ -481,8 +481,14 @@ font-weight: 700;
 }
 @media (max-width: 768px) {
     .img-slider {
-        width: 320px;
-        height: 200px;
+        width: 100%;
+        height: 320px;
+    }
+    .img-slider .slide{
+        width: 100%;
+    } 
+    .img-slider .slide img {
+        width: 100%; 
     }
     .img-slider .slide .info {
         padding: 5px 10px;
@@ -508,7 +514,8 @@ font-weight: 700;
     margin: 0 auto; 
 }
 .card {
-    background: white;
+    background: #17032C;
+    color:  #ffffff;
     width: 270px; 
     height: auto;  
     margin: 10px;
@@ -534,8 +541,9 @@ font-weight: 700;
     background-image: url('images/proyecto24.jpeg');
 }
 .car-4 {
-background-image: url('images/edc.jpeg') ;
+background-image: url('images/mexa.webp') ;
 }
+
 .car-5 {
     background-image: url('images/mexa.webp');
 }
@@ -548,6 +556,7 @@ background-image: url('images/edc.jpeg') ;
 .car-8 {
     background-image: url('images/rdb.jpeg');
 }
+
 .card h2{
     padding: 10px;
     font-family: 'Playfair Display', sans-serif; 
@@ -573,14 +582,169 @@ background-image: url('images/edc.jpeg') ;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
 }
 .card:hover {
-    background-color: #02060c;
-    color: white;
+    background-color:  #A293C4;
+    color: black;
     cursor: pointer;
-    transform: scale(1.03);
-    transition: all 1s ease;
-    transform: scale(1.05); 
+    transform:  scale(1.05);
+    transition: all 0.5s ease; /* Ajustado para una transición más suave */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
 }
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/*Slider final grid ------------------------------------- */
+.container-grid {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    display: flex;   
+}
+.nav {
+    position: relative;
+    width: 8%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+}
+.grid {
+    position: absolute;
+    top: 25%;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    width: max-content;
+    font-weight: bolder;
+}
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.nav-items {
+    display: flex;
+    transform: rotate(90deg);
+    padding: 1em 0;
+}
+.nav-items div {
+    padding: 0 1em;
+    text-transform: uppercase;
+    color: gray;
+    font-weight: bolder;
+}
+.swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+.swiper-slide img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+.slider-nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    z-index: 2;
+    color: #fff;
+}
+.slider-copy {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.cabecera {
+    font-size: 5vw;
+}
+.name {
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 2px #fff;
+    font-size: 6vw;
+    padding: 0 .2em 0;
+}
+.artist {
+    font-weight: 300;
+    padding: 0 .5em;
+}
+ion-icon {
+    font-size: 30px;
+    padding: 1em;
+}
+.content-grid {
+    position: relative;
+    width: 100%;
+    top: 90vh;
+    padding: 0 2em;
+}
+.bottom-nav {
+    padding: 2em 0;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+@media(max-width: 900px) {
+    .container-grid {
+        flex-direction: column;
+    }
+    .nav {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+    }
+    .nav-left .grid {
+        transform: rotate(0);
+        top: auto;
+    }
+    .nav-right {
+        height: 10vh;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .nav-items {
+        transform: rotate(0);
+    }
+    .nav-items ion-icon {
+        display: none
+    }
+}
+:root {
+    --swiper-pagination-color: #000;
+}
+
 /* Container About us ---------------------------------------------- */
 .section {
     width: 100%;
