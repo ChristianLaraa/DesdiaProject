@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> DESIDIA mx </title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hover.css/css/hover-min.css">
@@ -36,9 +37,10 @@
     
                     function updateCounter() {
                         if (currentValue < 100) {
-                            let increment = Math.floor(Math.random() * 10) + 1;
-                            currentValue = Math.min(currentValue + increment, 100);
+                            let increment = Math.min(100 - currentValue, Math.floor(Math.random() * 10) + 1);
+                            currentValue = currentValue + increment;
                             counterElement.textContent = currentValue;
+
     
                             let delay = Math.floor(Math.random() * 200) + 25;
                             setTimeout(updateCounter, delay);
@@ -47,20 +49,22 @@
     
                     updateCounter();
     
-                    // Espera 5 segundos (ajusta según necesites) antes de ocultar el loader
-                    setTimeout(function () {
-                        gsap.to(".count", { opacity: 0, duration: 0.5 });
-                        gsap.to(".pre-loader", { scale: 0.5, ease: "power4.inOut", duration: 2 });
-                        gsap.to(".loader", { height: "0", ease: "expo.inOut", duration: 1.5, delay: 0.25 });
-                        gsap.to(".loader-bg", { height: "0", ease: "power4.inOut", duration: 1.5, delay: 0.5 });
-                        gsap.to('.loader-2', { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)", ease: "power4.inOut", duration: 1.5, delay: 0.25 });
-    
-                        // Oculta el loader después de que las animaciones hayan terminado
+                    updateCounter();
+
+        // Espera 1.5 segundos antes de ocultar el loader
                         setTimeout(function () {
-                            document.querySelector('.container-loader').style.display = 'none';
-                        }, );
-                    }, 3000); // 5 segundos (ajusta según necesites)
-                }
+            gsap.to(".count", { opacity: 0, duration: 0.3 });
+            gsap.to(".pre-loader", { scale: 0.5, ease: "power4.inOut", duration: 1 });
+            gsap.to(".loader", { height: "0", ease: "expo.inOut", duration: 1, delay: 0.25 });
+            gsap.to(".loader-bg", { height: "0", ease: "power4.inOut", duration: 1, delay: 0.5 });
+            gsap.to('.loader-2', { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)", ease: "power4.inOut", duration: 1, delay: 0.25 });
+
+    // Oculta el loader después de que las animaciones hayan terminado
+    setTimeout(function () {
+        document.querySelector('.container-loader').style.display = 'none';
+    }); 
+}, 1500); // 1.5 segundos (ajustado)
+}
     
                 startLoader();
     
@@ -482,7 +486,7 @@ thumbnails.forEach((thumbnail, index) => {
 <div class="section">
     <div class="container2">
         <div class="content-section">
-            <div class="title">
+            <div class="title-about">
                 <h1> Sobre nosotros. </h1>
             </div>
             <div class="content">
@@ -512,7 +516,34 @@ thumbnails.forEach((thumbnail, index) => {
         // Tu código JavaScript aquí
     });
 </script>
-
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal(' .slider', {
+        duration: 4500,
+        origin: 'bottom',
+        distance: '-100px'
+    });
+    sr.reveal(' .img-slider ', {
+        duration: 4000,
+        origin: 'bottom',
+        distance: '100px'
+    });
+    sr.reveal(' .container ', {
+        duration: 6000,
+        origin: 'bottom',
+        distance: '100px'
+    });
+    sr.reveal(' .container-grid ', {
+        duration: 6000,
+        origin: 'bottom',
+        distance: '100px'
+    });
+    sr.reveal(' .container2 ', {
+        duration: 3000,
+        origin: 'bottom',
+        distance: '100px'
+    });
+</script>
 
     </body>
     </html>
