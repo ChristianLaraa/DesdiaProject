@@ -583,8 +583,8 @@ background-image: url('images/mexa.webp') ;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
 }
 .card:hover {
-    background-color:  #A9C4D3;;
-    color: black;
+    background-color:  #7EA5BB;;
+    color: white;
     cursor: pointer;
     transform:  scale(1.065);
     transition: all 0.3s ease; /* Ajustado para una transición más suave */
@@ -592,7 +592,7 @@ background-image: url('images/mexa.webp') ;
 }
 @media (max-width: 767px) {
     .card {
-        width: auto;
+        width: autoauto;
     }
 }
 
