@@ -16,8 +16,8 @@
             <i class='bx bx-x' id="close-icon"></i>
         </label>
         <nav class="navbar">  <!-- Barra de navegacion ELEMENTOS DEL MENU-->
-<a href="MenuDesidia.html" style="--i:0;" > Incio </a>
-<a href="Resenas.html" style="--i:1;" > Reseñas </a>
+<a href="MenuDesidia.html" style="--i:0;" > Inicio </a>
+<a href="Resenas.html" style="--i:1;" class="active"> Reseñas </a>
 <a href="Recomendaciones.html" style="--i:3;" > Recomendaciones </a>
 <a href="Playlist.html" style="--i:2;" > Playlist </a>
 <a href="Eventos.html" style="--i:4;" > Eventos </a>
@@ -38,14 +38,14 @@
         <div class="img">
             <a href="#">
             <img src="images/01madrileno.png" alt="" />
-        <p class="descripcion">El madrileño-<br>C.Tangana</p>
+        <p class="descripcion">El madrileño-<br><br>C.Tangana</p>
     </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/02mmcd.png" alt="" />
-            <p class="descripcion">Me Muevo Con Dios- <br> Cruz Cafune</p>
+            <p class="descripcion">Me Muevo Con Dios- <br><br> Cruz Cafune</p>
         </a>
         </div>
 
@@ -278,6 +278,30 @@ function scatterAndShrink(){
         ease:"power2.out",
     });
 }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script>
+barba.init({
+	transitions: [{
+		name: 'prueba',
+		leave: function(data){
+			var done = this.async();
+			document.body.classList.add('loading');
+			setTimeout(function(){
+				done();
+			},400);
+		},
+		enter:
+		function(data){
+			var done = this.async();
+			done();
+			setTimeout(function(){
+				document.body.classList.remove('loading');
+			},400);
+		}
+	}]
+});
+
     </script>
 </body>
 </html>

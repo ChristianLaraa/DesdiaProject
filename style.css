@@ -172,6 +172,10 @@ font-weight: 700;
     color: #2AEC88;
     transform: scale(1.1);
 }
+.navbar a.active{
+    color: rgb(88, 183, 255);
+    transform: scale(1.1);
+}
 #check {
     display: none;
 }
