@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleResenas.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <title>Reseñas</title>
 </head>
 <body>
@@ -33,145 +36,231 @@
     <div class="text-revealer"></div>
     </div>
 -->
+<div class="container-text">
+    <button class="btn">Enter</button>
+    <div class="text-container">
+        <div class="text-wrapper">
+            <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, minima. Molestias, quaerat distinctio, exercitationem veniam amet nulla laborum expedita fuga 
+                consequuntur vel ad enim, qui magnam veritatis harum eaque! Id.</div>
+                <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, minima. Molestias, quaerat distinctio, exercitationem veniam amet nulla laborum expedita fuga 
+                    consequuntur vel ad enim, qui magnam veritatis harum eaque! Id.</div>
+                    <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, minima. Molestias, quaerat distinctio, exercitationem veniam amet nulla laborum expedita fuga 
+                        consequuntur vel ad enim, qui magnam veritatis harum eaque! Id.</div>
+                        <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, minima. Molestias, quaerat distinctio, exercitationem veniam amet nulla laborum expedita fuga 
+                            consequuntur vel ad enim, qui magnam veritatis harum eaque! Id.</div>
+                            <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, minima. Molestias, quaerat distinctio, exercitationem veniam amet nulla laborum expedita fuga 
+                                consequuntur vel ad enim, qui magnam veritatis harum eaque! Id.</div>
+                                <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, minima. Molestias, quaerat distinctio, exercitationem veniam amet nulla laborum expedita fuga 
+                                    consequuntur vel ad enim, qui magnam veritatis harum eaque! Id.</div>
+                                    <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, minima. Molestias, quaerat distinctio, exercitationem veniam amet nulla laborum expedita fuga 
+                                        consequuntur vel ad enim, qui magnam veritatis harum eaque! Id.</div>
+                                        <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, minima. Molestias, quaerat distinctio, exercitationem veniam amet nulla laborum expedita fuga 
+                                            consequuntur vel ad enim, qui magnam veritatis harum eaque! Id.</div>
+                                            <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, minima. Molestias, quaerat distinctio, exercitationem veniam amet nulla laborum expedita fuga 
+                                                consequuntur vel ad enim, qui magnam veritatis harum eaque! Id.</div>
+        </div>
+    </div>
+    <div class="header-container">Desidia Mx</div>
+</div>
+<script>
+    const btn = document.querySelector(".btn");
+
+    btn.addEventListener("click", function(){
+        gsap.to(".btn", 1, {
+            opacity: 0,
+            y: -40,
+            ease: Expo.easeInOut,
+        });
+        gsap.to(".text-wrapper > div", 1, {
+            x: "500",
+            ease: Expo.easeInOut,
+            delay: 1,
+            stagger: 0.1,
+        });
+
+        gsap.to(".text-wrapper", 3, {
+            y: -600,
+            scale: 4.5,
+            rotate: -90,
+            ease: Expo.easeInOut,
+            delay: 1.5,
+        });
+
+        gsap.to(".text", 1, {
+            opacity: 1,
+            ease: Expo.easeInOut,
+            delay: 3,
+        });
+
+        gsap.to(".text-wrapper > div", 4, {
+            x: "-3500",
+            ease: Expo.easeInOut,
+            delay: 3.5,
+            stagger: 0.05,
+        });
+
+        gsap.to(".text-container", 2, {
+            bottom: "-100%",
+            ease: Expo.easeInOut,
+            delay: 6,
+        });
+
+        let textWrapper = document.querySelector(".header-container");
+        textWrapper.innerHTML = textWrapper.textContent.replace(
+            /\s/g,
+            "<span class='letter'>$&</span>"
+        );
+        anime.timeline().add({
+            targets: ".header-container .letter",
+            opacity: [0, 1],
+            translateY: [200, 0],
+            translateZ: 0,
+            easing: "easeOutExpo",
+            duration: 2000,
+            delay: (el, i) => 7000 + 40 + i,
+        });
+
+    });
+</script>
     <div class="gallery">
 
         <div class="img">
             <a href="#">
             <img src="images/01madrileno.png" alt="" />
-        <p class="descripcion">El madrileño-<br><br>C.Tangana</p>
+        <p class="descripcion">El madrileño -<br>C.Tangana</p>
     </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/02mmcd.png" alt="" />
-            <p class="descripcion">Me Muevo Con Dios- <br><br> Cruz Cafune</p>
+            <p class="descripcion">Me Muevo Con Dios - <br><br> Cruz Cafune</p>
         </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/03poo04.png" alt="" />
-            <p class="descripcion">PO2054AZ (Vol.I)-- <br> Sen Senra</p>
+            <p class="descripcion">PO2054AZ (Vol.I) - <br> Sen Senra</p>
         </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/04unamorsupremo.png" alt="" />
-            <p class="descripcion">1UNAMORSUPREMO- <br> Yoshi</p>
+            <p class="descripcion">1UNAMORSUPREMO - <br> Yoshi</p>
         </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/05data.png" alt="" />
-            <p class="descripcion">DATA- <br> Tainy </p>
+            <p class="descripcion">DATA - <br> Tainy </p>
         </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/06blonde.png" alt="" />
-            <p class="descripcion">Blonde- <br> Frank Ocean</p>
+            <p class="descripcion">Blonde - <br> Frank Ocean</p>
         </a>
         </div>
 
         <div class="img">   
             <a href="#">
             <img src="images/07goodkid.png" alt="" />
-            <p class="descripcion">Good Kid, M.A.A.D City- <br> Kendrick Lamar</p>
+            <p class="descripcion">Good Kid, M.A.A.D City - <br> Kendrick Lamar</p>
         </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/08prayforparis.png" alt="" />
-            <p class="descripcion">Pray For Paris- <br> Westside Gunn</p>
+            <p class="descripcion">Pray For Paris - <br> Westside Gunn</p>
         </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/09thelifeofpablo.png" alt="" />
-            <p class="descripcion">The Life Of Pablo- <br> Kanye West</p>
+            <p class="descripcion">The Life Of Pablo - <br> Kanye West</p>
             </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/10swimming.png" alt="" />
-            <p class="descripcion">Swimming- <br> Mac Miller</p>
+            <p class="descripcion">Swimming - <br> Mac Miller</p>
             </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/11riosalvaje.png" alt="" />
-            <p class="descripcion">Rio Salvaje- <br> Little Jesus</p>
+            <p class="descripcion">Rio Salvaje - <br> Little Jesus</p>
             </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/12felicilandia.png" alt="" />
-            <p class="descripcion">Felicilandia- <br> Alvaro Diaz </p>
+            <p class="descripcion">Felicilandia - <br> Alvaro Diaz </p>
             </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/13madvillian.png" alt="" />
-            <p class="descripcion">Madvilliany- <br> MF DOOM & Madlib</p>
+            <p class="descripcion">Madvilliany - <br> MF DOOM & Madlib</p>
             </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/14igor.png" alt="" />
-            <p class="descripcion">IGOR- <br> Tyler, The Creator</p>
+            <p class="descripcion">IGOR - <br> Tyler, The Creator</p>
             </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/15roy.png" alt="" />
-            <p class="descripcion">Roy- <br> Nsqk </p>
+            <p class="descripcion">Roy - <br> Nsqk </p>
             </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/16antiheroefav.png" alt="" />
-            <p class="descripcion"> Tu Antihéroe Favorito- <br> Tino el pinguino </p>
+            <p class="descripcion"> Tu Antihéroe Favorito - <br> Tino el pinguino </p>
             </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/17bogueto.png" alt="" />
-            <p class="descripcion">Reggaetoñerito <br> El Bogueto </p>
+            <p class="descripcion">Reggaetoñerito - <br> El Bogueto </p>
             </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/18amorenesp.png" alt="" />
-            <p class="descripcion">Amor En Español- <br> Jesse Baez </p>
+            <p class="descripcion">Amor En Español - <br> Jesse Baez </p>
             </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/19genesis.png" alt="" />
-            <p class="descripcion">Genesis- <br> Peso Pluma </p>
+            <p class="descripcion">Genesis - <br> Peso Pluma </p>
             </a>
         </div>
 
         <div class="img">
             <a href="#">
             <img src="images/20re.png" alt="" />
-            <p class="descripcion">Re- <br> Cáfe Tacvba</p>
+            <p class="descripcion">Re - <br> Cáfe Tacvba</p>
             </a>
         </div>
         
@@ -213,11 +302,11 @@ const positions = [
 
     
 
-const imgs = document.querySelectorAll(".img");
+        const imgs = document.querySelectorAll(".img");
 
-gsap.set(".img", {
-    top: "45%",
-    left: "50%",
+    gsap.set(".img", {
+    top: "50%",
+    left: "44.5%",
     transform: "translate(-50%, -50%) scale(0)",
 });
 
@@ -232,11 +321,11 @@ gsap.set(".img", {
 });*/
 
 gsap.to(" .img ", {
-    scale: 1,
-    width: "300px",
+    scale: 1.15,
+    width: "320px",
     height: "400px",
     stagger: 0.15,
-    duration: 0.75,
+    duration: 0.87,
     ease: "power2out",
     delay: 1,
     onComplete: scatterAndShrink,
@@ -271,9 +360,9 @@ function scatterAndShrink(){
         top: (i) => positions[i].top,
         left: (i) => positions[i].left,
         transform: "none",
-        width: "75px",
+        width: "90px",
         height: "100px",
-        stagger: 0.075,
+        stagger: 0.070,
         duration: 0.75,
         ease:"power2.out",
     });
