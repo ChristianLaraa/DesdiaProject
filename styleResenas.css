@@ -241,6 +241,10 @@ font-weight: 700;
         height: 100%;
         object-fit: cover;
     }
+    .descripcion {
+        font-size: 9px; /* Ajusta el tamaño de fuente de la descripción en pantallas más pequeñas */
+        width: 80%; /* Ajusta el ancho de la descripción */
+    }
 }
 
 .descripcion {
@@ -259,11 +263,11 @@ font-weight: 700;
     transition: opacity 0.5s, left 0.7s; /* Agrega una transición para suavizar el efecto */
 }
 
-/* Agrega estilos hover al pasar el ratón sobre el contenedor */
+
 .img:hover .descripcion {
     position: auto;
-    opacity: 9; /* Muestra la descripción */
-    left: 0; /* Muestra la descripción ajustando la posición a 0 */
+    opacity: 9; 
+    left: 0; 
     font-size: auto;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
