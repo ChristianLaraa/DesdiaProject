@@ -152,6 +152,7 @@ font-weight: 700;
 /*Botones animacion texto*/
 .btn {
     position: absolute;
+    color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -160,18 +161,19 @@ font-weight: 700;
     border: none;
     outline: none;
     font-family: Helvetica, sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     text-decoration: underline;
     text-transform: uppercase;
     font-size: 2em;
     cursor: pointer;
 }
+
 .header-container {
     position: fixed;
     width: 100%;
     height: 100vh;
     background: #0f0f0f;
-    color:#fff;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,6 +181,7 @@ font-weight: 700;
     font-family: "Voyage";
     font-size: 8em;
 }
+
 .text-container {
     position: fixed;
     width: 100%;
@@ -186,6 +189,7 @@ font-weight: 700;
     background: #de5e40;
     z-index: -1;
 }
+
 .text-wrapper {
     position: fixed;
     width: 100%;
@@ -196,6 +200,7 @@ font-weight: 700;
     justify-content: space-between;
     cursor: default;
 }
+
 .text {
     width: 300%;
     font-family: "Voyage";
@@ -204,6 +209,27 @@ font-weight: 700;
     opacity: 0.1;
 }
 
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .btn {
+        font-size: 1.9em; /* Adjust the font size for smaller screens */
+    }
+
+    .header-container {
+        font-size: 4em; 
+        font-family: 'Voyage'; /* Adjust the font size for smaller screens */
+    }
+
+    .text {
+        font-size: 6.5vw; /* Adjust the font size for smaller screens */
+    }
+
+    .text-wrapper {
+        text-overflow: initial;
+        font-size: larger;
+
+}
+}   
 
 /*carousel images -------------*/
 .gallery {
@@ -211,42 +237,50 @@ font-weight: 700;
     height: calc(100vh - 60px);
     position: relative;
 }
+
 .img {
     width: 75px;
     height: 100px;
     overflow: hidden;
     position: absolute;
-    margin: 60px;
-    
+    margin: 65px; /* Reduce the margin for smaller screens */
+
+    /* Add more specific styles for larger screens if necessary */
 }
+
 .img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin: auto;
 }
-@media (max-width: 768px) {
-    .gallery {
-        height: 45%;
-        margin: 0;
-        text-align:left;
-        width: 45%;
-    }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
     .img {
-        width: 70px;
-        height: 90px;
-        align-items: center;
-    }
-    .img img {
-        width: auto;
-        height: 100%;
-        object-fit: cover;
-    }
-    .descripcion {
-        font-size: 9px; /* Ajusta el tamaño de fuente de la descripción en pantallas más pequeñas */
-        width: 80%; /* Ajusta el ancho de la descripción */
+        width: 40px; /* Adjust the width for smaller screens */
+        height: 65px; /* Adjust the height for smaller screens */
+        margin: 10px; /* Adjust the margin for smaller screens */
     }
 }
 
+/* Media query for larger screens */
+@media screen and (min-width: 1200px) {
+    .img {
+        width: 30px; /* Adjust the width for larger screens */
+        height: 50px; /* Adjust the height for larger screens */
+        margin: 35px; /* Adjust the margin for larger screens */
+    }
+}
+
+/* Additional media queries for even larger screens if necessary */
+@media screen and (min-width: 1600px) {
+    .img {
+        width: 20px; /* Adjust the width for even larger screens */
+        height: 40px; /* Adjust the height for even larger screens */
+        margin: 20px; /* Adjust the margin for even larger screens */
+    }
+}
 .descripcion {
     position: absolute;
     font-size: 11.5px;
