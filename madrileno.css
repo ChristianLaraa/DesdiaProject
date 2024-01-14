@@ -286,3 +286,15 @@ font-weight: 700;
     left: 7px;
     top: 6px
 } 
+.spotifyMadri {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10vh;
+    width: 400px;
+    max-width: 600px;
+    height: 400px;
+    color: #fff;
+
+}
