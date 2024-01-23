@@ -167,6 +167,9 @@ font-weight: 700;
     font-size: 2em;
     cursor: pointer;
 }
+.btn:hover {
+    color: #0F6F95;
+}
 
 .header-container {
     position: fixed;

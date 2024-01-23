@@ -168,58 +168,56 @@ font-weight: 700;
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-right: 3rem;
-    margin-bottom: 3rem;   
+    align-items: center;
+    margin-right:0;
+    margin-bottom: 0;
 }
 
-.titulo .artista {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 2em;
+.titulo {
     display: flex;
-    justify-content: space-between;
+    padding: 2em;
+    width: 100%;
     margin-top: 2rem;
 }
+
 .titulo h1 {
-    margin-left: 8.5rem;
-    align-items: left;
-    margin-top: 15rem;
-    display: flex;
-    width: 100%;
+    margin-top: 8rem; /* Ajusta la distancia desde la parte superior */
+    margin-bottom: 0.5rem; /* Ajusta la distancia desde la parte inferior */
     letter-spacing: 3px;
-    justify-content: flex-start;
     color: white;
     font-family: "TRIAL Dx Sitrus";
-    font-size: 85px !important; 
+    font-size: 65px !important;
     text-align: left;
-
     cursor: pointer;
     text-transform: uppercase;
     transition: 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
     transform-origin: bottom;
-
+    margin-left: 6rem;
+    margin-right: 0rem;
 }
 
-
+.artista {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    width: 100%;
+    margin-top: 2rem;
+}
 
 .artista h2 {
-    display: flex;
+    margin-top: 16rem; /* Ajusta la distancia desde la parte superior */
+    margin-bottom: 0.5rem; /* Ajusta la distancia desde la parte inferior */
     letter-spacing: 3.5px;
-    margin-left: 31rem;
-    margin-top: 29rem;
-    width: 100%;
-    color: #F33817; 
+    color: #F33817;
     font-family: "TRIAL Dx Sitrus";
     font-size: 55px;
     text-align: center;
-
     cursor: pointer;
     text-transform: uppercase;
     transition: 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
     transform-origin: bottom;
 }
+
 
 .imagenPortada {
     display: flex;
