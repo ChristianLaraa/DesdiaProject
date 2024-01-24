@@ -10,7 +10,7 @@
 @import url(https://db.onlinewebfonts.com/c/dc3b686f53164408bb991e0d467102d2?family=TRIAL+Dx+Sitrus);
 @import url(https://db.onlinewebfonts.com/c/54f18a83ca631070e2427736953966d9?family=Mabrick+Serif+Rought+Free);
 @import url(https://db.onlinewebfonts.com/c/e6496bea4437a62d21b4f4ea502b18da?family=LFutura);
- 
+
 
 /*Body y cuerpo de la pagina --------------------------- */
 *{
@@ -23,7 +23,7 @@
 body {
     min-height: 100vh;
     /*background: url('backgroundProviDesidia.png') no-repeat center center fixed; */
-    background-color: #064049;
+    background-color: #022435;
     background-size: cover;
 }
 /*Header y navbar, iconos y responsive, menu ------------------------- */
@@ -173,47 +173,44 @@ font-weight: 700;
     margin-bottom: 0;
 }
 
-.titulo {
+.word .titulo .artista {
     display: flex;
-    padding: 2em;
     width: 100%;
-    margin-top: 2rem;
 }
 
-.titulo h1 {
-    margin-top: 8rem; /* Ajusta la distancia desde la parte superior */
-    margin-bottom: 0.5rem; /* Ajusta la distancia desde la parte inferior */
-    letter-spacing: 3px;
-    color: white;
-    font-family: "TRIAL Dx Sitrus";
-    font-size: 65px !important;
-    text-align: left;
+.titulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo span {
     cursor: pointer;
+    color: white;
     text-transform: uppercase;
+    font-size: 7vw;
     transition: 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
     transform-origin: bottom;
-    margin-left: 6rem;
-    margin-right: 0rem;
+    margin: 10rem auto 0; /* Ajusta la distancia desde la parte superior y centra horizontalmente */
+    font-family: "TRIAL Dx Sitrus";
+    text-align: center;
 }
 
 .artista {
     display: flex;
-    align-items: center;
-    padding: 2em;
     width: 100%;
-    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
-.artista h2 {
-    margin-top: 16rem; /* Ajusta la distancia desde la parte superior */
-    margin-bottom: 0.5rem; /* Ajusta la distancia desde la parte inferior */
-    letter-spacing: 3.5px;
-    color: #F33817;
-    font-family: "TRIAL Dx Sitrus";
-    font-size: 55px;
-    text-align: center;
+.artista span {
     cursor: pointer;
+    color: #F33817;
     text-transform: uppercase;
+    font-family: "TRIAL Dx Sitrus";
+    font-size: 5vw;
+    text-align: center;
     transition: 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
     transform-origin: bottom;
 }
@@ -225,7 +222,7 @@ font-weight: 700;
     height: 250px; /* Espacio entre la imagen y el texto */
     margin: 0 auto; /* Centra la imagen */
     margin-top: 12rem;
-    margin-right: 3rem;
+    margin-right: 7rem;
 }
 
 .containertextSpotify {
@@ -239,23 +236,23 @@ font-weight: 700;
 }
 .text-reseña h3 {
     color: white;
-    display: block;
+    display: flex;
     font-family: "LFutura";
     width: 100%;
-    max-width: 790px;
+    max-width: 800px;
     text-align: center;
     font-size: 20px;
     letter-spacing: 1.5px;
     line-height: 1.5;
-    margin-top: 2rem;
+    margin-top: 1rem;
 
 }
 .frameSpotify {
     display: flex;
     max-width: 400px;
-    height: 800px;
+    height: 1100px;
     justify-content: flex-end;
-    margin-top: 20rem;
+    margin-top: 17rem;
 }
 .container-text {
     position: absolute;
@@ -265,19 +262,6 @@ font-weight: 700;
     display: flex;
     justify-content: space-between;
 }
-.word {
-    display: flex;
-}
-.word span {
-    cursor: pointer;
-    font-family: "TRIAL Dx Sitrus";
-    text-transform: uppercase;
-    font-size: 10vw;
-    transition: 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
-    transform-origin: bottom;
-    color: rgb(162, 31, 31);
-}
-
 
 .frameYoutube {
     display: flex;
@@ -315,7 +299,7 @@ font-weight: 700;
     margin: 10px 20px; /* Ajusta los márgenes según tus necesidades */
 }
 
-.block h1 {
+.block h4 {
     position: flex;
     font-family: "Novecento WideBold";
     font-weight: lighter;
