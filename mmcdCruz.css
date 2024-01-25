@@ -173,15 +173,15 @@ font-weight: 700;
     margin-bottom: 0;
 }
 
-.word .titulo .artista {
-    display: flex;
+.titulo .artista {
+    display: block;
     width: 100%;
 }
 
 .titulo {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 
@@ -221,8 +221,8 @@ font-weight: 700;
     width: 250px; /* Ajusta el ancho de la imagen según tus necesidades */
     height: 250px; /* Espacio entre la imagen y el texto */
     margin: 0 auto; /* Centra la imagen */
-    margin-top: 12rem;
-    margin-right: 7rem;
+    margin-top: 10rem;
+    margin-right: 6rem;
 }
 
 .containertextSpotify {
@@ -239,7 +239,7 @@ font-weight: 700;
     display: flex;
     font-family: "LFutura";
     width: 100%;
-    max-width: 800px;
+    max-width: 790px;
     text-align: center;
     font-size: 20px;
     letter-spacing: 1.5px;
@@ -341,6 +341,7 @@ font-weight: 700;
 .next {
     right: 10px;
 }
+
 .scroll-btn {
     position: absolute;
     top: 50%;
@@ -355,14 +356,12 @@ font-weight: 700;
     transition: background-color 0.3s ease;
     margin-right: 2rem;
     transition: background-color 0.3s ease;
-  }
-  
-  .scroll-btn:hover {
+}
+.scroll-btn:hover {
     background-color: #555;
-  }
-  
-  .arrow-left,
-  .arrow-right {
+}
+.arrow-left,
+.arrow-right {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -372,27 +371,27 @@ font-weight: 700;
     border-style: solid;
     transition: border-width 0.3s ease, transform 0.3s ease;
     
-  }
-  
-  .arrow-left {
+}
+
+.arrow-left {
     border-width: 15px 0 15px 25px;
     border-color: transparent transparent transparent #fff;
-  }
-  
-  .arrow-right {
+}
+
+.arrow-right {
     border-width: 15px 25px 15px 0;
     border-color: transparent #fff transparent transparent;
-  }
-  
-  .scroll-btn.prev .arrow-left {
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
-  
-  .scroll-btn.next .arrow-right {
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
+}
 
-  .container-youtube {
+.scroll-btn.prev .arrow-left {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.scroll-btn.next .arrow-right {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.container-youtube {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -406,7 +405,7 @@ font-weight: 700;
 }
 
 .container-youtube:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
 }
 
@@ -441,14 +440,15 @@ font-weight: 700;
 
 .frame-youtube iframe {
     width: 100%;
-    height: 380px;
+    height: 300px;
+    width: 100%;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     transition: box-shadow 0.3s ease;
 }
 
 .frame-youtube:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .frame-youtube:hover iframe {
