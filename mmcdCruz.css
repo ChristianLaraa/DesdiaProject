@@ -456,5 +456,90 @@ font-weight: 700;
 }
 
 /*Responsive version*/
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo {
+        text-align: center; 
+    }
+    .titulo span {
+        font-size: 8vw;
+    }
 
+    .artista span {
+        font-size: 8vw;
+    }
+
+
+
+
+    .imagenPortada {
+        max-width: 80px; /* Reduzco el ancho máximo de la imagen */
+        width: 100%; /* La imagen ocupará el 100% del ancho disponible */
+        height: auto; /* La altura se ajustará automáticamente para mantener las proporciones originales */
+        margin-top: 0.5rem; /* Ajusto el margen superior */
+        margin-bottom: 0.5rem; /* Ajusto el margen inferior */
+        margin-right: 0;
+    }
+
+
+
+
+    .containertextSpotify {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+    }
+
+    .frameSpotify {
+        max-width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .container-text {
+        position: static;
+        width: 100%;
+        padding: 1em;
+        justify-content: center;
+    }
+
+    .frameYoutube {
+        margin-top: 2rem;
+        margin-block-end: 1rem;
+    }
+
+    .gallery-wrapper {
+        height: 300px;
+        margin-top: 2rem;
+    }
+
+    .block {
+        width: 100%;
+        height: 250px;
+        margin: 10px 0;
+    }
+
+    .block h4 {
+        font-size: 24px;
+    }
+
+    .scroll-btn {
+        width: 40px;
+        height: 40px;
+        margin-right: 1rem;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Add specific styles for tablets if needed */
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+    /* Add specific styles for desktop if needed */
+}
 /* Media queries para tamaños de pantalla más grandes si es necesario */
