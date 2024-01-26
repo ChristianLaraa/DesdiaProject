@@ -23,7 +23,7 @@
 body {
     min-height: 100vh;
     /*background: url('backgroundProviDesidia.png') no-repeat center center fixed; */
-    background-color: #022435;
+    background-color: #032345;
     background-size: cover;
 }
 /*Header y navbar, iconos y responsive, menu ------------------------- */
@@ -247,6 +247,20 @@ font-weight: 700;
     margin-top: 1rem;
 
 }
+.text-reseña a {
+    color: white;
+    display: flex;
+    font-family: "Neue";
+    width: 100%;
+    margin-top: 13rem;
+    font-size: 2vh;
+    text-align: right;
+    margin-left: 5rem;
+
+}
+.text-reseña a:hover {
+    color: #9fb9ff;
+}
 .frameSpotify {
     display: flex;
     max-width: 400px;
@@ -458,12 +472,14 @@ font-weight: 700;
 /*Responsive version*/
 @media only screen and (max-width: 600px) {
     .container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column-reverse;
+        align-items: center; /* Centro los elementos en el eje transversal */
     }
+
     .titulo {
         text-align: center; 
     }
+
     .titulo span {
         font-size: 8vw;
     }
@@ -471,9 +487,6 @@ font-weight: 700;
     .artista span {
         font-size: 8vw;
     }
-
-
-
 
     .imagenPortada {
         max-width: 80px; /* Reduzco el ancho máximo de la imagen */
@@ -484,8 +497,13 @@ font-weight: 700;
         margin-right: 0;
     }
 
-
-
+.imagenContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem; /* Ajusto el margen superior */
+        margin-bottom: 0.5rem; /* Ajusto el margen inferior */
+    }
 
     .containertextSpotify {
         flex-direction: column;
