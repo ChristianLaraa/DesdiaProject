@@ -10,7 +10,7 @@
 body {
     min-height: 100vh;
     /*background: url('backgroundProviDesidia.png') no-repeat center center fixed; */
-    background-color: #000000;
+    background-color: #0E0230;
     background-size: cover;
 }
 /*Header y navbar, iconos y responsive, menu ------------------------- */
@@ -148,7 +148,27 @@ font-weight: 700;
     opacity: 1;
     transition-delay: calc(.15s * var(--i));
 }
-}                                             
+}     
+
+card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajustar el espacio entre las tarjetas */
+    padding: 20px;
+}
+
+.card {
+    width: calc(33.33% - 20px); /* Ancho de cada tarjeta (33.33% del contenedor) */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
 .spotify {
     position: absolute;
     top: 50%;
