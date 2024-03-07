@@ -163,7 +163,7 @@ font-weight: 700;
     background:  #733670;
     color:  white;
     width: 365px; 
-    height: 420px;  
+    height: 400px;  
     margin: 10px;
     overflow: hidden;
     border-radius: 22px;
@@ -206,7 +206,7 @@ background-image: url('imgPlaylist/Playl4.png') ;
 .card p {
     padding: 15px;
     font-family: 'Roboto', sans-serif; 
-    font-size: 14px; 
+    font-size: 16px; 
     text-align: center;
     line-height: 1.5;
 }
