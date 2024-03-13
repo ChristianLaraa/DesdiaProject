@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
 *{
     margin: 0;
     padding: 0;
@@ -149,6 +150,58 @@ font-weight: 700;
     transition-delay: calc(.15s * var(--i));
 }
 }     
+
+.wrapper {
+    width: 100vw;
+    text-align: center;
+span {
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: #000;
+    font-size: 45px;
+    text-shadow: 0 0px #f3c623, 0 0px #f2aaaa;
+    transform: translate(0, 100%) rotate(4deg);
+    animation: jump 2s ease-in-out infinite;
+    display: inline-block;
+    font-family: "Titan One", cursive;
+    color: #fff;
+    margin-top: 10rem;
+
+    @for $i from 1 through 7 {
+      &:nth-child(#{$i}) {
+        animation-delay: 120ms * $i;
+      }
+    }
+  }
+}
+@keyframes jump {
+  33% {
+    text-shadow: 0 60px #f37121, 0 150px #f2aaaa;
+  }
+  50% {
+    transform: translate(0, 0) rotate(-4deg);
+    text-shadow: 0 0px #8fc0a9, 0 0px #84a9ac;
+  }
+  66.67% {
+    text-shadow: 0 -60px #d54062, 0 -150px #8fc0a9;
+  }
+}
+@media screen and (max-height: 200px) {
+  .wrapper {
+    transform: scale(0.2,0.3);
+  }
+}
+@media screen and (max-width: 576px) {
+  .wrapper {
+    span {
+      font-size: 50px;
+    }
+  }
+}
+
+
+
+
+
 /*CARDS*/
 :root{
     --background-dark: #2d3548;
@@ -189,7 +242,7 @@ font-weight: 700;
 .card{
     list-style: none;
     position: relative;
-    margin-top: 5rem;;
+    margin-top: 8rem;;
 }
 .card:before{
     content: '';
@@ -248,3 +301,5 @@ font-weight: 700;
     transform: translate(-50%, -50%);
     text-align: center; 
 }
+
+
