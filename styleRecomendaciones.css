@@ -10,7 +10,7 @@
 body {
     min-height: 100vh;
     /*background: url('backgroundProviDesidia.png') no-repeat center center fixed; */
-    background-color: #4E043C;
+    background-color: #1C374C;
     background-size: cover;
 }
 /*Header y navbar, iconos y responsive, menu ------------------------- */
@@ -149,12 +149,13 @@ font-weight: 700;
     transition-delay: calc(.15s * var(--i));
 }
 }                                             
-.h1 {
+h1 {
     font-size: 16rem;
     text-transform: uppercase;
+    color: white;
 }
-.p,
-.span {
+p,
+span {
     font-size: 3.2rem;
 }
 /*.... SECTION*/
@@ -162,6 +163,7 @@ font-weight: 700;
     position: relative;
     width: 100%;
     height: 100vh;
+    margin-top: 6.5rem;
 }
 .section_wrapper {
     height: inherit;
