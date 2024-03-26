@@ -1,5 +1,5 @@
 Desidia mx <br>
 Colaboradores: <br>
-<i>Christian Lara</i>
-<i>Diana Banda </i>
+<i>Christian Lara</i> <br>
+<i>Diana Banda </i> <br>
 <i>Fernando Sotomayor </i>
