@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url(https://db.onlinewebfonts.com/c/7bec814954d059a7e7dae047285eedbc?family=Satoshi+Medium);
+@import url(https://db.onlinewebfonts.com/c/6524255507145ca199b7554d8526bdd0?family=Prociono);
+@import url(https://db.onlinewebfonts.com/c/be7d12601306f9f1b7aac9eca131fc8f?family=AkzidenzGrotesk);
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +13,7 @@
 body {
     min-height: 100vh;
     /*background: url('backgroundProviDesidia.png') no-repeat center center fixed; */
-    background-color: #1C374C;
+    background-color: black;
     background-size: cover;
 }
 /*Header y navbar, iconos y responsive, menu ------------------------- */
@@ -150,9 +153,10 @@ font-weight: 700;
 }
 }                                             
 h1 {
-    font-size: 16rem;
+    font-size: 10rem;
     text-transform: uppercase;
-    color: white;
+    color: #fff0b5;
+    font-family: "AkzidenzGrotesk", sans-serif;
 }
 p,
 span {
@@ -201,18 +205,23 @@ span {
 }
 .section_list_item:nth-child(1) .section_list_item_figure {
     width: 20rem;
+    margin-top: 3rem;
 }
 .section_list_item:nth-child(2) .section_list_item_figure {
     width: 12rem;
+    margin-top: 3rem;
 }
 .section_list_item:nth-child(3) .section_list_item_figure {
     width: 18rem;
+    margin-top: 3rem;
 }
 .section_list_item:nth-child(4) .section_list_item_figure {
     width: 20rem;
+    margin-top: 3rem;
 }
 .section_list_item:nth-child(5) .section_list_item_figure {
     width: 8rem;
+    margin-top: 3rem;
 }
 .section_list_item_image {
     position: absolute;
