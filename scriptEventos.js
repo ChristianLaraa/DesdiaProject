@@ -458,6 +458,23 @@ function convertTime(time) {
 }
 
 
+// Prueba add evento
+const eventoPrueba = {
+  titulo: "Concierto en vivo",
+  descripcion: "Disfruta de una noche llena de música en vivo y entretenimiento.",
+  foto: "ruta/a/la/foto.jpg",
+  linkCompra: "https://ejemplo.com/comprar-entradas",
+  mapaLugar: "https://maps.google.com/?q=nombre+del+lugar",
+  horario: "18:00 - 22:00",
+};
+
+// Suponiendo que eventsArr es el arreglo donde almacenamos los eventos
+eventsArr.push({
+  day: 19, // Día del mes en el que se realizará el evento
+  month: 4, // Mes en el que se realizará el evento (0 = enero, 1 = febrero, ...)
+  year: 2024, // Año en el que se realizará el evento
+  events: [eventoPrueba], // Aquí añadimos el objeto evento al arreglo de eventos para este día
+});
 
 /*
 const newManualEvent = {

@@ -2,7 +2,7 @@
   "name": "desidia",
   "version": "1.0.0",
   "description": "Colaboradores: <br> <i>Christian Lara</i>",
-  "main": "MenuDesidia.html",
+  "main": "Eventos.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
