@@ -1,5 +1,4 @@
 
-
 /* SEGUNDO EFECTO JS */
 const section = document.querySelector('.section'),
     sectionListItem = section.querySelectorAll('.section_list_item'),

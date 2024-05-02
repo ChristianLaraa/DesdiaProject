@@ -4,6 +4,13 @@
 @import url(https://db.onlinewebfonts.com/c/6524255507145ca199b7554d8526bdd0?family=Prociono);
 @import url(https://db.onlinewebfonts.com/c/be7d12601306f9f1b7aac9eca131fc8f?family=AkzidenzGrotesk);
 @import url(https://db.onlinewebfonts.com/c/34bf77357fafcf04d4061d4e19a32c85?family=Reckless+Bold);
+@import url(https://db.onlinewebfonts.com/c/4366ceae6f7564999a0f0c3e8698a4ad?family=Neue+Montreal);
+@import url(https://db.onlinewebfonts.com/c/06b103d23cb2b5cebfb7a9ca55e10c72?family=Playfair+Display);
+@import url(https://db.onlinewebfonts.com/c/5d6b2c040ee072582e95ad70593a8d87?family=Bebas+Neue);
+@import url(https://db.onlinewebfonts.com/c/27cb2381f8e348c531e19a16b9921082?family=Suisse+Works+Bold);
+@import url(https://db.onlinewebfonts.com/c/214dd8afc399412820f14dd64245b5ba?family=Work+Sans);
+@import url(https://db.onlinewebfonts.com/c/04c4a36facccf2d0906a0f1ed61036ef?family=Favorit+Medium);
+@import url(https://db.onlinewebfonts.com/c/ce11b890e2dda29369a1a27b5e58397a?family=GT+Super+Text+Regular);
 *{
     margin: 0;
     padding: 0;
@@ -171,28 +178,35 @@ span {
     height: 100vh;
     text-align: center;
     color: white;
-    padding: 10rem;
+    padding: 8rem; /* Reducir el padding para acercar el texto al borde */
     margin-top: 5rem;
+    display: flex;
+    flex-direction: column; /* Alinear los elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
 }
 
-.hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.hero-text {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
 .fuente-tittle {
-    font-family: "Reckless Bold";
-    color: #DAF7A6;
-
+    font-family: "GT Super Text Regular";
+    color:  #E6BAFF ;
+    margin-top: 0; /* Ajustar el margen para mover el título más arriba */
+    margin-bottom: 2rem; /* Espaciado entre el título y el contenido */
 }
+
+.fuente-content {
+    font-family: "Work Sans";
+    color: #f0e7ca;
+    font-size: 20px;
+    margin-bottom: 2rem; /* Ajustar el espaciado entre el contenido */
+    margin-top: 2rem;
+}
+
+.fuente-recomendacion {
+    font-family: "favorit Medium";
+    color: #ffffff;
+    font-size: 1.4vw;
+    margin-top: 3rem; /* Ajustar el margen superior del texto de recomendación */
+}
+
 
 
 /*.... SECTION*/
