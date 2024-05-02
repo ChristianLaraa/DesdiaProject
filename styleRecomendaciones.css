@@ -11,6 +11,7 @@
 @import url(https://db.onlinewebfonts.com/c/214dd8afc399412820f14dd64245b5ba?family=Work+Sans);
 @import url(https://db.onlinewebfonts.com/c/04c4a36facccf2d0906a0f1ed61036ef?family=Favorit+Medium);
 @import url(https://db.onlinewebfonts.com/c/ce11b890e2dda29369a1a27b5e58397a?family=GT+Super+Text+Regular);
+@import url(https://db.onlinewebfonts.com/c/e4615d59604d3d0bb8376f5e258aee4d?family=General+Sans+Semibold+Italic);
 *{
     margin: 0;
     padding: 0;
@@ -171,32 +172,33 @@ span {
     font-size: 3.2rem;
 }
 .hero {
-    background-image: url("images/prototypeRecomendaciones.jpg");
+    background-image: url("images/recom.jpg");
     background-size: cover;
     background-position: center;
     width: 100vw;
     height: 100vh;
     text-align: center;
     color: white;
-    padding: 8rem; /* Reducir el padding para acercar el texto al borde */
+    padding: 4rem; 
     margin-top: 5rem;
     display: flex;
-    flex-direction: column; /* Alinear los elementos en columna */
-    justify-content: center; /* Centrar verticalmente */
+    flex-direction: column; 
+    justify-content: center; 
 }
 
 .fuente-tittle {
-    font-family: "GT Super Text Regular";
-    color:  #E6BAFF ;
-    margin-top: 0; /* Ajustar el margen para mover el título más arriba */
-    margin-bottom: 2rem; /* Espaciado entre el título y el contenido */
+    font-family: "General Sans Semibold Italic";
+    font-size: 8rem;
+    color:  #ffffff ;
+    margin-top: 0; 
+    margin-bottom: 2rem; 
 }
 
 .fuente-content {
     font-family: "Work Sans";
     color: #f0e7ca;
     font-size: 20px;
-    margin-bottom: 2rem; /* Ajustar el espaciado entre el contenido */
+    margin-bottom: 2rem; 
     margin-top: 2rem;
 }
 
@@ -204,7 +206,7 @@ span {
     font-family: "favorit Medium";
     color: #ffffff;
     font-size: 1.4vw;
-    margin-top: 3rem; /* Ajustar el margen superior del texto de recomendación */
+    margin-top: 3rem; 
 }
 
 
