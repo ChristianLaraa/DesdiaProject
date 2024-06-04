@@ -29,72 +29,25 @@
 </nav>
     </header>
     <div class="container">
-        <div class="left">
-          <div class="calendar">
-            <div class="month">
-              <i class="fas fa-angle-left prev"></i>
-              <div class="date">december 2015</div>
-              <i class="fas fa-angle-right next"></i>
-            </div>
-            <div class="weekdays">
-              <div>Domingo</div>
-              <div>Lunes</div>
-              <div>Martes</div>
-              <div>Miercoles</div>
-              <div>Jueves</div>
-              <div>Viernes</div>
-              <div>Sabado</div>
-            </div>
-            <div class="days"></div>
-            <div class="goto-today">
-              <div class="goto">
-                <input type="text" placeholder="mm/yyyy" class="date-input" />
-                <button class="goto-btn">Go</button>
-              </div>
-              <button class="today-btn">Hoy</button>
-            </div>
-          </div>
-        </div>
-        <div class="right">
-          <div class="today-date">
-            <div class="event-day">Viernes</div>
-            <div class="event-date">15 de Marzo 2024</div>
-          </div>
-          <div class="events"></div>
-          <div class="add-event-wrapper">
-            <div class="add-event-header">
-              <div class="title">Añadir evento</div>
-              <i class="fas fa-times close"></i>
-            </div>
-            <div class="add-event-body">
-              <div class="add-event-input">
-                <input type="text" placeholder="Event Name" class="event-name" />
-              </div>
-              <div class="add-event-input">
-                <input
-                  type="text"
-                  placeholder="Event Time From"
-                  class="event-time-from"
-                />
-              </div>
-              <div class="add-event-input">
-                <input
-                  type="text"
-                  placeholder="Event Time To"
-                  class="event-time-to"
-                />
-              </div>
-            </div>
-            <div class="add-event-footer">
-              <button class="add-event-btn">Añadir evento</button>
-            </div>
-          </div>
-        </div>
-        <button class="add-event">
-          <i class="fas fa-plus"></i>
-        </button>
+      <h1>Calendario de Eventos</h1>
+      <div class="calendar-nav">
+          <button id="prevMonth" aria-label="Mes anterior">&lt;</button>
+          <span id="currentMonth"></span>
+          <button id="nextMonth" aria-label="Mes siguiente">&gt;</button>
       </div>
-  
+      <div class="calendar">
+          <div class="days-of-week">
+              <div>Dom</div>
+              <div>Lun</div>
+              <div>Mar</div>
+              <div>Mié</div>
+              <div>Jue</div>
+              <div>Vie</div>
+              <div>Sáb</div>
+          </div>
+          <div id="calendar"></div>
+      </div>
+  </div>
       <script src="scriptEventos.js"></script>
 </body>
 </html>
