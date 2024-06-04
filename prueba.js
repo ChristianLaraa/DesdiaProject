@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
         currentMonthElement.textContent = date.toLocaleDateString('default', { month: 'long', year: 'numeric' });
 
         for (let i = 0; i < firstDayOfMonth; i++) {
-            calendar.appendChild(document.createElement('div'));
+            const emptyDiv = document.createElement('div');
+            calendar.appendChild(emptyDiv);
         }
 
         for (let day = 1; day <= lastDateOfMonth; day++) {
