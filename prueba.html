@@ -2,49 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Eventos</title>
     <link rel="stylesheet" href="prueba.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
-    <title>Recomendaciones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <a href = "#" class="logo"> DESIDIA mx </a>  <!-- Logo de DESIDIA mx POSTERIOREMENTE REMPLAZADO POR IMAGEN--> 
-        <input type="checkbox" id="check">
-        <label for="check" class="icons">
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i>
-        </label>
-        <nav class="navbar">  <!-- Barra de navegacion ELEMENTOS DEL MENU-->
-<a href="MenuDesidia.html" style="--i:0;" > Inicio </a>
-<a href="Resenas.html" style="--i:1;" > Reseñas </a>
-<a href="Recomendaciones.html" style="--i:3;" class="active" > Recomendaciones </a>
-<a href="Playlist.html" style="--i:2;" > Playlist </a>
-<a href="Eventos.html" style="--i:4;" > Eventos </a>
-</nav>
-    </header>
-
-<section class="lottie-container">
-    <div class="animation"></div>
-</section>
-
-<section class="gradient"></section>
-<section class="website-content">
-    <div class="end-lottie"></div>
-
-    <h1 class="first">RECOMENDACIONES by DESIDIA mx</h1>
-    <p class="text-containerFirst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, blanditiis sit unde beatae similique, consequatur recusandae consequuntur nesciunt cupiditate eaque mollitia quam quae iure asperiores! Vitae sint aliquid eum expedita.</p>
-</section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
-<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-
-<script src="prueba.js"></script>
-
+    <div class="container">
+        <h1>Calendario de Eventos</h1>
+        <div class="calendar-nav">
+            <button id="prevMonth" aria-label="Mes anterior">&lt;</button>
+            <span id="currentMonth"></span>
+            <button id="nextMonth" aria-label="Mes siguiente">&gt;</button>
+        </div>
+        <div class="calendar" id="calendar"></div>
+    </div>
+    <script src="prueba.js"></script>
 </body>
-
-
 </html>
