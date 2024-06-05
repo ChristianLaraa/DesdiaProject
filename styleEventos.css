@@ -14,7 +14,7 @@
 body {
     min-height: 100vh; 
     /*background: url('backgroundProviDesidia.png') no-repeat center center fixed; */
-    background-color: #040a47;
+    background-color: #044147;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
 }
@@ -239,10 +239,11 @@ h1 {
 .days-of-week {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  background-color: #007bff;
+  background-color: #d74a0e;
   color: white;
   padding: 10px 0;
   border-radius: 10px;
+  font-size: 18px;
 }
 
 .days-of-week div {
@@ -257,7 +258,7 @@ h1 {
 }
 
 .day {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -268,7 +269,7 @@ h1 {
 
 .day:hover {
   transform: scale(1.05);
-  background-color: #f0f8ff;
+  background-color: #cde8ff;
 }
 
 .day-header {
@@ -295,7 +296,7 @@ h1 {
   height: 180px;
   border-radius: 5px;
   margin-bottom: 10px;
-  object-fit: flex;
+  object-fit: cover;
 }
 
 .event h4 {

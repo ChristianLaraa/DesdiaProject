@@ -1,6 +1,55 @@
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
   const events = [
+    /*EVENTOS JULIO */
+      {
+          title: 'Mené "La maquina persona.',
+          date: '2024-07-13',
+          time: '09:00 PM',
+          location: 'Foro Indie Rocks',
+          image: 'imagesEventos/meneEvento.png',
+          link: 'https://www.passline.com/eventos/mene'
+      },
+      {
+          title: 'YOVNGCHIMI en CDMX ',
+          date: '2024-07-27',
+          time: '09:00 PM',
+          location: 'CARPA VELODROMO',
+          image: 'imagesEventos/chimiEvento.png',
+          link: 'https://yovngchimi-cdmx.boletia.com/'
+      },
+      {
+          title: 'Gabito Ballesteros',
+          date: '2024-07-27',
+          time: '09:00 PM',
+          location: 'Pepsi Center WTC',
+          image: 'imagesEventos/gabitoEvento.png',
+          link: 'https://www.ticketmaster.com.mx/gabito-ballesteros-mexico-27-07-2024/event/1400606BB3001445'
+      },
+      {
+          title: 'León Larregui (Prismarama tour)',
+          date: '2024-07-05',
+          time: '09:00 PM',
+          location: 'Paalacio de los Deportes',
+          image: 'imagesEventos/leonEvento.png',
+          link: 'https://www.ticketmaster.com.mx/len-larregui-mexico-05-07-2024/event/1400605CC2D91E80'
+      },
+      {
+          title: 'Migrant Motel',
+          date: '2024-07-04',
+          time: '08:00 PM',
+          location: 'Bajo Circuito',
+          image: 'imagesEventos/migrantEvento.png',
+          link: 'https://www.passline.com/eventos/migrant-motel-en-bajo-circuito'
+      },
+      {
+          title: 'Angus & Julia Stone',
+          date: '2024-07-01',
+          time: '09:00 PM',
+          location: 'Teatro Metropólitan',
+          image: 'imagesEventos/angusyjsEvento.png',
+          link: 'https://www.ticketmaster.com.mx/angus-julia-stone-mexico-01-07-2024/event/1400604C85A9087B'
+      }, 
       {
           title: 'Evento 1',
           date: '2024-06-15',
