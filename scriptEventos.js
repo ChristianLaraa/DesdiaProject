@@ -51,6 +51,63 @@ document.addEventListener('DOMContentLoaded', () => {
           link: 'https://www.ticketmaster.com.mx/angus-julia-stone-mexico-01-07-2024/event/1400604C85A9087B'
       }, 
       {
+          title: 'INSPECTOR',
+          date: '2024-07-06',
+          time: '09:00 PM',
+          location: 'Arena Ciudad de México',
+          image: 'imagesEventos/inspectorEvento.png',
+          link: 'https://www.superboletos.com/landing-evento/wNn8mW2Vc2aLfJowjz39_Q'
+
+      },
+      {
+        title: 'Daniels Sinfonico',
+        date: '2024-07-07',
+        time: '06:00 PM',
+        location: 'Teatro de la Ciudad Esperanza Iris',
+        image: 'imagesEventos/danielsEvento.png',
+        link: 'https://www.ticketmaster.com.mx/los-daniels-en-concierto-sinfonico-mexico-07-07-2024/event/3D00608596BF1912'
+      },
+      {
+        title: 'DLD en Concierto',
+        date: '2024-07-12',
+        time: '08:30 PM',
+        location: 'Palacio de los Deportes',
+        image: 'imagesEventos/dldEvento.png',
+        link: 'https://www.ticketmaster.com.mx/dld-mexico-12-07-2024/event/14006054B1B51979'
+      },
+      {
+        title: 'Los Bunkers',
+        date: '2024-07-13',
+        time: '08:30 PM',
+        location: 'Palacio de los Deportes',
+        image: 'imagesEventos/bunkersEvento.png',
+        link: 'https://www.ticketmaster.com.mx/los-bunkers-mexico-13-07-2024/event/14005F96B9691506'
+      },
+      {
+        title: 'Emery & The Almost',
+        date: '2024-07-19',
+        time: '06:00 PM',
+        location: 'Foro Alarcón',
+        image: 'imagesEventos/emeryEvento.png',
+        link: 'https://www.superboletos.com/landing-evento/jt_OaC7r5SJaY7vOLZ_RBA'
+      },
+      {
+        title: 'Oscar Maydon (Tour Distorsion)',
+        date: '2024-07-20',
+        time: '09:00 PM',
+        location: 'Auditorio BB',
+        image: 'imagesEventos/maydonEvento.png',
+        link: 'https://www.ticketmaster.com.mx/oscar-maydon-tour-distorsion-2024-mexico-20-07-2024/event/14006090AF2A146B'
+      },
+      {
+      title: 'Los Espiritus',
+      date: '2024-07-28',
+      time: '09:00 PM',
+      location: 'Auditorio BB',
+      image: 'imagesEventos/espiritusEvento.png',
+      link: 'https://www.ticketmaster.com.mx/los-espiritus-mexico-28-07-2024/event/140060A2E5D42975'
+      },
+      {
           title: 'Evento 1',
           date: '2024-06-15',
           time: '10:00 AM',
