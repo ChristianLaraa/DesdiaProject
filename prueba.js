@@ -4,6 +4,14 @@ document.addEventListener("DOMContentLoaded", function() {
     let animationTimeout = null;
     let currentlyPlaying = false;
 
+    const images = [
+        './images/01madrileno.png',
+        './images/02mmcd.png',
+        './images/05data.png',
+        './images/09thelifeofpablo.png',
+        // Agrega más rutas de imágenes aquí
+    ];
+
     function addNewItem(x, y) {
         const newItem = document.createElement("div");
         newItem.className = "item";
@@ -11,9 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
         newItem.style.top = `${y - 100}px`;
 
         const img = document.createElement("img");
-        img.src = `./images/recomendacionesC3.png`;
+        img.src = images[Math.floor(Math.random() * images.length)];
         newItem.appendChild(img);
-        imageIndex = (imageIndex % 15) + 1;
 
         container.appendChild(newItem);
         manageItemLimit();
