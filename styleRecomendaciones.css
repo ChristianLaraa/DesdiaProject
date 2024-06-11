@@ -166,6 +166,7 @@ p,
 span {
     font-size: 3.2rem;
 }
+
 .hero {
     background-image: url("images/recom.jpg");
     background-size: cover;
@@ -226,7 +227,6 @@ span {
         transform: translateY(0);
     }
 }
-
 
 
 /*.... SECTION*/
