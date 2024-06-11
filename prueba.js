@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const container = document.querySelector(".items");
+    const container = document.querySelector(".container .items");
     let imageIndex = 1;
     let animationTimeout = null;
     let currentlyPlaying = false;
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const newItem = document.createElement("div");
         newItem.className = "item";
         newItem.style.left = `${x - 75}px`;
-        newItem.style.top = `${y - 100}px`;
+        newItem.style.top = `${y - 90}px`;
 
         const img = document.createElement("img");
         img.src = images[Math.floor(Math.random() * images.length)];
@@ -54,8 +54,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     container.addEventListener("mousemove", function(event) {
-        clearTimeout(animationTimeout);
-        addNewItem(event.pageX, event.pageY);
-        animationTimeout = setTimeout(startAnimation, 100);
+        const rect = container.getBoundingClientRect();
+        if (
+            event.clientX >= rect.left &&
+            event.clientX <= rect.right &&
+            event.clientY >= rect.top &&
+            event.clientY <= rect.bottom
+        ) {
+            clearTimeout(animationTimeout);
+            addNewItem(event.pageX, event.pageY);
+            animationTimeout = setTimeout(startAnimation, 100);
+        }
+    });
+
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.pageYOffset;
+        container.style.transform = `translateY(${scrollPosition * 0.5}px) translateZ(-1px) scale(2)`;
     });
 });

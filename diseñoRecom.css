@@ -34,37 +34,77 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
-
-main {
-    padding: 20px;
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
 }
 
-.articles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    gap: 50px;
+.container {
+    text-align: center;
 }
 
-article {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
+.text {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
 }
 
-article img {
+.we, .brands, .into {
+    font-size: 3rem;
+    color: #f5f1e9; /* Color crema */
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.turn-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.turn {
+    font-size: 3rem;
+    color: #f5f1e9; /* Color crema */
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 0.5rem;
+    z-index: 1;
+    position: relative;
+}
+
+.circle {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    width: 130%;
+    height: 150%;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.heroes {
+    font-size: 8rem;
+    color: #ff0000; /* Color rojo */
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+
+.heroes::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
     width: 100%;
-    height: auto;
-}
-
-article .content {
-    padding: 15px;
-}
-
-article h2 {
-    margin: 0 0 10px;
-}
-
-article p {
-    margin: 0 0 5px;
+    height: 10px;
+    background: #fff;
+    z-index: -1;
+    transform: translateY(10px);
 }
