@@ -121,7 +121,113 @@ const events = [
             location: 'Lugar del Evento 2',
             image: 'https://via.placeholder.com/300',
             link: 'https://tu-enlace2.com'
-        }
+        },
+
+        //EVENTOS DE AGOSTO
+        {
+            title: 'El Malilla',
+            date: '2024-08-01',
+            time: '9:00 PM',
+            location: 'Auditorio BB',
+            image: 'imagesEventos/agosto/malilla.png',
+            link: 'https://www.ticketmaster.com.mx/el-malilla-mexico-01-08-2024/event/14006083A7D51966'
+        },
+        {
+            title: 'Los Caligaris',
+            date: '2024-08-02',
+            time: '8:30 PM',
+            location: 'Auditorio Nacional',
+            image: 'imagesEventos/agosto/caligaris.png',
+            link: 'https://www.ticketmaster.com.mx/caligaris-ciudad-de-mexico-02-08-2024/event/3D005F57F8B54D60'
+        },
+        {
+            title: 'Tino el Pingüino',
+            date: '2024-08-03',
+            time: '9:00 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/agosto/tino.png',
+            link: 'https://www.ticketmaster.com.mx/tino-el-pinguino-mexico-03-08-2024/event/14006064995109CD'
+        },
+        {
+            title: 'Juaninacka',
+            date: '2024-08-04',
+            time: '8:00 PM',
+            location: 'Bajo Circuito',
+            image: 'imagesEventos/agosto/juaninacka.png',
+            link: 'https://www.passline.com/eventos/juaninacka-media-vida-tour'
+        },
+        {
+            title: 'Abril de Fresa en CDMX',
+            date: '2024-08-10',
+            time: '8:00 PM',
+            location: 'Foro San Rafael',
+            image: 'imagesEventos/agosto/abrilfresa.png',
+            link: 'https://www.passline.com/eventos/abrildefresa-cdmx'
+        },
+        {
+            title: 'Lola Indigo en CDMX',
+            date: '2024-08-15',
+            time: '9:00 PM',
+            location: 'Foro Puebla',
+            image: 'imagesEventos/agosto/lola.png',
+            link: 'https://www.ticketmaster.com.mx/legallyrxx-el-nino-de-los-corazones-mexico-16-08-2024/event/3D0060C4AFC515CD'
+        },
+        {
+            title: 'Legallyrxx',
+            date: '2024-08-16',
+            time: '9:00 PM',
+            location: 'Foro Puebla',
+            image: 'imagesEventos/agosto/legally.png',
+            link: 'https://www.ticketmaster.com.mx/lola-indigo-mexico-15-08-2024/event/3D00608583050B5C'
+        },
+        {
+            title: 'Odisseo',
+            date: '2024-08-17',
+            time: '8:00 PM',
+            location: 'Auditorio Nacional',
+            image: 'imagesEventos/agosto/odisseo.png',
+            link: 'https://www.ticketmaster.com.mx/odisseo-ciudad-de-mexico-17-08-2024/event/3D006056F8B752F2'
+        },
+        {
+            title: 'Natanael Cano (Tumbado Tour)',
+            date: '2024-08-23',
+            time: '8:30 PM',
+            location: 'Foro Sol',
+            image: 'imagesEventos/agosto/nata.png',
+            link: 'https://www.ticketmaster.com.mx/natanael-cano-mexico-23-08-2024/event/14006090B13D1625'
+        },
+        {
+            title: 'Allison (acustico)',
+            date: '2024-08-27',
+            time: '8:30 PM',
+            location: 'Teatro Metropolitan',
+            image: 'imagesEventos/agosto/allison.png',
+            link: 'https://www.ticketmaster.com.mx/allison-mexico-27-08-2024/event/140060AF97BC1040'
+        },
+        {
+            title: 'CD9 (Last Party)',
+            date: '2024-08-29',
+            time: '9:00 PM',
+            location: 'Arena CDMX',
+            image: 'imagesEventos/agosto/cd9.png',
+            link: 'https://www.superboletos.com/landing-evento/F6X9msSu8X0I1wmQVd_N7Q'
+        },
+        {
+            title: 'Babasonicos',
+            date: '2024-08-30',
+            time: '8:30 PM',
+            location: 'Auditorio Nacional',
+            image: 'imagesEventos/agosto/babasonicos.png',
+            link: 'https://www.ticketmaster.com.mx/babasonicos-ciudad-de-mexico-30-08-2024/event/3D006073868409C2'
+        },
+        {
+            title: 'Eladio Carrion',
+            date: '2024-08-31',
+            time: '8:30 PM',
+            location: 'Arena CDMX',
+            image: 'imagesEventos/agosto/eladio.png',
+            link: 'https://www.superboletos.com/landing-evento/kqBcxWRbAk6YnC8P-v108w'
+        },
       // Agrega más eventos según sea necesario
 ];
     const calendar = document.getElementById('calendar');
