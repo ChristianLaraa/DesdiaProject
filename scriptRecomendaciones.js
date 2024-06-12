@@ -1,74 +1,78 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const container = document.querySelector(".container .items");
+    let imageIndex = 1;
+    let animationTimeout = null;
+    let currentlyPlaying = false;
 
-/* SEGUNDO EFECTO JS */
-const section = document.querySelector('.section'),
-    sectionListItem = section.querySelectorAll('.section_list_item'),
-    sectionListItemText = section.querySelectorAll('.section_list_item > h1'),
-    sectionListFigure = section.querySelectorAll('.section_list_item_figure'),
-    sectionMedia = section.querySelectorAll('.section_media');
+    const images = [
+        './images/01madrileno.png',
+        './images/02mmcd.png',
+        './images/05data.png',
+        './images/09thelifeofpablo.png',
+        './imagesRecomendaciones/legally.png',
+        './imagesRecomendaciones/dref.png',
+        './imagesRecomendaciones/aquihay.png',
+        './imagesRecomendaciones/lara.png',
+        // Agrega más rutas de imágenes aquí
+    ];
 
-const clipPath = {
-    top: 'polygon(0 0, 100% 0, 100% 0, 0 0)',
-    full: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-    bottom: 'polygon(0 100%, 100% 100%, 100% 100%, 0 100%)',
-};
-gsap.set(sectionMedia, {clipPath: clipPath.top});
+    function addNewItem(x, y) {
+        const newItem = document.createElement("div");
+        newItem.className = "item";
+        newItem.style.left = `${x - 75}px`;
+        newItem.style.top = `${y - 90}px`;
 
-const initAnimation = () => {
-    gsap.set(sectionListItemText, { y: '100%'});
+        const img = document.createElement("img");
+        img.src = images[Math.floor(Math.random() * images.length)];
+        newItem.appendChild(img);
 
-    const tlText = gsap.timeline({  defaults: {duration: 1.48, ease: 'expo.inOut'} });
-    tlText.to(sectionListItemText, {
-        y: '0%',
-        stagger: 0.032, 
-    }) 
-    .from (
-        sectionListFigure, 
-        {
-            width: 0,
-            stagger: 0.032,
-        },
-        0.8
-    );
-    addEventListeners();
-};
-const addEventListeners = () => {
-        sectionListItem.forEach((item, index)=> {
-            const images = sectionMedia[index]?.children;
+        container.appendChild(newItem);
+        manageItemLimit();
+    }
 
-            item.addEventListener('mouseenter', () => {
-                for (let i=0; i<images.length; i++) {
-                    gsap.timeline({defaults: {duration: 0.64, ease: 'expo.inOut', overwrite: true},
-                }).to(sectionMedia[index], {
-                    clipPath: clipPath.full,
+    function manageItemLimit() {
+        while (container.children.length > 20) {
+            container.removeChild(container.firstChild);
+        }
+    }
+
+    function startAnimation() {
+        if (currentlyPlaying || container.children.length === 0) return;
+        currentlyPlaying = true;
+
+        gsap.to(".item", {
+            y: 1000,
+            scale: 0.7,
+            opacity: 0,
+            duration: 0.7,
+            stagger: 0.025,
+            onComplete: function() {
+                this.targets().forEach((item) => {
+                    if (item.parentNode) {
+                        item.parentNode.removeChild(item);
+                    }
                 });
-                sectionListItem.forEach((otherItem)=> {
-                    otherItem === item 
-                    ? (otherItem.style.color = 'orange')
-                    : (otherItem.style.opacity = 0.5);
-                });
-                }
-            });
-                item.addEventListener('mouseleave', ()=> {
-                    for(let i = 0; i < images.length; i++){
-                        gsap.timeline({defaults: {duration: 0.64, ease: 'expo.inOut', overwrite: true},
-                    }).to(sectionMedia[index], {
-                        clipPath: clipPath.bottom, 
-                        onComplete: () => {
-                            gsap.set(sectionMedia[index], {
-                                clipPath: clipPath.top,
-                            });
-                        },
-                    });
-                    } 
-                    sectionListItem.forEach((otherItem) => {
-                        otherItem === item 
-                        ? (otherItem.style.color = '#181818')
-                        : (otherItem.style.opacity = 1);
-                    });
-
-                });
+                currentlyPlaying = false;
+            }
         });
-};
-initAnimation();
+    }
 
+    container.addEventListener("mousemove", function(event) {
+        const rect = container.getBoundingClientRect();
+        if (
+            event.clientX >= rect.left &&
+            event.clientX <= rect.right &&
+            event.clientY >= rect.top &&
+            event.clientY <= rect.bottom
+        ) {
+            clearTimeout(animationTimeout);
+            addNewItem(event.pageX, event.pageY);
+            animationTimeout = setTimeout(startAnimation, 100);
+        }
+    });
 
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.pageYOffset;
+        container.style.transform = `translateY(${scrollPosition * 0.5}px) translateZ(-1px) scale(2)`;
+    });
+});
