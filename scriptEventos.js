@@ -127,6 +127,14 @@ const events = [
         {
             title: 'El Malilla',
             date: '2024-08-01',
+            time: '8:30 PM',
+            location: 'Lunario del Auditorio Nacional',
+            image: 'imagesEventos/agosto/drome.png',
+            link: 'https://www.ticketmaster.com.mx/dromedarios-magicos-y-ms-ambar-ciudad-de-mexico-01-08-2024/event/3D0060A3A4C3349F'
+        },
+        {
+            title: 'Dromedario Mágicos y MS Ambar ',
+            date: '2024-08-01',
             time: '9:00 PM',
             location: 'Auditorio BB',
             image: 'imagesEventos/agosto/malilla.png',
@@ -157,12 +165,36 @@ const events = [
             link: 'https://www.passline.com/eventos/juaninacka-media-vida-tour'
         },
         {
+            title: 'Emilia (MP3 Tour)',
+            date: '2024-08-09',
+            time: '9:00 PM',
+            location: 'Teatro Metropólitan',
+            image: 'imagesEventos/agosto/emilia.png',
+            link: 'https://www.ticketmaster.com.mx/emilia-mp3-tour-mexico-09-08-2024/event/140060A2F1F92C0C'
+        },
+        {
             title: 'Abril de Fresa en CDMX',
             date: '2024-08-10',
             time: '8:00 PM',
             location: 'Foro San Rafael',
             image: 'imagesEventos/agosto/abrilfresa.png',
             link: 'https://www.passline.com/eventos/abrildefresa-cdmx'
+        },
+        {
+            title: 'Moenia',
+            date: '2024-08-14',
+            time: '8:30 PM',
+            location: 'Auditorio Nacional',
+            image: 'imagesEventos/agosto/moenia.png',
+            link: 'https://www.ticketmaster.com.mx/moenia-ciudad-de-mexico-14-08-2024/event/3D00604E9CA916F6'
+        },
+        {
+            title: 'Piso 21',
+            date: '2024-08-15',
+            time: '9:00 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/agosto/piso21.png',
+            link: 'https://www.ticketmaster.com.mx/piso-21-mexico-15-08-2024/event/14006074016F2C8B'
         },
         {
             title: 'Lola Indigo en CDMX',
@@ -189,12 +221,36 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/odisseo-ciudad-de-mexico-17-08-2024/event/3D006056F8B752F2'
         },
         {
+            title: 'Feid (Ferxxocalipsis Tour)',
+            date: '2024-08-21',
+            time: '8:30 PM',
+            location: 'Foro Sol',
+            image: 'imagesEventos/agosto/feid.png',
+            link: 'https://www.ticketmaster.com.mx/feid-mexico-21-08-2024/event/1400606702422D02'
+        },
+        {
             title: 'Natanael Cano (Tumbado Tour)',
             date: '2024-08-23',
             time: '8:30 PM',
             location: 'Foro Sol',
             image: 'imagesEventos/agosto/nata.png',
             link: 'https://www.ticketmaster.com.mx/natanael-cano-mexico-23-08-2024/event/14006090B13D1625'
+        },
+        {
+            title: 'Caamilo Septimo (X años)',
+            date: '2024-08-23',
+            time: '5:00 PM',
+            location: 'Lunario del Auditorio Nacional',
+            image: 'imagesEventos/agosto/camilo.png',
+            link: 'https://www.ticketmaster.com.mx/camilo-septimo-ciudad-de-mexico-23-08-2024/event/3D0060BBEFEF4417'
+        },
+        {
+            title: 'Festival HERA',
+            date: '2024-08-24',
+            time: '1:00 PM',
+            location: 'Autodromo Hermanos Rodriguez',
+            image: 'imagesEventos/agosto/hera.png',
+            link: 'https://www.ticketmaster.com.mx/festival-hera-hsbc-general-mexico-24-08-2024/event/14006088C2A01334'
         },
         {
             title: 'Allison (acustico)',
@@ -228,6 +284,23 @@ const events = [
             image: 'imagesEventos/agosto/eladio.png',
             link: 'https://www.superboletos.com/landing-evento/kqBcxWRbAk6YnC8P-v108w'
         },
+        {
+            title: 'Caifanes',
+            date: '2024-08-31',
+            time: '9:00 PM',
+            location: 'Foro Sol',
+            image: 'imagesEventos/agosto/caifanes.png',
+            link: 'https://www.ticketmaster.com.mx/caifanes-mexico-31-08-2024/event/14006084DE1524EA'
+        },
+        {
+            title: 'La Garfield',
+            date: '2024-08-31',
+            time: '8:30 PM',
+            location: 'Auditorio BB',
+            image: 'imagesEventos/agosto/lagarfield.png',
+            link: 'https://www.ticketmaster.com.mx/la-garfield-mexico-31-08-2024/event/14006084E68527C2'
+        },
+        
       // Agrega más eventos según sea necesario
 ];
     const calendar = document.getElementById('calendar');
