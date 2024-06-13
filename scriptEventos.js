@@ -129,7 +129,7 @@ const events = [
             date: '2024-08-01',
             time: '8:30 PM',
             location: 'Lunario del Auditorio Nacional',
-            image: 'imagesEventos/agosto/drome.png',
+            image: 'imagesEventos/agosto/malilla.png',
             link: 'https://www.ticketmaster.com.mx/dromedarios-magicos-y-ms-ambar-ciudad-de-mexico-01-08-2024/event/3D0060A3A4C3349F'
         },
         {
@@ -137,7 +137,7 @@ const events = [
             date: '2024-08-01',
             time: '9:00 PM',
             location: 'Auditorio BB',
-            image: 'imagesEventos/agosto/malilla.png',
+            image: 'imagesEventos/agosto/drome.png',
             link: 'https://www.ticketmaster.com.mx/el-malilla-mexico-01-08-2024/event/14006083A7D51966'
         },
         {
@@ -237,7 +237,7 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/natanael-cano-mexico-23-08-2024/event/14006090B13D1625'
         },
         {
-            title: 'Caamilo Septimo (X años)',
+            title: 'Camilo Septimo (X años)',
             date: '2024-08-23',
             time: '5:00 PM',
             location: 'Lunario del Auditorio Nacional',
@@ -303,6 +303,7 @@ const events = [
         
       // Agrega más eventos según sea necesario
 ];
+    
     const calendar = document.getElementById('calendar');
     const currentMonthElement = document.getElementById('currentMonth');
     const prevMonthButton = document.getElementById('prevMonth');
@@ -342,9 +343,9 @@ const events = [
         eventElement.innerHTML = `
             <img src="${event.image}" alt="Imagen del Evento">
             <h4>${event.title}</h4>
-            <p>Hora: ${event.time}</p>
-            <p>Ubicación: ${event.location}</p>
-            <a href="${event.link}" target="_blank">Más información</a>
+            <p> ${event.time}</p>
+            <p> ${event.location}</p>
+            <a href="${event.link}" target="_blank">Compra de boletos.</a>
         `;
         eventsContainer.appendChild(eventElement);
         });
