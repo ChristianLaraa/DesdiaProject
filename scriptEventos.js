@@ -157,6 +157,14 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/tino-el-pinguino-mexico-03-08-2024/event/14006064995109CD'
         },
         {
+            title: 'DrefQuila',
+            date: '2024-08-03',
+            time: '9:00 PM',
+            location: 'Foro Indie Rocks',
+            image: 'imagesEventos/agosto/dref.png',
+            link: 'https://www.passline.com/eventos/drefquila-en-foro-indie-rocks'
+        },
+        {
             title: 'Juaninacka',
             date: '2024-08-04',
             time: '8:00 PM',
@@ -179,6 +187,22 @@ const events = [
             location: 'Foro San Rafael',
             image: 'imagesEventos/agosto/abrilfresa.png',
             link: 'https://www.passline.com/eventos/abrildefresa-cdmx'
+        },
+        {
+            title: 'Wild O´Fest',
+            date: '2024-08-10',
+            time: '12:30 PM',
+            location: 'Pabellón Oeste',
+            image: 'imagesEventos/agosto/wild.png',
+            link: 'https://www.ticketmaster.com.mx/wild-o-fest-mexico-10-08-2024/event/1400605BC99B1EC8'
+        },
+        {
+            title: 'Bruno Mars',
+            date: '2024-08-10',
+            time: '9:00 PM',
+            location: 'Estadio GNP seguros',
+            image: 'imagesEventos/agosto/bruno.png',
+            link: 'https://www.ticketmaster.com.mx/bruno-mars-mxico-10-08-2024/event/140060CA9B340CD7'
         },
         {
             title: 'Moenia',
