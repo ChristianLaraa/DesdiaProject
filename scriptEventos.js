@@ -173,6 +173,14 @@ const events = [
             link: 'https://www.passline.com/eventos/juaninacka-media-vida-tour'
         },
         {
+            title: 'GHOULJABOY + CHICANO WEI',
+            date: '2024-08-08',
+            time: '8:00 PM',
+            location: 'El Club del Rock & Roll ',
+            image: 'imagesEventos/agosto/chicano.png',
+            link: 'https://www.passline.com/eventos/ghouljaboy-chicano-wei'
+        },
+        {
             title: 'Emilia (MP3 Tour)',
             date: '2024-08-09',
             time: '9:00 PM',
@@ -226,7 +234,15 @@ const events = [
             time: '9:00 PM',
             location: 'Foro Puebla',
             image: 'imagesEventos/agosto/lola.png',
-            link: 'https://www.ticketmaster.com.mx/legallyrxx-el-nino-de-los-corazones-mexico-16-08-2024/event/3D0060C4AFC515CD'
+            link: 'https://www.ticketmaster.com.mx/lola-indigo-mexico-15-08-2024/event/3D00608583050B5C'
+        },
+        {
+            title: 'TE VI EN UN PLANETARIO',
+            date: '2024-08-15',
+            time: '8:00 PM',
+            location: 'El Club del Rock & Roll',
+            image: 'imagesEventos/agosto/planetario.png',
+            link: 'https://www.passline.com/eventos/te-vi-en-un-planetario-tigre-ulli-en-el-club-del-rock-roll'
         },
         {
             title: 'Legallyrxx',
@@ -245,12 +261,28 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/odisseo-ciudad-de-mexico-17-08-2024/event/3D006056F8B752F2'
         },
         {
+            title: 'ANDRU',
+            date: '2024-08-17',
+            time: '8:00 PM',
+            location: 'El Club del Rock & Roll',
+            image: 'imagesEventos/agosto/andru.png',
+            link: 'https://www.passline.com/eventos/andru-las-cosas-que-quiero-recordar'
+        },
+        {
             title: 'Feid (Ferxxocalipsis Tour)',
             date: '2024-08-21',
             time: '8:30 PM',
             location: 'Foro Sol',
             image: 'imagesEventos/agosto/feid.png',
             link: 'https://www.ticketmaster.com.mx/feid-mexico-21-08-2024/event/1400606702422D02'
+        },
+        {
+            title: 'Jonas Brothers',
+            date: '2024-08-22',
+            time: '9:00 PM',
+            location: 'Arena CDMX',
+            image: 'imagesEventos/agosto/jonas.png',
+            link: 'https://www.superboletos.com/landing-evento/VqnasUUutFP3UuMArutUUw'
         },
         {
             title: 'Natanael Cano (Tumbado Tour)',
@@ -275,6 +307,14 @@ const events = [
             location: 'Autodromo Hermanos Rodriguez',
             image: 'imagesEventos/agosto/hera.png',
             link: 'https://www.ticketmaster.com.mx/festival-hera-hsbc-general-mexico-24-08-2024/event/14006088C2A01334'
+        },
+        {
+            title: 'Lucho al Ataque',
+            date: '2024-08-24',
+            time: '8:00 PM',
+            location: 'Bajo Circuito',
+            image: 'imagesEventos/agosto/lucho.png',
+            link: 'https://www.passline.com/eventos/lucho-al-attaque-en-bajo-circuito'
         },
         {
             title: 'Allison (acustico)',
