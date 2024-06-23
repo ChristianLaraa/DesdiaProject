@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
+@import url(https://db.onlinewebfonts.com/c/65e36fdf4beb60e0deae894a1777a091?family=Zurich+Ultra+Black+Extended);
+@import url(https://db.onlinewebfonts.com/c/116af611cbcd9e4bada60b4e700430c1?family=Avenir+Light);
 
 /*Body y cuerpo de la pagina --------------------------- */
 *{
@@ -388,10 +389,16 @@ font-weight: 700;
 .thumbnail .item .content p {
     color: #fff;
 }
-@media screen and (max-width: 678px) {
-    .slider .list .item .content {
+@media screen and (max-width: 678px) 
+{
+    .slider {
+        height: 100vh;
+        margin-top: -50px;
+        position: relative;
+    }
+    .list .item .content {
         width: 90%;
-        top: 30%; 
+        top: 29%; 
         left: 5%; 
         transform: translateY(0);
     }
@@ -417,60 +424,85 @@ font-weight: 700;
         transform: translateX(-50%);
     }
 }
-/*Segundo Slider posibles noticias --------------------------------------*/
+/* Segundo Slider posibles noticias -------------------------------------- */
 .img-slider {
-    position: relative;
-    width: 100%;
-    max-width: 1280px;
-    height: 600px;
-    margin: 10px auto;
+    position: flex;
+    width: 100%; 
+    height: 100vh; 
     overflow: hidden;
-    background: black;
+    background: rgb(1, 0, 17);
+    margin-top: auto;
+    flex-wrap: wrap;
+    border-radius: 20px; /* Bordes redondeados del contenedor */
+    box-shadow: 0 4px 8px rgba(37, 37, 37, 0.1); /* Añade una sombra para darle un efecto de profundidad */
 }
+
 .img-slider .slide {
     z-index: 1;
     position: absolute;
     width: 100%;
-    clip-path: circle(0% at 0 50%);
+    height: 100%;
+    clip-path: circle(0% at 50% 50%);
+    border-radius: 35px; 
 }
+
 .img-slider .slide.active {
-    clip-path: circle(150% at 0 50%);
-    transition: 2s;
+    clip-path: circle(150% at 50% 50%);
+    transition: 2.5s;
     transition-property: clip-path;
 }
+
 .img-slider .slide img {
     z-index: 1;
     width: 100%;
-    border-radius: 5px;
+    height: 100%; /* Ajusta la imagen para que ocupe el 100% del contenedor */
+    object-fit: cover; /* Mantiene la relación de aspecto de la imagen y la recorta si es necesario */
+    border-radius: 20px; /* Bordes redondeados de la imagen */
+    display: flex;
 }
+
 .img-slider .slide .info {
     position: absolute;
     top: 0;
-    padding:15px 30px
+    padding: 15px 30px;
+    border-radius: 50px; /* Bordes redondeados del contenedor de información */
 }
+
 .img-slider .slide .info h2 {
     color: #fff;
-    font-size: 45px;
+    font-family: "Zurich Ultra Black Extended";
+    font-size: 3.5vw; /* Tamaño de fuente relativo a la anchura de la pantalla */
     text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 2px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 4px;
+    gap: 10;
+    margin-top: 5rem;
+    margin: auto;
 }
+
 .img-slider .slide .info p {
     color: #fff;
-    background: rgba(0, 0, 0, .1);
-    font-size: 16px;
-    width: 60%;
+    background: rgba(0, 0, 0, .4);
+    font-family: "Avenir Light";
+    font-size: 2vw; /* Tamaño de fuente relativo a la anchura de la pantalla */
+    width: 100%;
+    text-transform: uppercase;
     padding: 10px;
     border-radius: 4px;
+    margin-top: 2rem;
+    text-align: center;
 }
+
 .img-slider .navigation {
     z-index: 2;
     position: absolute;
     display: flex;
     bottom: 20px;
     left: 50%;
-    transform: transaleX(-50%);
+    transform: translateX(-50%);
 }
+
 .img-slider .navigation .btn {
     background: rgba(255, 255, 255, 0.5);
     width: 12px;
@@ -479,35 +511,52 @@ font-weight: 700;
     border-radius: 50%;
     cursor: pointer;
 }
+
 .img-slider .navigation .btn.active {
-    background: #2AEC88;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    background: rgb(0, 72, 255);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
 }
+/* Media queries para tamaños de pantalla más pequeños */
 @media (max-width: 768px) {
     .img-slider {
-        width: 100%;
-        height: 320px;
+        height: 50vh; /* Ajusta la altura para pantallas más pequeñas */
     }
-    .img-slider .slide{
-        width: 100%;
-    } 
-    .img-slider .slide img {
-        width: 100%; 
-    }
-    .img-slider .slide .info {
-        padding: 5px 10px;
-    }
+
     .img-slider .slide .info h2 {
-        font-size: 20px;
+        font-size: 5vw; /* Aumenta el tamaño de fuente en pantallas pequeñas */
     }
+
     .img-slider .slide .info p {
-        width: auto;
-        font-size: 9px;
+        font-size: 3vw; /* Aumenta el tamaño de fuente en pantallas pequeñas */
     }
-    .img-slider .navigation {
-        bottom: 10px;
+
+    .img-slider .navigation .btn {
+        width: 10px; /* Ajusta el tamaño de los botones de navegación */
+        height: 10px;
     }
 }
+
+@media (max-width: 480px) {
+    .img-slider {
+        height: 40vh; /* Ajusta la altura para pantallas muy pequeñas */
+    }
+
+    .img-slider .slide .info h2 {
+        font-size: 6vw; /* Aumenta el tamaño de fuente en pantallas muy pequeñas */
+    }
+
+    .img-slider .slide .info p {
+        font-size: 4vw; /* Aumenta el tamaño de fuente en pantallas muy pequeñas */
+    }
+
+    .img-slider .navigation .btn {
+        width: 8px; /* Ajusta el tamaño de los botones de navegación */
+        height: 8px;
+    }
+}
+
+
+
 /*contenedores donde se encuentra las noticias e imagenes --------------------------------*/
 .container {
     display: flex;
@@ -516,6 +565,9 @@ font-weight: 700;
     width: 100%; 
     max-width: 1200px; 
     margin: 0 auto; 
+    margin-top: 5rem;
+    gap: auto;
+    padding: auto;
 }
 .card {
     background:  #0C2A3B;
@@ -595,8 +647,9 @@ background-image: url('images/mexa.webp') ;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
 }
 @media (max-width: 767px) {
-    .card {
-        width: autoauto;
+    
+    .container {
+        display: flex;
     }
 }
 
@@ -604,7 +657,7 @@ background-image: url('images/mexa.webp') ;
 .container-grid {
     position: absolute;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;   
 }
 .nav {
@@ -722,7 +775,8 @@ ion-icon {
 }
 @media(max-width: 900px) {
     .container-grid {
-        flex-direction: column;
+        width: 100%;
+        display: flex;   
     }
     .nav {
         width: 100%;
@@ -890,5 +944,8 @@ ion-icon {
     }
     .content-section .social {
         text-align: center;
+    }
+    .image-section img {
+        display: flex;
     }
 }
