@@ -234,7 +234,7 @@ font-weight: 700;
 }
 }   
 
-/*carousel images -------------*/
+/* Carousel images */
 .gallery {
     width: 100%;
     height: calc(100vh - 60px);
@@ -255,56 +255,25 @@ font-weight: 700;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin: auto;
 }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-    .img {
-        width: 40px; /* Adjust the width for smaller screens */
-        height: 65px; /* Adjust the height for smaller screens */
-        margin: 10px; /* Adjust the margin for smaller screens */
-    }
-}
-
-/* Media query for larger screens */
-@media screen and (min-width: 1200px) {
-    .img {
-        width: 30px; /* Adjust the width for larger screens */
-        height: 50px; /* Adjust the height for larger screens */
-        margin: 35px; /* Adjust the margin for larger screens */
-    }
-}
-
-/* Additional media queries for even larger screens if necessary */
-@media screen and (min-width: 1600px) {
-    .img {
-        width: 20px; /* Adjust the width for even larger screens */
-        height: 40px; /* Adjust the height for even larger screens */
-        margin: 20px; /* Adjust the margin for even larger screens */
-    }
-}
 .descripcion {
     position: absolute;
     font-size: 11.5px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     top: 0;
     left: 100%; /* Inicialmente fuera del contenedor */
     width: 50%; /* Ajusta según tus necesidades */
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6); /* Fondo inicialmente oscuro */
     color: white; /* Color de fuente inicialmente blanco */
-    padding: auto; /* Ajusta según tus necesidades */
+    padding: 10px; /* Ajusta según tus necesidades */
     box-sizing: border-box; /* Para incluir el padding en el tamaño total */
     opacity: 0; /* Inicialmente oculto */
     transition: opacity 0.5s, left 0.7s; /* Agrega una transición para suavizar el efecto */
 }
 
-
 .img:hover .descripcion {
-    position: auto;
-    opacity: 9; 
-    left: 0; 
-    font-size: auto;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 1; /* Mostrar la descripción */
+    left: 0; /* Mover la descripción dentro del contenedor */
 }

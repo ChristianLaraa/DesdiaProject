@@ -202,7 +202,7 @@
 
 <script>
     const btn = document.querySelector(".btn");
-        const galleryContainer = document.querySelector(".gallery-container");
+    const galleryContainer = document.querySelector(".gallery-container");
 
     btn.addEventListener("click", function(){
         gsap.to(".btn", 1, {
@@ -216,7 +216,6 @@
             delay: 1,
             stagger: 0.1,
         });
-
         gsap.to(".text-wrapper", 3, {
             y: -600,
             scale: 4.5,
@@ -259,145 +258,152 @@
             duration: 2000,
             delay: (el, i) => 7000 + 40 + i,
         });
-        
-        const positions = [
-        /*1a columna*/
-        { top: "2%", left: "5%" },
-        { top: "5%", left: "25%" },
-        { top: "1%", left: "45%" },
-        { top: "7%", left: "65%" }, 
-        { top: "2%", left: "86%" },
-        /*2da columna*/
-        { top: "28%", left: "3%" },
-        { top: "32%", left: "20%" },
-        { top: "25%", left: "38%" },
-        { top: "30%", left: "57%" },
-        { top: "29%", left: "79%" },
-        /*3ra columna*/
-        { top: "52%", left: "6%" },
-        { top: "56%", left: "23%" },
-        { top: "50%", left: "42%" },
-        { top: "53%", left: "63%" },
-        { top: "55%", left: "81%" },
-        /*4ta columna*/
-        { top: "75%", left: "12%" },
-        { top: "76%", left: "31%" },
-        { top: "75%", left: "50%" },
-        { top: "76%", left: "72%" },
-        { top: "76%", left: "89%" },
-        /*reserva*/
-        { top: "85%", left: "85%" },
-        { top: "50%", left: "85%" },
-        { top: "55%", left: "15%" },
 
-];
-const imgs = document.querySelectorAll(".img");
+        const positions = calculatePositions();
+        const imgs = document.querySelectorAll(".img");
 
-gsap.set(".img", {
-    top: "50%",
-    left: "44.5%",
-    transform: "translate(-50%, -50%) scale(0)",
-});
-
-gsap.to(".img", {
-    scale: 1.15,
-    width: "320px",
-    height: "400px",
-    stagger: 0.15,
-    duration: 0.87,
-    ease: "power2.out", // Aquí se corrigió el nombre del easing
-    delay: 1,
-    onComplete: scatterAndShrink,
-});
-
-function scatterAndShrink() {
-    gsap.to(".img", {
-        top: (i) => positions[i].top,
-        left: (i) => positions[i].left,
-        transform: "none",
-        width: "90px",
-        height: "100px",
-        stagger: 0.070,
-        duration: 0.75,
-        ease: "power2.out",
-    });
-}
-
-function applyBlurEffect() {
-    const elementsToBlur = document.querySelectorAll('.img:not([data-enlarged="true"])');
-    gsap.to(elementsToBlur, {
-        filter: 'blur(20px)',
-        duration: 0.75,
-        ease: "power2.out",
-    });
-}
-
-function removeBlurEffect() {
-    const elementsToBlur = document.querySelectorAll('.img:not([data-enlarged="true"])');
-    gsap.to(elementsToBlur, {
-        filter: "blur(0px)",
-        duration: 1, // Aquí se corrigió el nombre de la propiedad 'duartion' a 'duration'
-        ease: "power2.out",
-    });
-}
-
-function toggleImageSize(event) {
-    const img = event.currentTarget;
-    const isEnlarged = img.getAttribute('data-enlarged') === 'true'; // Se corrigió getAtribute a getAttribute
-    const originalPosition = JSON.parse(img.getAttribute('data-original-position'));
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
-
-    if (!isEnlarged) {
-        const enlargedWidth = 500; // Se corrigió la variable isEnLargedWidth a enlargedWidth
-        const enlargedHeight = 600; // Se corrigió la variable enlñargedHeight a enlargedHeight
-        const centeredLeft = (viewportWidth - enlargedWidth) / 2;
-        const centeredTop = (viewportHeight - enlargedHeight) / 2;
-        const topCorrection = 75;
-        const correctedTop = centeredTop - topCorrection;
-
-        gsap.to(img, {
-            zIndex: 1000,
-            top: correctedTop + 'px',
-            left: centeredLeft + 'px',
-            width: enlargedWidth + 'px',
-            height: enlargedHeight + 'px',
-            ease: "power4.out",
-            duration: 1,
+        gsap.set(".img", {
+            top: "50%",
+            left: "44.5%",
+            transform: "translate(-50%, -50%) scale(0)",
         });
-        img.setAttribute('data-enlarged', 'true');
-        applyBlurEffect();
-    } else {
-        setTimeout(() => removeBlurEffect(), 100);
 
-        gsap.to(img, {
-            zIndex: 1,
-            top: originalPosition.top,
-            left: originalPosition.left,
-            width: '75px',
-            height: '100px',
-            ease: "power4.out",
-            duration: 1,
+        gsap.to(".img", {
+            scale: 1.15,
+            width: "320px",
+            height: "400px",
+            stagger: 0.15,
+            duration: 0.87,
+            ease: "power2.out",
+            delay: 1,
+            onComplete: scatterAndShrink,
         });
-        img.setAttribute('data-enlarged', 'false');
-    }
-}
 
-imgs.forEach((img, i) => {
-    img.setAttribute('data-original-position', JSON.stringify(positions[i]));
-    img.setAttribute('data-enlarged', 'false');
-    img.addEventListener('click', toggleImageSize);
-});
-
-    });
-    function showGalleryContainer() {
-            // Muestra el segundo contenedor
-            galleryContainer.style.display = "block";
-
-            // Animación para mostrar el segundo contenedor (puedes personalizar esta animación)
-            gsap.from(".gallery-container", { opacity: 0, duration: 1, ease: Expo.easeInOut });
+        function scatterAndShrink() {
+            gsap.to(".img", {
+                top: (i) => positions[i].top + 'px',
+                left: (i) => positions[i].left + 'px',
+                transform: "none",
+                width: "100px",
+                height: "120px",
+                stagger: 0.070,
+                duration: 0.75,
+                ease: "power2.out",
+            });
         }
+
+        function applyBlurEffect() {
+            const elementsToBlur = document.querySelectorAll('.img:not([data-enlarged="true"])');
+            gsap.to(elementsToBlur, {
+                filter: 'blur(20px)',
+                duration: 0.75,
+                ease: "power2.out",
+            });
+        }
+
+        function removeBlurEffect() {
+            const elementsToBlur = document.querySelectorAll('.img:not([data-enlarged="true"])');
+            gsap.to(elementsToBlur, {
+                filter: "blur(0px)",
+                duration: 1,
+                ease: "power2.out",
+            });
+        }
+
+        function toggleImageSize(event) {
+            const img = event.currentTarget;
+            const isEnlarged = img.getAttribute('data-enlarged') === 'true';
+            const originalPosition = JSON.parse(img.getAttribute('data-original-position'));
+            const viewportWidth = window.innerWidth;
+            const viewportHeight = window.innerHeight;
+
+            if (!isEnlarged) {
+                const enlargedWidth = 500;
+                const enlargedHeight = 600;
+                const centeredLeft = (viewportWidth - enlargedWidth) / 2;
+                const centeredTop = (viewportHeight - enlargedHeight) / 2;
+                const topCorrection = 75;
+                const correctedTop = centeredTop - topCorrection;
+
+                gsap.to(img, {
+                    zIndex: 1000,
+                    top: `${correctedTop}px`,
+                    left: `${centeredLeft}px`,
+                    width: `${enlargedWidth}px`,
+                    height: `${enlargedHeight}px`,
+                    ease: "power4.out",
+                    duration: 1,
+                });
+                img.setAttribute('data-enlarged', 'true');
+                applyBlurEffect();
+            } else {
+                setTimeout(() => removeBlurEffect(), 100);
+
+                gsap.to(img, {
+                    zIndex: 1,
+                    top: originalPosition.top + 'px',
+                    left: originalPosition.left + 'px',
+                    width: '75px',
+                    height: '100px',
+                    ease: "power4.out",
+                    duration: 1,
+                });
+                img.setAttribute('data-enlarged', 'false');
+            }
+        }
+
+        imgs.forEach((img, i) => {
+            img.setAttribute('data-original-position', JSON.stringify(positions[i]));
+            img.setAttribute('data-enlarged', 'false');
+            img.addEventListener('click', toggleImageSize);
+        });
+    });
+
+    function showGalleryContainer() {
+        galleryContainer.style.display = "block";
+        gsap.from(".gallery-container", { opacity: 0, duration: 1, ease: Expo.easeInOut });
+    }
+
+    function calculatePositions() {
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        return [
+        /* Fila 1 */
+        { top: viewportHeight * 0.02, left: viewportWidth * 0.05 },
+        { top: viewportHeight * 0.10, left: viewportWidth * 0.20 },
+        { top: viewportHeight * 0.02, left: viewportWidth * 0.35 },
+        { top: viewportHeight * 0.10, left: viewportWidth * 0.50 },
+        { top: viewportHeight * 0.02, left: viewportWidth * 0.65 },
+        { top: viewportHeight * 0.10, left: viewportWidth * 0.80 },
+        /* Fila 2 */
+        { top: viewportHeight * 0.25, left: viewportWidth * 0.05 },
+        { top: viewportHeight * 0.33, left: viewportWidth * 0.20 },
+        { top: viewportHeight * 0.25, left: viewportWidth * 0.35 },
+        { top: viewportHeight * 0.33, left: viewportWidth * 0.50 },
+        { top: viewportHeight * 0.25, left: viewportWidth * 0.65 },
+        { top: viewportHeight * 0.33, left: viewportWidth * 0.80 },
+        /* Fila 3 */
+        { top: viewportHeight * 0.48, left: viewportWidth * 0.05 },
+        { top: viewportHeight * 0.56, left: viewportWidth * 0.20 },
+        { top: viewportHeight * 0.48, left: viewportWidth * 0.35 },
+        { top: viewportHeight * 0.56, left: viewportWidth * 0.50 },
+        { top: viewportHeight * 0.48, left: viewportWidth * 0.65 },
+        { top: viewportHeight * 0.56, left: viewportWidth * 0.80 },
+        /* Fila 4 */
+        { top: viewportHeight * 0.71, left: viewportWidth * 0.05 },
+        { top: viewportHeight * 0.79, left: viewportWidth * 0.20 },
+        { top: viewportHeight * 0.71, left: viewportWidth * 0.35 },
+        { top: viewportHeight * 0.79, left: viewportWidth * 0.50 },
+        { top: viewportHeight * 0.71, left: viewportWidth * 0.65 },
+        { top: viewportHeight * 0.79, left: viewportWidth * 0.80 },
+        /* Reserva */
+        { top: viewportHeight * 0.85, left: viewportWidth * 0.85 },
+        { top: viewportHeight * 0.50, left: viewportWidth * 0.85 },
+        { top: viewportHeight * 0.55, left: viewportWidth * 0.15 },
+    ];
+    }
 </script>
+
 <script>
     
 </script>
