@@ -15,7 +15,7 @@
 }
 body {
     min-height: 100vh; 
-    background-color: rgb(214, 139, 0);
+    background-color: rgb(255, 166, 0);
     background-size: cover;
     font-family: 'Roboto', sans-serif;
 }
@@ -213,7 +213,8 @@ body {
 }
 
 .calendar-nav span {
-  font-size: 1.7em;
+  font-size: 2em;
+  letter-spacing: 1px;
   font-family: 'Neue Montreal Medium', sans-serif;
   color: #000000;
   font-weight: 900;
@@ -245,7 +246,7 @@ body {
   background-color: #2a07b9;
   color: white;
   padding: 11px 0;
-  border-radius: 20px;
+  border-radius: 12px;;
 }
 
 .days-of-week div {
@@ -379,20 +380,164 @@ body {
 }
 
 
-/*Responsive version*/
-@media (max-width: 768px) {
-  .calendar {
-    grid-template-columns: repeat(2, 1fr);
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+    padding: 20px;
+    margin: 15px;
+  }
+
+  .titleCalendar {
+    font-size: 2.5rem;
+  }
+
+  .calendar-nav span {
+    font-size: 1.5em;
+  }
+
+  .days-of-week div {
+    font-size: 1.5em;
+  }
+
+  #calendar {
+    gap: 8px;
+  }
+
+  .day {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .titleCalendar {
+    font-size: 2rem;
+  }
+
+  .calendar-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .calendar-nav span {
+    font-size: 1.3em;
+  }
+
+  .days-of-week {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .days-of-week div {
+    font-size: 1.2em;
+  }
+
+  #calendar {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .day {
+    font-size: 1.2em;
+    padding: 8px;
   }
 
   .event {
-    flex: 1 1 100%; 
+    flex: 1 1 100%;
   }
 }
 
-@media (max-width: 480px) {
-  .calendar {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .titleCalendar {
+    font-size: 1.8rem;
+  }
+
+  .calendar-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .calendar-nav span {
+    font-size: 1.2em;
+  }
+
+  .days-of-week {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .days-of-week div {
+    font-size: 1em;
+  }
+
+  #calendar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .day {
+    font-size: 1em;
+    padding: 5px;
+  }
+
+  .event {
+    flex: 1 1 100%;
   }
 }
 
+@media (max-width: 576px) {
+  .container {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .titleCalendar {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .calendar-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .calendar-nav span {
+    font-size: 1em;
+  }
+
+  .days-of-week {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .days-of-week div {
+    font-size: 0.8em;
+  }
+
+  #calendar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .day {
+    font-size: 0.8em;
+    padding: 3px;
+  }
+
+  .event h4 {
+    font-size: 1em;
+  }
+
+  .event p {
+    font-size: 0.9em;
+  }
+
+  .event a {
+    font-size: 1em;
+  }
+}
