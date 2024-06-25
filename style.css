@@ -616,12 +616,13 @@ background-image: url('images/mexa.webp') ;
 }
 
 .card h2{
-    padding: 0px;
+    padding: 5px;
     font-family: 'Playfair Display', sans-serif; 
     font-weight: bolder;
     font-size: 21px; 
     text-align: center;
     line-height: 1.2;
+    letter-spacing: 0.5px;
 }
 .card p {
     padding: 15px;
