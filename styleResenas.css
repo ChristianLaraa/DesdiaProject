@@ -247,8 +247,6 @@ font-weight: 700;
     overflow: hidden;
     position: absolute;
     margin: 65px; /* Reduce the margin for smaller screens */
-
-    /* Add more specific styles for larger screens if necessary */
 }
 
 .img img {
@@ -256,14 +254,19 @@ font-weight: 700;
     height: 100%;
     object-fit: cover;
 }
+.img:hover {
+    transform: scale(1.1);
+    animation-duration: 4s;
+}
 
 .descripcion {
     position: absolute;
     font-size: 11.5px;
+    letter-spacing: 0.2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     top: 0;
     left: 100%; /* Inicialmente fuera del contenedor */
-    width: 50%; /* Ajusta según tus necesidades */
+    width: 100%; /* Ajusta según tus necesidades */
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6); /* Fondo inicialmente oscuro */
     color: white; /* Color de fuente inicialmente blanco */
@@ -274,6 +277,6 @@ font-weight: 700;
 }
 
 .img:hover .descripcion {
-    opacity: 1; /* Mostrar la descripción */
-    left: 0; /* Mover la descripción dentro del contenedor */
+    opacity: 1; 
+    left: 0; 
 }
