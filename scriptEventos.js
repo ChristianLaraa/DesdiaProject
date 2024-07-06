@@ -157,6 +157,14 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/tino-el-pinguino-mexico-03-08-2024/event/14006064995109CD'
         },
         {
+            title: 'Party 101',
+            date: '2024-08-03',
+            time: '8:00 PM',
+            location: 'Foro Puebla',
+            image: 'imagesEventos/agosto/101.png',
+            link: 'https://www.ticketmaster.com.mx/party-101-mexico-03-08-2024/event/3D0060E3BEAD3E85'
+        },
+        {
             title: 'DrefQuila',
             date: '2024-08-03',
             time: '9:00 PM',
@@ -251,6 +259,14 @@ const events = [
             location: 'Foro Puebla',
             image: 'imagesEventos/agosto/legally.png',
             link: 'https://www.ticketmaster.com.mx/lola-indigo-mexico-15-08-2024/event/3D00608583050B5C'
+        },
+        {
+            title: 'Miky Woodz',
+            date: '2024-08-16',
+            time: '9:00 PM',
+            location: 'Pabellon Oeste',
+            image: 'imagesEventos/agosto/woodz.png',
+            link: 'https://www.ticketmaster.com.mx/miky-woodz-mexico-16-08-2024/event/140060DAFFE52EF8'
         },
         {
             title: 'Odisseo',
