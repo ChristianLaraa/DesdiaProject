@@ -149,6 +149,22 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/caligaris-ciudad-de-mexico-02-08-2024/event/3D005F57F8B54D60'
         },
         {
+            title: 'El Haragán y Cía',
+            date: '2024-08-02',
+            time: '8:30 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/agosto/haragan.png',
+            link: 'https://www.ticketmaster.com.mx/el-haragan-y-cia-mexico-02-08-2024/event/14006090B5001952?clickId=wiiTRv2TOxyKRCQ3QvxqTxNCUkCx3nXDRUd7SA0&irgwc=1&utm_source=1234554-Songkick&utm_medium=affiliate&utm_campaign=1234554&ircid=11559&camefrom=CFC_BUYAT_1234554'
+        },
+        {
+            title: 'Ferraz',
+            date: '2024-08-02',
+            time: '8:00 PM',
+            location: 'Mercado Roma',
+            image: 'imagesEventos/agosto/ferraz.png',
+            link: 'https://www.passline.com/eventos/ferraz-en-vivo-full-band-presenta-trascendente'
+        },
+        {
             title: 'Tino el Pingüino',
             date: '2024-08-03',
             time: '9:00 PM',
@@ -165,6 +181,14 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/party-101-mexico-03-08-2024/event/3D0060E3BEAD3E85'
         },
         {
+            title: 'Estelares',
+            date: '2024-08-03',
+            time: '8:00 PM',
+            location: 'Lunario del Auditorio Nacional',
+            image: 'imagesEventos/agosto/estelares.png',
+            link: 'https://www.ticketmaster.com.mx/estelares-ciudad-de-mexico-03-08-2024/event/3D00606C9B030E57?clickId=wiiTRv2TOxyKRCQ3QvxqTxNCUkCx3iwLRUd7SA0&irgwc=1&utm_source=1234554-Songkick&utm_medium=affiliate&utm_campaign=1234554&ircid=11559&camefrom=CFC_BUYAT_1234554'
+        },
+        {
             title: 'DrefQuila',
             date: '2024-08-03',
             time: '9:00 PM',
@@ -179,6 +203,14 @@ const events = [
             location: 'Bajo Circuito',
             image: 'imagesEventos/agosto/juaninacka.png',
             link: 'https://www.passline.com/eventos/juaninacka-media-vida-tour'
+        },
+        {
+            title: 'Kidd Wings',
+            date: '2024-08-04',
+            time: '4:00 PM',
+            location: 'Multiforo 246',
+            image: 'imagesEventos/agosto/kidd.png',
+            link: 'https://www.passline.com/eventos/un-show-mas-de-pepelepluggg'
         },
         {
             title: 'GHOULJABOY + CHICANO WEI',
@@ -285,12 +317,60 @@ const events = [
             link: 'https://www.passline.com/eventos/andru-las-cosas-que-quiero-recordar'
         },
         {
-            title: 'Feid (Ferxxocalipsis Tour)',
+            title: 'Ben Howard',
+            date: '2024-08-17',
+            time: '9:00 PM',
+            location: 'Teatro Metropólitan',
+            image: 'imagesEventos/agosto/howard.png',
+            link: 'https://www.ticketmaster.com.mx/ben-howard-mexico-17-08-2024/event/1400604C11642777?utm_content=hotevent&clickId=wiiTRv2TOxyKRCQ3QvxqTxNCUkCx3EzCRUd7SA0&irgwc=1&utm_source=1234554-Songkick&utm_medium=affiliate&utm_campaign=1234554&ircid=11559&camefrom=CFC_BUYAT_1234554'
+        },
+        {
+            title: 'WARCRY',
+            date: '2024-08-17',
+            time: '8:30 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/agosto/warcry.png',
+            link: 'https://www.ticketmaster.com.mx/warcry-daimon-tour-mexico-17-08-2024/event/140060AFB1A023DB?clickId=wiiTRv2TOxyKRCQ3QvxqTxNCUkCx3HTDRUd7SA0&irgwc=1&utm_source=1234554-Songkick&utm_medium=affiliate&utm_campaign=1234554&ircid=11559&camefrom=CFC_BUYAT_1234554'
+        },
+        {
+            title: 'Vacations',
+            date: '2024-08-17',
+            time: '9:00 PM',
+            location: 'Foro Puebla',
+            image: 'imagesEventos/agosto/vacations.png',
+            link: 'https://www.ticketmaster.com.mx/vacations-mexico-17-08-2024/event/3D0060A6EC7126BF'
+        },
+        {
+            title: 'Sandro Malandro',
+            date: '2024-08-18',
+            time: '8:00 PM',
+            location: 'Bajo Circuito',
+            image: 'imagesEventos/agosto/sandro.png',
+            link: 'https://www.passline.com/eventos/sandro-malandro-en-cdmx'
+        },
+        {
+            title: 'Feid',
             date: '2024-08-21',
             time: '8:30 PM',
             location: 'Foro Sol',
             image: 'imagesEventos/agosto/feid.png',
             link: 'https://www.ticketmaster.com.mx/feid-mexico-21-08-2024/event/1400606702422D02'
+        },
+        {
+            title: 'Karol Sevilla',
+            date: '2024-08-21',
+            time: '8:30 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/agosto/karol.png',
+            link: 'https://www.ticketmaster.com.mx/karol-sevilla-mexico-21-08-2024/event/140060CABDEE14FC'
+        },
+        {
+            title: 'Wild Nothing',
+            date: '2024-08-21',
+            time: '6:00 PM',
+            location: 'Foro Indie Rocks',
+            image: 'imagesEventos/agosto/nothing.png',
+            link: 'https://www.passline.com/eventos/wild-nothing'
         },
         {
             title: 'Jonas Brothers',
@@ -301,6 +381,14 @@ const events = [
             link: 'https://www.superboletos.com/landing-evento/VqnasUUutFP3UuMArutUUw'
         },
         {
+            title: 'Master Plus',
+            date: '2024-08-22',
+            time: '8:30 PM',
+            location: 'Lunario del Auditorio Nacional',
+            image: 'imagesEventos/agosto/master.png',
+            link: 'https://www.ticketmaster.com.mx/master-plus-ciudad-de-mexico-22-08-2024/event/3D00603AB16F485A'
+        },
+        {
             title: 'Natanael Cano (Tumbado Tour)',
             date: '2024-08-23',
             time: '8:30 PM',
@@ -309,12 +397,20 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/natanael-cano-mexico-23-08-2024/event/14006090B13D1625'
         },
         {
-            title: 'Camilo Septimo (X años)',
+            title: 'Camilo Septimo',
             date: '2024-08-23',
             time: '5:00 PM',
             location: 'Lunario del Auditorio Nacional',
             image: 'imagesEventos/agosto/camilo.png',
             link: 'https://www.ticketmaster.com.mx/camilo-septimo-ciudad-de-mexico-23-08-2024/event/3D0060BBEFEF4417'
+        },
+        {
+            title: 'LAGOS',
+            date: '2024-08-23',
+            time: '9:00 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/agosto/lagos.png',
+            link: 'https://www.ticketmaster.com.mx/lagos-mexico-23-08-2024/event/1400603DBB411EDE?clickId=wiiTRv2TOxyKRCQ3QvxqTxNCUkCx3EyyRUd7SA0&irgwc=1&utm_source=1234554-Songkick&utm_medium=affiliate&utm_campaign=1234554&ircid=11559&camefrom=CFC_BUYAT_1234554'
         },
         {
             title: 'Festival HERA',
@@ -333,6 +429,22 @@ const events = [
             link: 'https://www.passline.com/eventos/lucho-al-attaque-en-bajo-circuito'
         },
         {
+            title: 'Technicolor Fabrics',
+            date: '2024-08-24',
+            time: '8:30 PM',
+            location: 'Auditorio BB',
+            image: 'imagesEventos/agosto/colors.png',
+            link: 'https://www.ticketmaster.com.mx/technicolor-fabrics-mexico-24-08-2024/event/14006081AAB114E7'
+        },
+        {
+            title: 'Human Tetris',
+            date: '2024-08-24',
+            time: '9:00 PM',
+            location: 'Pabellon Oeste',
+            image: 'imagesEventos/agosto/human.png',
+            link: 'https://www.ticketmaster.com.mx/event/140060AEAD6E1AE3'
+        },
+        {
             title: 'Allison (acustico)',
             date: '2024-08-27',
             time: '8:30 PM',
@@ -347,6 +459,14 @@ const events = [
             location: 'Arena CDMX',
             image: 'imagesEventos/agosto/cd9.png',
             link: 'https://www.superboletos.com/landing-evento/F6X9msSu8X0I1wmQVd_N7Q'
+        },
+        {
+            title: 'Peter Hook & The Light',
+            date: '2024-08-29',
+            time: '9:00 PM',
+            location: 'Pabello Oeste',
+            image: 'imagesEventos/agosto/peter.png',
+            link: 'https://www.ticketmaster.com.mx/peter-hook-the-light-mexico-29-08-2024/event/14005F68E33E26D8'
         },
         {
             title: 'Babasonicos',
@@ -379,6 +499,14 @@ const events = [
             location: 'Auditorio BB',
             image: 'imagesEventos/agosto/lagarfield.png',
             link: 'https://www.ticketmaster.com.mx/la-garfield-mexico-31-08-2024/event/14006084E68527C2'
+        },
+        {
+            title: 'Sonido Gallo Negro',
+            date: '2024-08-31',
+            time: '8:30 PM',
+            location: 'Foro Puebla',
+            image: 'imagesEventos/agosto/gallo.png',
+            link: 'https://www.ticketmaster.com.mx/sonido-gallo-negro-mexico-31-08-2024/event/3D0060B7A2722E72?clickId=wiiTRv2TOxyKRCQ3QvxqTxNCUkCx3G0zRUd7SA0&irgwc=1&utm_source=1234554-Songkick&utm_medium=affiliate&utm_campaign=1234554&ircid=11559&camefrom=CFC_BUYAT_1234554'
         },
         
       // Agrega más eventos según sea necesario
