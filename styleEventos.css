@@ -180,12 +180,22 @@ body {
   margin-top: 12rem;
 }
 
+.titleCalendar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
 .titleCalendar {
   color: #17076a;
   font-family: 'Integral CF Bold', sans-serif;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 3rem;
+  flex: 1;
+  text-align: center;
 }
 
 .calendar-nav {
@@ -246,7 +256,7 @@ body {
   background-color: #2a07b9;
   color: white;
   padding: 11px 0;
-  border-radius: 12px;;
+  border-radius: 12px;
 }
 
 .days-of-week div {
@@ -267,7 +277,7 @@ body {
   border-radius: 22px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 1.8em;
-  font-family: 'integral CF Bold', sans-serif;
+  font-family: 'Integral CF Bold', sans-serif;
   padding: 15px;
   transition: transform 0.3s, background-color 0.3s;
   position: relative;
@@ -314,8 +324,6 @@ body {
   transform: scale(1.10); /* Aumenta el tamaño del contenedor al pasar el ratón */
 }
 
-
-
 .event img {
   width: 100%;
   height: 100px;
@@ -328,14 +336,14 @@ body {
   margin: 0 auto;
   font-family: 'Integral CF Bold', sans-serif;
   color: #03254a;
-  font-size: 1.3em ;
-  text-transform: uppercase; 
-  letter-spacing: 0.09em; 
-  line-height: 1.2; 
-  padding: 10px 0; 
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); 
-  border-bottom: 2px solid #022c57; 
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  line-height: 1.2;
+  padding: 10px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  border-bottom: 2px solid #022c57;
   text-align: center;
 }
 
@@ -343,42 +351,39 @@ body {
   margin: 5px 0;
   color: #000000;
   font-size: 1.1em;
-  font-family: 'Integral CF Bold', sans-serif; 
+  font-family: 'Integral CF Bold', sans-serif;
   line-height: 1.8;
-  padding: 10px 0; 
-  text-indent: 0.8em; 
-  background: #ffffff99; 
-  border-left: 2px solid #264803; 
-  padding-left: 2px; 
+  padding: 10px 0;
+  text-indent: 0.8em;
+  background: #ffffff99;
+  border-left: 2px solid #264803;
+  padding-left: 2px;
   padding-right: 4px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); 
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-
 .event a {
-  color: #007bff; 
-  text-decoration: none; 
-  font-weight: bold; 
-  transition: color 0.3s, text-shadow 0.3s; 
-  font-size: 1.2em; 
-  font-family: 'Neue Montreal Medium' sans-serif; 
-  padding: 2px 4px; 
-  border-radius: 4px; 
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s;
+  font-size: 1.2em;
+  font-family: 'Neue Montreal Medium', sans-serif;
+  padding: 2px 4px;
+  border-radius: 4px;
   text-align: center;
   margin-top: 1rem;
 }
 
 .event a:hover {
-  color: #09498d; 
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); 
+  color: #09498d;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
-
 
 .event a:active {
-  color: #003f7f; 
+  color: #003f7f;
 }
-
 
 /* Media Queries for Responsive Design */
 @media (max-width: 1200px) {
@@ -457,12 +462,22 @@ body {
     margin: 10px;
   }
 
+  .titleCalendar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
   .titleCalendar {
     font-size: 1.8rem;
+    text-align: center;
+    flex: 1;
   }
 
   .calendar-nav {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 15px;
   }
 
@@ -471,11 +486,7 @@ body {
   }
 
   .days-of-week {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .days-of-week div {
-    font-size: 1em;
+    display: none; /* Ocultar la barra de los días de la semana */
   }
 
   #calendar {
@@ -490,38 +501,48 @@ body {
   .event {
     flex: 1 1 100%;
   }
+
+  .day-header {
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 576px) {
   .container {
     padding: 5px;
     margin: 5px;
+    margin-top: 8rem;
+  }
+
+  .titleCalendar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
 
   .titleCalendar {
-    font-size: 1.5rem;
+    font-size: 3rem;
     text-align: center;
+    flex: 1;
   }
 
   .calendar-nav {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 10px;
   }
 
   .calendar-nav span {
-    font-size: 1em;
+    font-size: 2rem;
   }
 
   .days-of-week {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .days-of-week div {
-    font-size: 0.8em;
+    display: none; /* Ocultar la barra de los días de la semana */
   }
 
   #calendar {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .day {
@@ -539,5 +560,10 @@ body {
 
   .event a {
     font-size: 1em;
+  }
+
+  .day-header {
+    font-size: 2.8em;
+    color: #000000;
   }
 }

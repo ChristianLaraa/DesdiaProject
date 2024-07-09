@@ -130,15 +130,15 @@ const events = [
             time: '8:30 PM',
             location: 'Lunario del Auditorio Nacional',
             image: 'imagesEventos/agosto/malilla.png',
-            link: 'https://www.ticketmaster.com.mx/dromedarios-magicos-y-ms-ambar-ciudad-de-mexico-01-08-2024/event/3D0060A3A4C3349F'
+            link: 'https://www.ticketmaster.com.mx/el-malilla-mexico-01-08-2024/event/14006083A7D51966'
         },
         {
-            title: 'Dromedario Mágicos y MS Ambar ',
+            title: 'Dromedarios Mágicos y MS Ambar ',
             date: '2024-08-01',
             time: '9:00 PM',
             location: 'Auditorio BB',
             image: 'imagesEventos/agosto/drome.png',
-            link: 'https://www.ticketmaster.com.mx/el-malilla-mexico-01-08-2024/event/14006083A7D51966'
+            link: 'https://www.ticketmaster.com.mx/dromedarios-magicos-y-ms-ambar-ciudad-de-mexico-01-08-2024/event/3D0060A3A4C3349F'
         },
         {
             title: 'Los Caligaris',
