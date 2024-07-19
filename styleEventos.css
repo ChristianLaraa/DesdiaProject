@@ -287,7 +287,7 @@ body {
 }
 
 .day:hover {
-  transform: scale(1.06);
+  transform: scale(1.03);
   background-color: #b1d2ee;
 }
 
@@ -321,7 +321,7 @@ body {
 }
 
 .event:hover {
-  transform: scale(1.10); /* Aumenta el tamaño del contenedor al pasar el ratón */
+  transform: scale(1.08); /* Aumenta el tamaño del contenedor al pasar el ratón */
 }
 
 .event img {
