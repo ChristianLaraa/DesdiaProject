@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrevista con VALE</title>
+    <link rel="stylesheet" href="stylesRecom1.css">
+</head>
+<body>
+    <header>
+        <h1>Entrevista con VALE</h1>
+        <p>Editorial</p>
+    </header>
+    <main>
+        <article>
+            <img src="https://via.placeholder.com/800x400" alt="Entrevista con VALE">
+        </article>
+        <aside>
+            <h2>LEE NUESTRA REVISTA DIGITAL</h2>
+            <div class="magazine-cover">
+                <img src="https://via.placeholder.com/200x300" alt="Vibras #16: Girl in Red">
+                <p>VIBRAS #16: GIRL IN RED</p>
+            </div>
+        </aside>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
