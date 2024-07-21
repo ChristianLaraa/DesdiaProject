@@ -9,6 +9,7 @@
  @import url(https://db.onlinewebfonts.com/c/e4615d59604d3d0bb8376f5e258aee4d?family=General+Sans+Semibold+Italic);
  @import url(https://db.onlinewebfonts.com/c/0ea33830686c6ee0453b626d9aac208e?family=Helvetica);
  @import url(https://db.onlinewebfonts.com/c/b52804ac57ef6e90d2826a6b0f111133?family=Integral+CF+Bold);
+ @import url(https://db.onlinewebfonts.com/c/b52804ac57ef6e90d2826a6b0f111133?family=Integral+CF+Bold);
  *{
      margin: 0;
      padding: 0;
@@ -223,7 +224,7 @@
 
 
 main {
-    padding: 20px;
+    padding: 35px;
     background-color: #f9f9f9;
     margin-top: 2rem;
 }
@@ -231,15 +232,24 @@ main {
 .articles {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    grid-row-gap: 40px; /* Ajusta este valor según tus necesidades */
+    grid-column-gap: 20px; /* Opcional, para ajustar la separación horizontal */
+    /* O simplemente gap para ambas separaciones */
+    gap: 60px 40px; /* El primer valor es la separación horizontal, el segundo es la vertical */
 }
+
+
+
 
 article {
     background-color: #fff;
-    border: 2px solid #a4a3a3;
+    border: 2px solid #848484;
     border-radius: 8px;
     overflow: hidden;
     width: 100%;
+}
+article:hover {
+    transform: scale(1.02);
 }
 
 
@@ -260,15 +270,20 @@ article h2 {
     margin: 0 0 4px;
     font-size: 23px; /* Ajusta el tamaño de la fuente para un mejor equilibrio */
 }
+article h2:hover{
+   color: #11b586; /* Ajusta el tamaño de la fuente para un mejor equilibrio */
+}
 article h3 {
     text-align: center;
     padding: auto;
+    color: black;
     font-size: 18px; /* Ajusta el tamaño de la fuente para un mejor equilibrio */
 }
 
 article p {
     margin: 0 0 5px;
-    font-size: 14px; /* Ajusta el tamaño de la fuente para un mejor equilibrio */
+    font-size: 14px; 
+    color: #393939;/* Ajusta el tamaño de la fuente para un mejor equilibrio */
 }
 
 
@@ -293,7 +308,7 @@ article p {
     }
 
     .articles {
-        gap: 25px;
+        gap: 20px;
     }
 
     article h2 {

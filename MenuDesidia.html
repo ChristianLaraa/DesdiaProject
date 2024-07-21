@@ -7,6 +7,8 @@
         <title> DESIDIA mx </title>
         <link rel="stylesheet" href="style.css">
         <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hover.css/css/hover-min.css">
@@ -25,60 +27,7 @@
             </div>
             <div class="loader-2"></div>
         </div>
-<!--Scripts imports loader-->    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<!--Script funcionamiento loader-->
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                function startLoader() {
-                    let counterElement = document.querySelector('.count p');
-                    let currentValue = 0;
-    
-                    function updateCounter() {
-                        if (currentValue < 100) {
-                            let increment = Math.min(100 - currentValue, Math.floor(Math.random() * 10) + 1);
-                            currentValue = currentValue + increment;
-                            counterElement.textContent = currentValue;
 
-    
-                            let delay = Math.floor(Math.random() * 200) + 25;
-                            setTimeout(updateCounter, delay);
-                        }
-                    }
-                    updateCounter();
-                    updateCounter();
-                        setTimeout(function () {
-            gsap.to(".count", { opacity: 0, duration: 0.3 });
-            gsap.to(".pre-loader", { scale: 0.5, ease: "power4.inOut", duration: 1 });
-            gsap.to(".loader", { height: "0", ease: "expo.inOut", duration: 1, delay: 0.25 });
-            gsap.to(".loader-bg", { height: "0", ease: "power4.inOut", duration: 1, delay: 0.5 });
-            gsap.to('.loader-2', { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)", ease: "power4.inOut", duration: 1, delay: 0.25 });
-    setTimeout(function () {
-        document.querySelector('.container-loader').style.display = 'none';
-    }); 
-}, 1500); 
-}
-                startLoader();
-                let textWrapper = document.querySelector('.ml16');
-                textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-                anime.timeline({ loop: false })
-                    .add({
-                        targets: '.ml16 .letter',
-                        translateY: [-100, 0],
-                        easing: "easeOutExpo",
-                        duration: 1500,
-                        delay: (el, i) => 30 * i
-                    })
-                    .add({
-                        targets: '.ml16 .letter',
-                        translateY: [0, 100],
-                        easing: "easeOutExpo",
-                        duration: 3000,
-                        delay: (el, i) => 30 * i
-                    });
-            });
-        </script>
 <!--Header y navbar elementos del menu-->
         <header class="header">
             <a href = "MenuDesidia.html" class="logo"> DESIDIA mx </a>  <!-- Logo de DESIDIA mx POSTERIOREMENTE REMPLAZADO POR IMAGEN--> 
@@ -192,58 +141,7 @@
                 </div>
             </div>
         </div>
-<!--Script funcionamiento primer slider-->
-<script>
-    let items = document.querySelectorAll('.slider .list .item');
-    let next = document.getElementById('next');
-    let prev = document.getElementById('prev');
-    let thumbnails = document.querySelectorAll('.thumbnail .item');
 
-        let countItem = items.length;
-        let itemActive = 0;
-// event next click
-next.onclick = function(){
-    itemActive = itemActive + 1;
-    if(itemActive >= countItem){
-        itemActive = 0;
-    }
-    showSlider();
-}
-//event prev click
-prev.onclick = function(){
-    itemActive = itemActive - 1;
-    if(itemActive < 0){
-        itemActive = countItem - 1;
-    }
-    showSlider();
-}
-// auto run slider
-let refreshInterval = setInterval(() => {
-    next.click();
-}, 5000)
-function showSlider(){
-    // remove item active old
-    let itemActiveOld = document.querySelector('.slider .list .item.active');
-    let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
-    itemActiveOld.classList.remove('active');
-    thumbnailActiveOld.classList.remove('active');
-    // active new item
-    items[itemActive].classList.add('active');
-    thumbnails[itemActive].classList.add('active');
-    // clear auto time run slider
-    clearInterval(refreshInterval);
-    refreshInterval = setInterval(() => {
-        next.click();
-    }, 5000)
-}
-// click thumbnail
-thumbnails.forEach((thumbnail, index) => {
-    thumbnail.addEventListener('click', () => {
-        itemActive = index;
-        showSlider();
-    })
-})
-</script>
 <!--Segundo slider noticias-->
 <div class="img-slider">
     <div class="slide active">
@@ -289,48 +187,7 @@ thumbnails.forEach((thumbnail, index) => {
         <div class="btn"></div>
     </div>
 </div>
-<!--Script funcionamiento segundo slider-->
-<script type="text/javascript">
-    var slides = document.querySelectorAll('.img-slider .slide');
-    var btns = document.querySelectorAll('.img-slider .navigation .btn');
-    let currentSlide = 0;
-    // Función para navegación Manual
-    function manualNav(manual) {
-        slides.forEach((slide) => {
-            slide.classList.remove('active');
-        });
-        btns.forEach((btn) => {
-            btn.classList.remove('active');
-        });
-        slides[manual].classList.add('active');
-        btns[manual].classList.add('active');
-        currentSlide = manual;
-    }
-    btns.forEach((btn, i) => {
-        btn.addEventListener("click", () => {
-            manualNav(i);
-        });
-    });
-    // Asociar evento click a los botones de navegación
-    var repeat = function () {
-        let i = 0;
-        var repeater = () => {
-            setTimeout(function () {
-                slides[i].classList.remove('active');
-                btns[i].classList.remove('active');
-                i++;
-                if (i >= slides.length) {
-                    i = 0;
-                }
-                slides[i].classList.add('active');
-                btns[i].classList.add('active');
-                repeater();
-            }, 10000);
-        }
-        repeater();
-    }
-    repeat();
-</script>
+
 <!-- Containers Noticias, remplazadas cada 2 o 3 dias  -->
     <section class = "container">  
     <div class = "card">
@@ -442,17 +299,7 @@ thumbnails.forEach((thumbnail, index) => {
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!--Script funcionamiento container top canciones-->
-    <script>
-            const swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            navigation: {
-                nextEl: ".button-next",
-                prevEl: ".button-prev",
-            }
-        })
-    </script>
+
 <!--About us, info contacto, redes.-->
 <div class="section">
     <div class="container2">
@@ -482,10 +329,7 @@ thumbnails.forEach((thumbnail, index) => {
                 </div>
     </div>
 <!--Script funcionamiento about us, imagen-->
-<script>    
-    document.addEventListener("DOMContentLoaded", function() {
-    });
-</script>
+
 <!--Scroll reveal animaciones-->
 <script>
     window.sr = ScrollReveal();
@@ -515,6 +359,7 @@ thumbnails.forEach((thumbnail, index) => {
         distance: '-100px'
     });
 </script>
+<script src="scriptinicio.js"></script>
     </body>
     </html>
 
