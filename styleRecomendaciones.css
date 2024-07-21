@@ -235,7 +235,7 @@ main {
     grid-row-gap: 40px; /* Ajusta este valor según tus necesidades */
     grid-column-gap: 20px; /* Opcional, para ajustar la separación horizontal */
     /* O simplemente gap para ambas separaciones */
-    gap: 60px 40px; /* El primer valor es la separación horizontal, el segundo es la vertical */
+    gap: 70px 40px; /* El primer valor es la separación horizontal, el segundo es la vertical */
 }
 
 
@@ -250,6 +250,7 @@ article {
 }
 article:hover {
     transform: scale(1.02);
+    transition: all 0.3s ease; /* Ajustado para una transición más suave */
 }
 
 
@@ -271,7 +272,7 @@ article h2 {
     font-size: 23px; /* Ajusta el tamaño de la fuente para un mejor equilibrio */
 }
 article h2:hover{
-   color: #11b586; /* Ajusta el tamaño de la fuente para un mejor equilibrio */
+   color: #09a277; /* Ajusta el tamaño de la fuente para un mejor equilibrio */
 }
 article h3 {
     text-align: center;
