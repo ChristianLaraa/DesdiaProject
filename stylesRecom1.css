@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/pp-neue-montreal');
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url(https://db.onlinewebfonts.com/c/214dd8afc399412820f14dd64245b5ba?family=Work+Sans);
 *{
     margin: 0;
     padding: 0;
@@ -169,7 +170,8 @@ article h1 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 10px;
-    margin-top: 4rem;
+    margin-top: 4rem;;
+    font-family: 'Work Sans', sans-serif;
 }
 
 article img {
@@ -185,6 +187,25 @@ article p {
     padding: 20px;
     line-height: auto;
 }
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.star {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.star:hover,
+.star.selected,
+.star.hover {
+    color: gold;
+}
+
 
 aside {
     text-align: center;
