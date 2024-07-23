@@ -606,6 +606,14 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/juan-palitos-chinos-ciudad-de-mexico-07-09-2024/event/3D006099C4B14029?language=en-mx',
         },
         {
+            title: 'ARRE',
+            date: '2024-09-08',
+            time: '1:00 PM',
+            location: 'Autodromo Hermanos Rodriguez',
+            image: 'imagesEventos/septiembre/arre.png',
+            link: 'https://www.ticketmaster.com.mx/abono-general-arre-2024-mexico-07-09-2024/event/14006097C95722CA?language=en-mx',
+        },
+        {
             title: 'NCT DREAM',
             date: '2024-09-09',
             time: '8:00 PM',
@@ -812,6 +820,118 @@ const events = [
             location: 'Auditorio Nacional',
             image: 'imagesEventos/septiembre/matisse.png',
             link: 'https://www.ticketmaster.com.mx/matisse-ciudad-de-mexico-22-09-2024/event/3D00608B93DF0C30'
+        },
+        {
+            title: 'ARTMS',
+            date: '2024-09-22',
+            time: '6:00 PM',
+            location: 'Auditorio BB',
+            image: 'imagesEventos/septiembre/artms.png',
+            link: 'https://www.passline.com/eventos-plano/artms-world-tour-2024'
+        },
+        {
+            title: 'Foyone',
+            date: '2024-09-22',
+            time: '9:00 PM',
+            location: 'Foro Puebla',
+            image: 'imagesEventos/septiembre/foyone.png',
+            link: 'https://foyone.boletia.com/'
+        },
+        {
+            title: 'Ute Lemper',
+            date: '2024-09-23',
+            time: '8:30 PM',
+            location: 'Lunario del Auditorio Nacional',
+            image: 'imagesEventos/septiembre/ute.png',
+            link: 'https://www.ticketmaster.com.mx/ute-lemper-noches-intimas-de-kabarett-ciudad-de-mexico-23-09-2024/event/3D0060A9BBC51EE5?language=en-mx'
+        },
+        {
+            title: 'Anohni and the Johnson',
+            date: '2024-09-24',
+            time: '9:00 PM',
+            location: 'Teatro Metropólitan',
+            image: 'imagesEventos/septiembre/anohi.png',
+            link: 'https://www.ticketmaster.com.mx/anohni-and-the-johnsons-mexico-24-09-2024/event/140060C4B0521406?language=en-mx'
+        },
+        {
+            title: 'Fall Out Boy',
+            date: '2024-09-25',
+            time: '9:00 PM',
+            location: 'Palacio de los Deportes',
+            image: 'imagesEventos/septiembre/fall.png',
+            link: 'https://www.ticketmaster.com.mx/fall-out-boy-mexico-25-09-2024/event/140060C3F1B51CF0'
+        },
+        {
+            title: 'DannyLux',
+            date: '2024-09-26',
+            time: '8:30 PM',
+            location: 'Teatro Metropólitan',
+            image: 'imagesEventos/septiembre/danny.png',
+            link: 'https://www.ticketmaster.com.mx/fall-out-boy-mexico-25-09-2024/event/140060C3F1B51CF0'
+        },
+        {
+            title: 'LSD & The Search for Go',
+            date: '2024-09-27',
+            time: '7:00 PM',
+            location: 'Foro Indie Rocks',
+            image: 'imagesEventos/septiembre/lsd.png',
+            link: 'https://www.ticketmaster.com.mx/insite-thermo-mexico-26-09-2024/event/1400608F99CB0AFD?language=en-mx'
+        },
+        {
+            title: 'Jumbo',
+            date: '2024-09-27',
+            time: '9:00 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/septiembre/jumbo.png',
+            link: 'https://www.ticketmaster.com.mx/jumbo-mexico-27-09-2024/event/14006074E4F526D4'
+        },
+        {
+            title: 'Generaciones Tour',
+            date: '2024-09-27',
+            time: '9:00 PM',
+            location: 'Arena CDMX',
+            image: 'imagesEventos/septiembre/generaciones.png',
+            link: 'https://www.superboletos.com/landing-evento/m2m_HTAcRPinpD_5AtXxtw'
+        },
+        {
+            title: 'Festival Horizonte',
+            date: '2024-09-27',
+            time: '5:00 PM',
+            location: 'Fronton Mexico',
+            image: 'imagesEventos/septiembre/horizonte.png',
+            link: 'https://festival-horizonte.boletia.com/?fbclid=IwZXh0bgNhZW0CMTAAAR1lofxQ5BKog37nvx4RAVckHkF5hPcttdWmQuxHotXhDGsSAY8S1a8AIFw_aem_AeCg9fnFpZRFzC5H9_fJFXSuo56Sm-oltpNWyfplJbYlJVY4fscebh_gZ6X4s890bf40mC4oNOigfgDhQRNygYhP'
+        },
+        {
+            title: 'Bratty',
+            date: '2024-09-28',
+            time: '8:30 PM',
+            location: 'Teatro Metropólitan',
+            image: 'imagesEventos/septiembre/bratty.png',
+            link: 'https://www.ticketmaster.com.mx/bratty-mexico-28-09-2024/event/140060990DDE2F55?language=en-mx'
+        },
+        {
+            title: 'Dillom',
+            date: '2024-09-28',
+            time: '8:00 PM',
+            location: 'Carpa Velodromo',
+            image: 'imagesEventos/septiembre/dillom.png',
+            link: 'https://dillom-por-cesarea-tour-cdmx.boletia.com/',
+        },
+        {
+            title: 'Bronco',
+            date: '2024-09-28',
+            time: '9:00 PM',
+            location: 'Arena CDMX',
+            image: 'imagesEventos/septiembre/bronco.png',
+            link: 'https://www.superboletos.com/landing-evento/_PGQUc4YEd8zMH3_jZ1KuA',
+        },
+        {
+            title: 'Chicano Batman',
+            date: '2024-09-28',
+            time: '8:00 PM',
+            location: 'Auditorio BB',
+            image: 'imagesEventos/septiembre/chicano.png',
+            link: 'https://www.ticketmaster.com.mx/event/1400604FF7B9353D?fbclid=IwAR3HqzSKaOKr-dXQzY1KdP9JTyO31xuJlAa45vH7ZsPRfr4qt--OUvKKZBw',
         },
         {
             title: 'NSQK',
