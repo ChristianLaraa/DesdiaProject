@@ -662,15 +662,159 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/mon-torales-ciudad-de-mexico-12-09-2024/event/3D0060C7BD943B91?fbclid=IwZXh0bgNhZW0CMTAAAR2dKjcZGOYxB2vLiBiFekRNa-N62ghchN8nO5P6qDPkBwEU0Jqke4eGnFE_aem_O1fik6AKWg0SlvE0CdyY_w',
         },
         {
-            title: '',
-            date: '',
-            time: '',
-            location: '',
-            image: '',
-            link: '',
+            title: 'La Castañeda',
+            date: '2024-09-13',
+            time: '8:30 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/septiembre/casta.png',
+            link: 'https://www.ticketmaster.com.mx/la-castaneda-35-aniversario-mexico-13-09-2024/event/1400602997C20BB6?language=en-mx',
         },
         {
-            title: '',
+            title: 'Delux',
+            date: '2024-09-13',
+            time: '8:30 PM',
+            location: 'Teatro Metropólitan',
+            image: 'imagesEventos/septiembre/delux.png',
+            link: 'https//www.ticketmaster.com.mx/delux-mexico-13-09-2024/event/140060BEB9BA249F?language=en-mx//www.ticketmaster.com.mx/la-castaneda-35-aniversario-mexico-13-09-2024/event/1400602997C20BB6?language=en-mx',
+        },
+        {
+            title: 'Rata Blanca',
+            date: '2024-09-13',
+            time: '8:00 PM',
+            location: 'Auditorio BB',
+            image: 'imagesEventos/septiembre/rata.png',
+            link: 'https://rata-blanca-gira-mexico-2024.boletia.com/?fbclid=IwZXh0bgNhZW0CMTAAAR1iLfrbytg6epUK9ecPC6cuWhDPvF6fQLmV_OV1YbUdJDSi0ZPbsPZn8i4_aem_QosX8UDSAEI-Saro-p8wOQ',
+        },
+        {
+            title: 'Dehd',
+            date: '2024-09-13',
+            time: '9:00 PM',
+            location: 'Foro Puebla',
+            image: 'imagesEventos/septiembre/dehd.png',
+            link: 'https://www.ticketmaster.com.mx/dehd-mexico-13-09-2024/event/3D0060E288CC17D9',
+        },
+        {
+            title: 'Enjambre',
+            date: '2024-09-14',
+            time: '8:00 PM',
+            location: 'Auditorio Nacional',
+            image: 'imagesEventos/septiembre/enjambre.png',
+            link: 'https://www.ticketmaster.com.mx/enjambre-ciudad-de-mexico-14-09-2024/event/3D00604FCB2F4774?language=en-mx'
+        },
+        {
+            title: 'NVSCVR',
+            date: '2024-09-14',
+            time: '9:00 PM',
+            location: 'Foro Alarcon',
+            image: 'imagesEventos/septiembre/nvscvr.png',
+            link: 'https://nvscvr-cdmx.boletia.com/'
+        },
+        {
+            title: 'Alvaro Diaz',
+            date: '2024-09-15',
+            time: '7:00 PM',
+            location: 'Auditorio Nacional',
+            image: 'imagesEventos/septiembre/alvaro.png',
+            link: 'https://www.ticketmaster.com.mx/alvaro-diaz-ciudad-de-mexico-15-09-2024/event/3D0060CD8C34095C?language=en-mx'
+        },
+        {
+            title: 'Austin TV',
+            date: '2024-09-19',
+            time: '8:00 PM',
+            location: 'Foro Alicia',
+            image: 'imagesEventos/septiembre/austin.png',
+            link: 'https://www.wegow.com/mx/conciertos/austin-tv-la-ultima-noche-del-mundo-19-septiembre'
+        },
+        {
+            title: 'Grupo Cañaveral',
+            date: '2024-09-19',
+            time: '8:00 PM',
+            location: 'Auditorio Nacional',
+            image: 'imagesEventos/septiembre/canaveral.png',
+            link: 'https://www.ticketmaster.com.mx/grupo-canaveral-de-humberto-pabon-en-concierto-ciudad-de-mexico-19-09-2024/event/3D005F44B2E725D3'
+        },
+        {
+            title: 'Metallica',
+            date: '2024-09-20',
+            time: '6:30 PM',
+            location: 'Estadio GNP Seguros',
+            image: 'imagesEventos/septiembre/metallica.png',
+            link: 'https://www.ticketmaster.com.mx/metallica-m72-world-tour-foro-sol-cdmx-20-09-2024/event/14005D76BEA832E9?language=en-mx'
+        },
+        {
+            title: 'Rawayana',
+            date: '2024-09-20',
+            time: '8:30 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/septiembre/rawayana.png',
+            link: 'https://www.ticketmaster.com.mx/rawayana-mexico-20-09-2024/event/1400607B8B7B08A3'
+        },
+        {
+            title: 'Travis Scott',
+            date: '2024-09-21',
+            time: '9:00 PM',
+            location: 'Explanada del Estadio Azteca',
+            image: 'imagesEventos/septiembre/travis.png',
+            link: ''
+        },
+        {
+            title: 'NSQK',
+            date: '2024-09-21',
+            time: '9:00 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/septiembre/nsqk.png',
+            link: 'https://www.ticketmaster.com.mx/nsqk-presenta-alter-ego-mexico-21-09-2024/event/140060A7EA1226BB?language=en-mx'
+        },
+        {
+            title: 'Niall Horan',
+            date: '2024-09-21',
+            time: '8:00 PM',
+            location: 'Palacio de los Deportes',
+            image: 'imagesEventos/septiembre/niall.png',
+            link: 'https://www.ticketmaster.com.mx/niall-horan-cdmx-21-09-2024/event/14005F51B34515B3?language=en-mx'
+        },
+        {
+            title: 'Plastilina Mosh',
+            date: '2024-09-21',
+            time: '8:30 PM',
+            location: 'Teatro Metropólitan',
+            image: 'imagesEventos/septiembre/plastilina.png',
+            link: 'https://www.ticketmaster.com.mx/plastilina-mosh-mexico-21-09-2024/event/140060EAAA401F5C?language=en-mx'
+        },
+        {
+            title: 'Axel Catalán',
+            date: '2024-09-21',
+            time: '8:00 PM',
+            location: 'Auditorio BB',
+            image: 'imagesEventos/septiembre/Catalan.png',
+            link: 'https://www.ticketmaster.com.mx/axel-catalan-mexico-21-09-2024/event/1400606B98A40BF5'
+        },
+        {
+            title: 'Fito Paez',
+            date: '2024-09-21',
+            time: '8:30 PM',
+            location: 'Auditorio Nacional',
+            image: 'imagesEventos/septiembre/fito.png',
+            link: 'https://www.ticketmaster.com.mx/fito-paez-ciudad-de-mexico-21-09-2024/event/3D006081A7CC1CC4'
+        },
+        {
+            title: 'Daniel Quien',
+            date: '2024-09-21',
+            time: '8:30 PM',
+            location: 'Teatro Ciudad de la Esperanza Iris',
+            image: 'imagesEventos/septiembre/daniel.png',
+            link: 'https://www.ticketmaster.com.mx/daniel-quien-de-este-sueno-no-me-despierto-mexico-21-09-2024/event/3D0060D3C4FD2FE0'
+        },
+        {
+            title: 'Matisse',
+            date: '2024-09-22',
+            time: '7:00 PM',
+            location: 'Auditorio Nacional',
+            image: 'imagesEventos/septiembre/matisse.png',
+            link: 'https://www.ticketmaster.com.mx/matisse-ciudad-de-mexico-22-09-2024/event/3D00608B93DF0C30'
+        },
+        {
+            title: 'NSQK',
             date: '',
             time: '',
             location: '',
