@@ -550,6 +550,14 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/kika-edgar-y-la-internacional-sonora-mexico-06-09-2024/event/1400608BA7A71268',
         },
         {
+            title: 'Justin Quiles',
+            date: '2024-09-06',
+            time: '7:00 PM',
+            location: 'Centro de Convenciones Tlatelolco',
+            image: 'imagesEventos/septiembre/quiles.png',
+            link: 'https://www.passline.com/eventos/justin-quiles-en-mexico',
+        },
+        {
             title: 'ARRE',
             date: '2024-09-07',
             time: '1:00 PM',
@@ -678,6 +686,14 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/la-castaneda-35-aniversario-mexico-13-09-2024/event/1400602997C20BB6?language=en-mx',
         },
         {
+            title: 'Renee',
+            date: '2024-09-13',
+            time: '7:00 PM',
+            location: 'Parker and Lenox',
+            image: 'imagesEventos/septiembre/renee.png',
+            link: 'https://www.passline.com/eventos/renee-residencia-13-de-septiembre',
+        },
+        {
             title: 'Delux',
             date: '2024-09-13',
             time: '8:30 PM',
@@ -724,6 +740,14 @@ const events = [
             location: 'Auditorio Nacional',
             image: 'imagesEventos/septiembre/alvaro.png',
             link: 'https://www.ticketmaster.com.mx/alvaro-diaz-ciudad-de-mexico-15-09-2024/event/3D0060CD8C34095C?language=en-mx'
+        },
+        {
+            title: 'Peso Pluma',
+            date: '2024-09-18',
+            time: '9:00 PM',
+            location: 'Palacio de los Deportes',
+            image: 'imagesEventos/septiembre/peso.png',
+            link: 'https://www.ticketmaster.com.mx/peso-pluma-cdmx-18-09-2024/event/140060EB974317EE?language=en-mx'
         },
         {
             title: 'Austin TV',
@@ -814,6 +838,14 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/daniel-quien-de-este-sueno-no-me-despierto-mexico-21-09-2024/event/3D0060D3C4FD2FE0'
         },
         {
+            title: 'Boris Brejcha',
+            date: '2024-09-22',
+            time: '10:00 PM',
+            location: 'Palacio de los Deportes',
+            image: 'imagesEventos/septiembre/boris.png',
+            link: 'https://www.ticketmaster.com.mx/boris-brejcha-cdmx-22-09-2024/event/140060EB921D174B'
+        },
+        {
             title: 'Matisse',
             date: '2024-09-22',
             time: '7:00 PM',
@@ -867,7 +899,15 @@ const events = [
             time: '8:30 PM',
             location: 'Teatro Metropólitan',
             image: 'imagesEventos/septiembre/danny.png',
-            link: 'https://www.ticketmaster.com.mx/fall-out-boy-mexico-25-09-2024/event/140060C3F1B51CF0'
+            link: 'https://www.ticketmaster.com.mx/dannylux-mexico-26-09-2024/event/1400605DA0F61443'
+        },
+        {
+            title: 'Insite + Thermo',
+            date: '2024-09-26',
+            time: '8:30 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/septiembre/insite.png',
+            link: 'https://www.ticketmaster.com.mx/insite-thermo-mexico-26-09-2024/event/1400608F99CB0AFD?language=en-mx'
         },
         {
             title: 'LSD & The Search for Go',
@@ -875,7 +915,7 @@ const events = [
             time: '7:00 PM',
             location: 'Foro Indie Rocks',
             image: 'imagesEventos/septiembre/lsd.png',
-            link: 'https://www.ticketmaster.com.mx/insite-thermo-mexico-26-09-2024/event/1400608F99CB0AFD?language=en-mx'
+            link: 'https://www.passline.com/eventos/lsd-the-search-for-god-ulrika-spacek'
         },
         {
             title: 'Jumbo',
