@@ -734,6 +734,14 @@ const events = [
             link: 'https://nvscvr-cdmx.boletia.com/'
         },
         {
+            title: 'Mc Davo',
+            date: '2024-09-14',
+            time: '8:30 PM',
+            location: 'Pabellon Oeste',
+            image: 'imagesEventos/septiembre/davo.png',
+            link: 'https://www.ticketmaster.com.mx/mc-davo-mexico-14-09-2024/event/140060F2E6BE2500?language=en-mx'
+        },
+        {
             title: 'Alvaro Diaz',
             date: '2024-09-15',
             time: '7:00 PM',
