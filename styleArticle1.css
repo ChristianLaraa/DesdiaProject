@@ -99,6 +99,7 @@ font-weight: 700;
 .icons #menu-icon,
 .icons #close-icon {
     font-size: 3.2rem;
+    color: black;
 }
 .icons #menu-icon:hover {
     color: #2AEC88;
@@ -155,7 +156,7 @@ font-weight: 700;
 }
 }  
 
-/* ------------------------- */
+/* Estilos generales */
 .container {
     max-width: 900px;
     margin: 20px auto;
@@ -167,8 +168,6 @@ font-weight: 700;
     font-family: Arial, sans-serif;
 }
 
-
-
 .main-image {
     width: 100%;
     border-radius: 5px;
@@ -179,7 +178,8 @@ font-weight: 700;
     padding: 20px;
     margin: 60px 0;
 }
-h1{
+
+h1 {
     font-size: 3.5em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 20px;
@@ -196,7 +196,7 @@ h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.6;
     margin-bottom: 15px;
-    text-align:  justify;
+    text-align: justify;
 }
 
 .new-section {
@@ -214,4 +214,76 @@ h1{
     width: 100%;
     border-radius: 5px;
     margin-top: 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 700px;
+        margin-top: 10rem;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+
+    .content p {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 600px;
+        margin-top: 8rem;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .content p {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        margin-top: 6rem;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .content p {
+        font-size: 1.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        margin-top: 7rem;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 10px;
+        margin: 30px 0;
+    }
+
+    .content p {
+        font-size: 2em;
+    }
+
+    .new-section {
+        padding: 10px;
+    }
 }

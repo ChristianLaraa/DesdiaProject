@@ -1,7 +1,9 @@
-@import url('https://fonts.cdnfonts.com/css/pp-neue-montreal');
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url(https://db.onlinewebfonts.com/c/214dd8afc399412820f14dd64245b5ba?family=Work+Sans);
+@import url(https://db.onlinewebfonts.com/c/65e36fdf4beb60e0deae894a1777a091?family=Zurich+Ultra+Black+Extended);
+@import url(https://db.onlinewebfonts.com/c/116af611cbcd9e4bada60b4e700430c1?family=Avenir+Light);
+@import url(https://db.onlinewebfonts.com/c/7aa69c481b407f30ed286cad3d58dcf2?family=Eina+03+W03+SemiBold);
+@import url(https://db.onlinewebfonts.com/c/be7d12601306f9f1b7aac9eca131fc8f?family=AkzidenzGrotesk);
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +19,7 @@ body {
 }
 
  /*Header y navbar, iconos y responsive, menu ------------------------- */
- .header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -78,7 +80,7 @@ font-weight: 700;
     transform: scale(1.1);
 }
 .navbar a.active{
-    color: rgb(244, 0, 0);
+    color: rgb(0, 102, 244);
     transform: scale(1.1);
 }
 #check {
@@ -96,7 +98,8 @@ font-weight: 700;
 
 .icons #menu-icon,
 .icons #close-icon {
-    font-size: 3.2rem;
+    color: black;
+    font-size: 3.5rem;
 }
 .icons #menu-icon:hover {
     color: #2AEC88;
@@ -139,7 +142,7 @@ font-weight: 700;
 }
 .navbar a {
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin: 1.5rem 0;
     text-align: center;
     transform: translateY(-50px);
@@ -155,23 +158,25 @@ font-weight: 700;
 
 main {
     display: grid;
-    grid-template-columns: 2.3fr 1fr;
+    grid-template-columns: 3fr 1fr; /* Ajusta el ancho de article y aside */
     gap: 20px;
-    max-width: auto;
+    max-width: 100%;
     width: 100%;
     padding: 40px;
     margin-top: 10rem;
 }
+
 article {
     border: 2px solid #ccc;
     padding: 10px;
 }
+
 article h1 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 10px;
-    margin-top: 4rem;;
-    font-family: 'Work Sans', sans-serif;
+    margin-top: 4rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 article img {
@@ -187,25 +192,6 @@ article p {
     padding: 20px;
     line-height: auto;
 }
-.rating {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.star {
-    font-size: 2rem;
-    cursor: pointer;
-    color: #ccc;
-    transition: color 0.3s;
-}
-
-.star:hover,
-.star.selected,
-.star.hover {
-    color: gold;
-}
-
 
 aside {
     text-align: center;
@@ -219,22 +205,98 @@ aside .magazine-cover {
     padding: 20px;
     text-align: center;
 }
+
 aside h2 {
     font-size: 2rem;
     margin-top: 2rem;
     padding: 7px;
     margin-bottom: 1rem;
 }
+
 aside p {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 8px;
     padding: 10px;
     line-height: auto;
-
 }
 
 aside img {
     max-width: 100%;
     height: auto;
+}
+
+/* Media queries para hacerlo responsive */
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: 2fr 1fr; /* Ajuste para pantallas medianas */
+    }
+
+    article h1 {
+        font-size: 2.5rem;
+    }
+
+    article p {
+        font-size: 1.6rem;
+    }
+
+    aside h2 {
+        font-size: 1.8rem;
+    }
+
+    aside p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
+    }
+
+    article {
+        order: 2; /* Mover article debajo de aside */
+    }
+
+    aside {
+        order: 1;
+    }
+
+    article h1 {
+        font-size: 2rem;
+    }
+
+    article p {
+        font-size: 1.4rem;
+    }
+
+    aside h2 {
+        font-size: 1.6rem;
+    }
+
+    aside p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 20px;
+    }
+
+    article h1 {
+        font-size: 1.8rem;
+    }
+
+    article p {
+        font-size: 1.2rem;
+    }
+
+    aside h2 {
+        font-size: 1.4rem;
+    }
+
+    aside p {
+        font-size: 1.1rem;
+    }
 }
