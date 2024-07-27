@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ME MUEVO CON DIOS</title>
+    <link rel="stylesheet" href="stylesResena1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hover.css/css/hover-min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+</head>
+<body>
+    <header class="header">
+        <a href = "MenuDesidia.html" class="logo" > DESIDIA mx </a>  <!-- Logo de DESIDIA mx POSTERIOREMENTE REMPLAZADO POR IMAGEN--> 
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navbar">  <!-- Barra de navegacion ELEMENTOS DEL MENU-->
+<a href="MenuDesidia.html" style="--i:0;" > Inicio </a>
+<a href="Resenas.html" style="--i:1;" class="active"> Reseñas </a>
+<a href="Recomendaciones.html" style="--i:3;""> Recomendaciones </a>
+<a href="Playlist.html" style="--i:2;" > Playlist </a>
+<a href="Eventos.html" style="--i:4;" > Eventos </a>
+</nav>
+    </header>
+    <main>
+        <article>
+            <h1>
+                Me Muevo Con Dios <br> Cruz Cafuné 
+            </h1>
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Officia totam ipsum laboriosam sit unde ipsam nesciunt, veritatis, temporibus, repudiandae accusantium repellendus adipisci dicta maiores assumenda tempora voluptatibus odio pariatur explicabo!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt enim minus repellendus, animi quae sed tempora,
+             praesentium accusamus illo quasi soluta debitis ducimus consequuntur magni explicabo recusandae maiores dolore!
+            
+            </p>
+        </article>
+        <aside>
+            <h2> </h2>
+            <div class="magazine-cover">
+                <img src="images/02mmcd.png" alt="">
+                <p>Su show más cercano</p>
+                <div class="framespotify">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7yvmtCjHcBe9DqIVl7AwQT?utm_source=generator" width="100%" height="852" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+           
+        </aside>
+    </main>
+    <div class="gallery-wrapper">
+        <div class="containerGallery" id="galleryContainer">
+            <div class="block block-1">
+                <h4>TrackList</h4>
+            </div>
+            <div class="block block-2">
+                <h4>Tour</h4>
+            </div>
+            <div class="block block-3">
+                <h4>Visuales</h4>
+            </div>
+            <div class="block block-4">
+                <h4>Inspiración</h4>
+            </div>
+            <div class="block block-5">
+                <h4>Proceso</h4>
+            </div>
+        </div>
+        <button class="scroll-btn prev" onclick="scrollGallery(-1)">
+            <span class="arrow-left"></span>
+          </button>
+          <button class="scroll-btn next" onclick="scrollGallery(1)">
+            <span class="arrow-right"></span>
+    </div>
+    <script src="resena1.js"></script>
+</body>
+</html>

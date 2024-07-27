@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://db.onlinewebfonts.com/c/67821e7ef9a2952d6e7757a6cae5a826?family=Novecento+WideBold');
+@import url(https://db.onlinewebfonts.com/c/65e36fdf4beb60e0deae894a1777a091?family=Zurich+Ultra+Black+Extended);
+@import url(https://db.onlinewebfonts.com/c/116af611cbcd9e4bada60b4e700430c1?family=Avenir+Light);
+@import url(https://db.onlinewebfonts.com/c/7aa69c481b407f30ed286cad3d58dcf2?family=Eina+03+W03+SemiBold);
+@import url(https://db.onlinewebfonts.com/c/be7d12601306f9f1b7aac9eca131fc8f?family=AkzidenzGrotesk);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", cursive;
+    font-size: xx-small;                                                                                                    
+}
+body {
+    min-height: 100vh;
+    /*background: url('backgroundProviDesidia.png') no-repeat center center fixed; */
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+}
+
+ /*Header y navbar, iconos y responsive, menu ------------------------- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6.8rem;
+    padding: 1.5rem 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header * {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1); 
+    backdrop-filter: blur(25px); 
+    z-index: -1;
+}
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .5s;
+}
+.header:hover::after {
+    left: 100%;
+}
+.logo {
+font-size: 2rem;
+color: rgb(0, 0, 0); 
+text-decoration: none;
+font-weight: 700;
+}
+.logo:hover {
+    color: #2AEC88;
+    transform: scale(1.1);
+}
+.navbar a {
+    font-size: 2rem;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+.navbar a:hover {
+    color: #2AEC88;
+    transform: scale(1.1);
+}
+.navbar a.active{
+    color: rgb(255, 94, 0);
+    transform: scale(1.1);
+}
+#check {
+    display: none;
+}
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+/*BREAKPOINTS*/
+
+.icons #menu-icon,
+.icons #close-icon {
+    color: black;
+    font-size: 3.5rem;
+}
+.icons #menu-icon:hover {
+    color: #2AEC88;
+}
+.icons #close-icon:hover {
+    color: #2AEC88;
+}
+@media (max-width: 992px){
+.header {
+    padding: 1.3rem 5%;
+}
+}
+@media (max-width: 768px) {
+.icons {
+    display: inline-flex;
+}
+#check:checked~.icons #menu-icon {
+    display: none;
+}
+.icons #close-icon {    
+    display: none;
+}
+#check:checked~.icons #close-icon {
+    display: block;
+}
+.navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    overflow: hidden;
+    transition: .3s ease;
+}
+#check:checked~.navbar {
+    height: 17.7rem;
+}
+.navbar a {
+    display: block;
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: .3s ease;
+}
+#check:checked ~ .navbar a {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(.15s * var(--i));
+}
+}  
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Ajusta el ancho de article y aside */
+    gap: 20px;
+    max-width: 100%;
+    width: 100%;
+    padding: 40px;
+    margin-top: 10rem;
+}
+
+article {
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+article h1 {
+    font-size: 6rem;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 4rem;
+    font-family: 'Novecento WideBold';
+}
+
+.imgTitle {
+    margin-left: 10px;
+    width: 180px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+article p {
+    font-size: 1.8rem;
+    text-align: justify;
+    margin-bottom: 8px;
+    padding: 20px;
+    line-height: auto;
+}
+
+aside {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside .magazine-cover {
+    border: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+aside h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 7px;
+    margin-bottom: 1rem;
+}
+
+aside p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 10px;
+    line-height: auto;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Media queries para hacerlo responsive */
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: 2fr 1fr; /* Ajuste para pantallas medianas */
+    }
+
+    article h1 {
+        font-size: 2.5rem;
+    }
+
+    article p {
+        font-size: 1.6rem;
+    }
+
+    aside h2 {
+        font-size: 1.8rem;
+    }
+
+    aside p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
+    }
+
+    article {
+        order: 2; /* Mover article debajo de aside */
+    }
+
+    aside {
+        order: 1;
+    }
+
+    article h1 {
+        font-size: 2rem;
+    }
+
+    article p {
+        font-size: 1.4rem;
+    }
+
+    aside h2 {
+        font-size: 1.6rem;
+    }
+
+    aside p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 20px;
+    }
+
+    article h1 {
+        font-size: 1.8rem;
+    }
+
+    article p {
+        font-size: 1.2rem;
+    }
+
+    aside h2 {
+        font-size: 1.4rem;
+    }
+
+    aside p {
+        font-size: 1.1rem;
+    }
+}
+.gallery-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 460px; /* Ajusta la altura según tus necesidades */
+    margin-top: 17rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+.containerGallery {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 100%;
+    margin-right: 2rem;
+}
+
+.block {
+    flex: 0 0 auto;
+    position: relative;
+    width: 580px;
+    height: 460px;
+    margin: 10px 20px; /* Ajusta los márgenes según tus necesidades */
+}
+
+.block h4 {
+    position: flex;
+    font-family: "Novecento WideBold";
+    font-weight: lighter;
+    font-size: 60px;
+    color: #fff;
+    bottom: 0;
+    right: 0; /* Ajusta la posición del texto según tus necesidades */
+}
+
+.block-1 {
+    background: url(images/mmcd/tracklist.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-2 {
+    background: url(images/mmcd/tourCon.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-3 {
+    background: url(images/mmcd/visuales.gif) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-4 {
+    background: url(images/mmcd/inspiracion.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-5 {
+    background: url(images/mmcd/inspiracion.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    margin-right: 2rem;
+    transition: background-color 0.3s ease;
+}
+.scroll-btn:hover {
+    background-color: #555;
+}
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transition: border-width 0.3s ease, transform 0.3s ease;
+    
+}
+
+.arrow-left {
+    border-width: 15px 0 15px 25px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.arrow-right {
+    border-width: 15px 25px 15px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.scroll-btn.prev .arrow-left {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.scroll-btn.next .arrow-right {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
