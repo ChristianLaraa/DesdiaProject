@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://db.onlinewebfonts.com/c/67821e7ef9a2952d6e7757a6cae5a826?family=Novecento+WideBold');
 @import url(https://db.onlinewebfonts.com/c/65e36fdf4beb60e0deae894a1777a091?family=Zurich+Ultra+Black+Extended);
 @import url(https://db.onlinewebfonts.com/c/116af611cbcd9e4bada60b4e700430c1?family=Avenir+Light);
 @import url(https://db.onlinewebfonts.com/c/7aa69c481b407f30ed286cad3d58dcf2?family=Eina+03+W03+SemiBold);
@@ -165,7 +166,8 @@ font-weight: 700;
     transform: scale(1.1);
 }
 .navbar a {
-    font-size: 2rem;
+    font-family: 'Novecento WideBold';
+    font-size: 1.65rem;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
