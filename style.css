@@ -156,10 +156,10 @@ body {
     left: 100%;
 }
 .logo {
-font-size: 2rem;
-color: rgb(255, 255, 255); 
-text-decoration: none;
-font-weight: 700;
+    font-size: 2rem;
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+    font-weight: 700;
 }
 .logo:hover {
     color: #2AEC88;
@@ -167,7 +167,7 @@ font-weight: 700;
 }
 .navbar a {
     font-family: 'Novecento WideBold';
-    font-size: 1.65rem;
+    font-size: 1.5rem;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
@@ -177,9 +177,13 @@ font-weight: 700;
     color: #2AEC88;
     transform: scale(1.1);
 }
-.navbar a.active{
+.navbar a.active {
     color: rgb(88, 183, 255);
     transform: scale(1.1);
+}
+.header .navbar a i {
+    padding: 0 0.3rem;
+    font-size: 1.7rem;
 }
 #check {
     display: none;
@@ -192,8 +196,6 @@ font-weight: 700;
     cursor: pointer;
     display: none;
 }
-/*BREAKPOINTS*/
-
 .icons #menu-icon,
 .icons #close-icon {
     font-size: 3.2rem;
@@ -204,6 +206,7 @@ font-weight: 700;
 .icons #close-icon:hover {
     color: #2AEC88;
 }
+/*BREAKPOINTS*/
 @media (max-width: 992px){
 .header {
     padding: 1.3rem 5%;
@@ -235,11 +238,11 @@ font-weight: 700;
     transition: .3s ease;
 }
 #check:checked~.navbar {
-    height: 17.7rem;
+    height: 22.7rem;
 }
 .navbar a {
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     margin: 1.5rem 0;
     text-align: center;
     transform: translateY(-50px);
@@ -251,7 +254,12 @@ font-weight: 700;
     opacity: 1;
     transition-delay: calc(.15s * var(--i));
 }
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+.navbar a i {
+    display: block;
+    font-size: 2rem;
+}
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 /* Primer slider novedades ------------------------------------ */
 .slider {
     height: 115vh;
