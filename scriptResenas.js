@@ -368,7 +368,7 @@ function runSmallScreenAnimations() {
         const viewportHeight = window.innerHeight;
         const positions = [];
         const imgWidth = 75;
-        const imgHeight = 100;
+        const imgHeight = 80;
         const margin = 30;
 
         const numCols = Math.floor(viewportWidth / (imgWidth + margin));
