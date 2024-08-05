@@ -1039,6 +1039,14 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/idles-love-is-the-fing-tour-mexico-04-10-2024/event/14005F76837C0F03',
         },
         {
+            title: 'Sama Abdulhadi',
+            date: '2024-10-04',
+            time: '10:00 PM',
+            location: 'Foro Supremo',
+            image: 'imagesEventos/octubre/sama.png',
+            link: 'https://sama-abdulhadi-cdmx.boletia.com/',
+        },
+        {
             title: 'La Gusana Ciega',
             date: '2024-10-04',
             time: '8:30 PM',
@@ -1069,6 +1077,14 @@ const events = [
             location: 'Estadio GNP Seguros',
             image: 'imagesEventos/octubre/killers.png',
             link: 'https://www.ticketmaster.com.mx/the-killers-cdmx-05-10-2024/event/1400608CB17A17E7',
+        },
+        {
+            title: 'Leon Leiden',
+            date: '2024-10-05',
+            time: '9:00 PM',
+            location: 'Foro Supremo',
+            image: 'imagesEventos/octubre/leiden.png',
+            link: 'https://leon-leiden-cdmx.boletia.com/',
         },
         {
             title: 'Los Bitchos',
@@ -1215,12 +1231,28 @@ const events = [
             link: 'https://www.passline.com/eventos/crack-cloud-live',
         },
         {
+            title: 'Ambar Lucid',
+            date: '2024-10-11',
+            time: '8:30 PM',
+            location: 'Foro Puebla',
+            image: 'imagesEventos/octubre/ambar.png',
+            link: 'https://ambar-lucid.boletia.com/',
+        },
+        {
             title: 'Columpio Asesino',
             date: '2024-10-11',
             time: '8:30 PM',
             location: 'Fronton Mexico',
             image: 'imagesEventos/octubre/columpio.png',
             link: 'https://www.ticketmaster.com.mx/el-columpio-asesino-ciudad-de-mexico-11-10-2024/event/3D0060B406EA4675',
+        },
+        {
+            title: 'Muerdo',
+            date: '2024-10-11',
+            time: '8:00 PM',
+            location: 'Teatro de la Ciudad Esperanza Iris',
+            image: 'imagesEventos/octubre/muerdo.png',
+            link: 'https://www.ticketmaster.com.mx/muerdo-presenta-sinverguenza-mexico-11-10-2024/event/3D0060D1B0EA2085',
         },
         {
             title: 'Princesa Alba',
@@ -1253,6 +1285,14 @@ const events = [
             location: 'La Maraka',
             image: 'imagesEventos/octubre/kabah.png',
             link: 'https://www.ticketmaster.com.mx/kabah-mexico-12-10-2024/event/3D0060CCE2A33325',
+        },
+        {
+            title: 'Rojuu',
+            date: '2024-10-13',
+            time: '8:00 PM',
+            location: 'Carpa Velodromo',
+            image: 'imagesEventos/octubre/rojuu.png',
+            link: 'https://www.ticketmaster.com.mx/rojuu-en-ciudad-de-mexico-cdmx-13-10-2024/event/3D0060C3B16F12A8',
         },
         {
             title: 'S7N',
@@ -1319,6 +1359,14 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/carlos-sadness-ciudad-de-mexico-16-10-2024/event/3D00605CC1AB4A5A',
         },
         {
+            title: 'Jesse & Joy',
+            date: '2024-10-17',
+            time: '8:30 PM',
+            location: ' Auditorio Nacional',
+            image: 'imagesEventos/octubre/jesejoy.png',
+            link: 'https://www.ticketmaster.com.mx/jesse-joy-ciudad-de-mexico-17-10-2024/event/3D0060D2A3241D60',
+        },
+        {
             title: 'Mother Mother',
             date: '2024-10-18',
             time: '8:00 PM',
@@ -1365,6 +1413,14 @@ const events = [
             location: 'Auditorio Nacional',
             image: 'imagesEventos/octubre/paty.png',
             link: 'https://www.ticketmaster.com.mx/paty-cantu-ciudad-de-mexico-19-10-2024/event/3D0060A8B6BC1EF4',
+        },
+        {
+            title: 'Elefantes',
+            date: '2024-10-19',
+            time: '9:00 PM',
+            location: 'Lunario del Auditorio Nacional',
+            image: 'imagesEventos/octubre/elefantes.png',
+            link: 'https://www.ticketmaster.com.mx/elefantes-gira-30-aniversario-ciudad-de-mexico-19-10-2024/event/3D006064E3211A9A',
         },
         {
             title: 'Eden Muñoz',
@@ -1493,14 +1549,6 @@ const events = [
             location: 'Auditorio BB',
             image: 'imagesEventos/octubre/drake.png',
             link: 'https://eventosencdmx.com/eventos/drake-bell-en-el-auditorio-bb/',
-        },
-        {
-            title: 'Drake Bell',
-            date: '2024-10-27',
-            time: '8:00 PM',
-            location: 'Auditorio BB',
-            image: 'imagesEventos/octubre/drake.png',
-            link: 'https://drake-bell.boletia.com/',
         },
         {
             title: 'Fer Soberón',
