@@ -16,7 +16,6 @@
 }
 body {
     min-height: 100vh;
-    /*background: url('backgroundProviDesidia.png') no-repeat center center fixed; */
     background-color: #000000;
     background-size: cover;
 }
@@ -121,7 +120,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 6.8rem;
+    height: 7.7rem;
     padding: 1.5rem 6%;
     display: flex;
     justify-content: space-between;
@@ -669,7 +668,6 @@ background-image: url('images/mexa.webp') ;
 }
 
 .card h2{
-    padding: 6px;
     font-family: 'Novecento WideBold'; 
     font-size: 2.2rem; 
     text-align: center;
@@ -678,8 +676,8 @@ background-image: url('images/mexa.webp') ;
 }
 .card p {
     padding: 1.5rem;
-    font-family: 'Avenir Light';
-    font-size: 1.7rem; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem; 
     text-align: center;
     line-height: 1.5;
     letter-spacing: 0.2px;
@@ -1044,5 +1042,8 @@ ion-icon {
     }
     .image-section img {
         display: flex;
+    }
+    .image-section img {
+        display: none;
     }
 }
