@@ -2236,17 +2236,271 @@ const events = [
             image: 'imagesEventos/noviembre/sangre.png',
             link: 'https://www.ticketmaster.com.mx/event/14006065EF4E1F49?fbclid=IwZXh0bgNhZW0CMTAAAR19DwAqWrrM3tIqZPr0k7mbI3F5K9VcjEsx5IAFE1Y57tr2US8hF69h88I_aem_GkMIW7GmscV8i637qXxlGQ',
         },
-
-
+            //Diciembre
         {
-            title: 'NSQK',
-            date: '',
-            time: '',
-            location: '',
-            image: '',
-            link: '',
+            title: 'División Minúscula',
+            date: '2024-12-01',
+            time: '8:00 PM',
+            location: 'Auditorio Nacional',
+            image: 'imagesEventos/diciembre/division.png',
+            link: 'https://www.ticketmaster.com.mx/divisin-minscula-ciudad-de-mexico-01-12-2024/event/3D00603F8600394A'
         },
-      // Agrega más eventos según sea necesario
+        {
+            title: 'Rubio',
+            date: '2024-12-04',
+            time: '9:00 PM',
+            location: 'Lunario del Auditorio Nacional',
+            image: 'imagesEventos/diciembre/rubio.png',
+            link: 'https://www.ticketmaster.com.mx/rubio-venusblue-tour-2024-ciudad-de-mexico-04-12-2024/event/3D006090A4AF191A'
+        },
+        {
+            title: 'The Pineapple Thief',
+            date: '2024-12-05',
+            time: '9:30 PM',
+            location: 'Auditorio BB',
+            image: 'imagesEventos/diciembre/pinapple.png',
+            link: 'https://www.passline.com/eventos-plano/the-pineapple-thief-en-cdmx'
+        },
+        {
+            title: 'Leiden',
+            date: '2024-12-05',
+            time: '8:00 PM',
+            location: 'Teatro de la Ciudad Esperanza Iris',
+            image: 'imagesEventos/diciembre/leiden.png',
+            link: 'https://www.ticketmaster.com.mx/leiden-mexico-05-12-2024/event/3D0060E89FC40C95'
+        },
+        {
+            title: 'Tokio Hotel',
+            date: '2024-12-06',
+            time: '7:00 PM',
+            location: 'Velodromo Olimpico',
+            image: 'imagesEventos/diciembre/tokio.png',
+            link: 'https://tokio-hotel.boletia.com/'
+        },
+        {
+            title: 'Descendents y Circle Jerks',
+            date: '2024-12-06',
+            time: '8:30 PM',
+            location: 'Pabellon Oeste',
+            image: 'imagesEventos/diciembre/descent.png',
+            link: 'https://www.ticketmaster.com.mx/descendents-circle-jerks-mexico-06-12-2024/event/140060B0B0E82782'
+        },
+        {
+            title: 'Lupita D´Alessio',
+            date: '2024-12-06',
+            time: '9:00 PM',
+            location: 'Arena CDMX',
+            image: 'imagesEventos/diciembre/lupita.png',
+            link: 'https://www.superboletos.com/landing-evento/Ie06YJvEnjre0cItDKxk3Q'
+        },
+        {
+            title: 'Epica y Orquesta',
+            date: '2024-12-07',
+            time: '8:00 PM',
+            location: 'Auditorio Nacional',
+            image: 'imagesEventos/diciembre/epica.png',
+            link: 'https://www.eticket.mx/masinformacion.aspx?idevento=31583'
+        },
+        {
+            title: 'BLNKO',
+            date: '2024-12-07',
+            time: '6:00 PM',
+            location: 'Fronton México',
+            image: 'imagesEventos/diciembre/blnko.png',
+            link: 'https://fronticket.passline.com/sitio-evento/blnko'
+        },
+        {
+            title: 'Carín León',
+            date: '2024-12-07',
+            time: '9:30 PM',
+            location: 'Estadio GNP Seguros',
+            image: 'imagesEventos/diciembre/carin.png',
+            link: 'https://www.ticketmaster.com.mx/carin-leon-cdmx-07-12-2024/event/1400610CC0B42770'
+        },
+        {
+            title: 'DREAM THEATER ',
+            date: '2024-12-07',
+            time: '8:00 PM',
+            location: 'Explanada del Estadio Azteca',
+            image: 'imagesEventos/diciembre/dream.png',
+            link: 'https://funticket.mx/evento/dream-theater-24/'
+        },
+        {
+            title: 'Marca Registrada',
+            date: '2024-12-07',
+            time: '9:00 PM',
+            location: 'Plaza de Toros La Mexico',
+            image: 'imagesEventos/diciembre/marca.png',
+            link: 'https://www.superboletos.com/landing-evento/W-Dk-gwclg_Fn2Srp2dBBA'
+        },
+        {
+            title: 'Caifanes',
+            date: '2024-12-07',
+            time: '9:00 PM',
+            location: 'Palacio de los Deportes',
+            image: 'imagesEventos/diciembre/caifanes.png',
+            link: 'https://www.ticketmaster.com.mx/caifanes-mexico-07-12-2024/event/14006024B47411F2'
+        },
+        {
+            title: 'VENOM / WARBRINGER',
+            date: '2024-12-07',
+            time: '6:00 PM',
+            location: 'Circo Volador',
+            image: 'imagesEventos/diciembre/venom.png',
+            link: 'https://eventos.ticketnowmexico.com/orderticketsarea.asp?p=1963&a=1633&src=&_ga=GA1.1.615150698.1720313278'
+        },
+        {
+            title: 'Softcult',
+            date: '2024-12-07',
+            time: '9:00 PM',
+            location: 'Foro La Paz',
+            image: 'imagesEventos/diciembre/softcult.png',
+            link: 'https://softcult-en-cdmx.boletia.com/'
+        },
+        {
+            title: 'Barney Gombo',
+            date: '2024-12-08',
+            time: '6:45 PM',
+            location: 'Lunario del Auditorio Nacional',
+            image: 'imagesEventos/diciembre/barney.png',
+            link: 'https://www.ticketmaster.com.mx/barney-gombo-ciudad-de-mexico-08-12-2024/event/3D00609DB3693817'
+        },
+        {
+            title: 'Arcano',
+            date: '2024-12-10',
+            time: '8:35 PM',
+            location: 'Auditorio Nacional',
+            image: 'imagesEventos/diciembre/arcano.png',
+            link: 'https://www.ticketmaster.com.mx/arcano-tour-2024-ciudad-de-mexico-10-12-2024/event/3D0060759F2518D7'
+        },
+        {
+            title: 'Benny y Aleks Syntek',
+            date: '2024-12-11',
+            time: '8:30 PM',
+            location: 'La Maraka',
+            image: 'imagesEventos/diciembre/aleks.png',
+            link: 'https://lamaraka.com.mx/evento/benny-y-aleks-syntek'
+        },
+        {
+            title: 'Arch Enemy',
+            date: '2024-12-11',
+            time: '8:30 PM',
+            location: 'Circo Volador',
+            image: 'imagesEventos/diciembre/arch.png',
+            link: 'https://www.superboletos.com/landing-evento/RPofV2k8baawLk-xQRH4CQ'
+        },
+        {
+            title: 'Buena Vista All Stars',
+            date: '2024-12-11',
+            time: '8:30 PM',
+            location: 'Auditorio Nacional',
+            image: 'imagesEventos/diciembre/noche.png',
+            link: 'https://www.ticketmaster.com.mx/buena-vista-all-stars-una-noche-ciudad-de-mexico-11-12-2024/event/3D0060C5B81A16A4'
+        },
+        {
+            title: 'Leonel Garcia',
+            date: '2024-12-12',
+            time: '8:30 PM',
+            location: 'Auditorio Nacional',
+            image: 'imagesEventos/diciembre/leonel.png',
+            link: 'https://www.ticketmaster.com.mx/leonel-garcia-ciudad-de-mexico-12-12-2024/event/3D006083BE58303E'
+        },
+        {
+            title: 'Morat',
+            date: '2024-12-13',
+            time: '8:30 PM',
+            location: 'Estadio GNP Seguros',
+            image: 'imagesEventos/diciembre/morat.png',
+            link: 'https://www.ticketmaster.com.mx/morat-mexico-13-12-2024/event/14006042FEF0361A?referrer=https%3A%2F%2Fwww.ticketmaster.com.mx%2Fmorat-boletos%2Fartist%2F2261438'
+        },
+        {
+            title: 'Reik',
+            date: '2024-12-13',
+            time: '9:00 PM',
+            location: 'Arena CDMX',
+            image: 'imagesEventos/diciembre/reik.png',
+            link: 'https://www.superboletos.com/landing-evento/ntzbffCvX-ZjZ3q2bZ--9w'
+        },
+        {
+            title: 'Bring Me the Horizon',
+            date: '2024-12-14',
+            time: '5:00 PM',
+            location: 'Explanada del Estadio Azteca',
+            image: 'imagesEventos/diciembre/bring.png',
+            link: 'https://boletos.funticket.mx/boletos5/public/janto/main.php?Nivel=Evento&idEvento=BMTH24&fbclid=IwZXh0bgNhZW0CMTAAAR22gUtVUHlJca3UqCxKsr_emtMzbAO8fZW2es9Un45WNNJsdbZKZghvam4_aem_ZmFrZWR1bW15MTZieXRlcw'
+        },
+        {
+            title: 'Lenny Kravitz',
+            date: '2024-12-14',
+            time: '8:30 PM',
+            location: 'Palacio de los Deportes',
+            image: 'imagesEventos/diciembre/lenny.png',
+            link: 'https://www.ticketmaster.com.mx/lenny-kravitz-cdmx-14-12-2024/event/140060CE8F380D94'
+        },
+        {
+            title: 'Danny Frank',
+            date: '2024-12-14',
+            time: '8:00 PM',
+            location: 'Teatro Metropolitan',
+            image: 'imagesEventos/diciembre/danny.png',
+            link: 'https://www.ticketmaster.com.mx/danny-frank-esencia-mexico-14-12-2024/event/140060838BB00CAD'
+        },
+        {
+            title: 'Banda MS',
+            date: '2024-12-14',
+            time: '9:00 PM',
+            location: 'Arena CDMX',
+            image: 'imagesEventos/diciembre/ms.png',
+            link: 'https://www.superboletos.com/landing-evento/YWhlQ576X9RkxotS-Bf1cg'
+        },
+        {
+            title: 'SARAH BRIGHTMAN',
+            date: '2024-12-18',
+            time: '9:00 PM',
+            location: 'Arena CDMX',
+            image: 'imagesEventos/diciembre/sarah.png',
+            link: 'https://www.superboletos.com/landing-evento/6bZ3Ld2OHPuKc-ohAj95nQ'
+        },
+        {
+            title: 'ERLEND OYE Y LA COMITIVA',
+            date: '2024-12-19',
+            time: '9:00 PM',
+            location: 'Auditorio BB',
+            image: 'imagesEventos/diciembre/lend.png',
+            link: 'https://erlend-oye-la-comitiva-en-cdmx.boletia.com/'
+        },
+        {
+            title: 'Jinjer',
+            date: '2024-12-20',
+            time: '8:30 PM',
+            location: 'Circo Volador',
+            image: 'imagesEventos/diciembre/jinjer.png',
+            link: 'https://www.superboletos.com/landing-evento/mQEVyuVxIRRGz67pzeQAUw'
+        },
+        {
+            title: 'Orquesta La Típica',
+            date: '2024-12-20',
+            time: '9:00 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/diciembre/tipica.png',
+            link: 'https://www.ticketmaster.com.mx/internacional-orquesta-la-tipica-mexico-20-12-2024/event/140060D89A2619E1?fbclid=IwY2xjawEjhfNleHRuA2FlbQIxMAABHecCIGVJzZppQvjlWyqM8t4QXsx34LDOWrAlqLp5r_3slZYGRIzgK3kCQw_aem_iSWWbafnHVgvrqE2eh32jg'
+        },
+        {
+            title: 'Los Temerarios',
+            date: '2024-12-20',
+            time: '8:30 PM',
+            location: 'Estadio GNP Seguros',
+            image: 'imagesEventos/diciembre/temerarios.png',
+            link: 'https://www.ticketmaster.com.mx/los-temerarios-cdmx-20-12-2024/event/14006117AA4E153B?language=en-mx'
+        },
+        {
+            title: 'The White Buffalo',
+            date: '2024-12-21',
+            time: '7:00 PM',
+            location: 'Foro Indie Rocks',
+            image: 'imagesEventos/diciembre/buffalo.png',
+            link: 'https://www.passline.com/eventos/the-white-buffalo-en-ciudad-de-mexico'
+        },
 ];
     
     const calendar = document.getElementById('calendar');
