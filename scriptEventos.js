@@ -926,6 +926,14 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/dannylux-mexico-26-09-2024/event/1400605DA0F61443'
         },
         {
+            title: 'Paulo Londra',
+            date: '2024-09-26',
+            time: '8:30 PM',
+            location: 'Foro Puebla',
+            image: 'imagesEventos/septiembre/paulo.png',
+            link: 'https://www.ticketmaster.com.mx/paulo-londra-mexico-26-09-2024/event/3D006122EFC02B67?language=en-mx'
+        },
+        {
             title: 'Insite + Thermo',
             date: '2024-09-26',
             time: '8:30 PM',
@@ -972,6 +980,14 @@ const events = [
             location: 'Teatro Metropólitan',
             image: 'imagesEventos/septiembre/bratty.png',
             link: 'https://www.ticketmaster.com.mx/bratty-mexico-28-09-2024/event/140060990DDE2F55?language=en-mx'
+        },
+        {
+            title: 'Paulo Londra',
+            date: '2024-09-28',
+            time: '9:00 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/septiembre/paulopepsi.png',
+            link: 'https://www.ticketmaster.com.mx/paulo-londra-mexico-28-09-2024/event/14006122E8E622A1?language=en-mx'
         },
         {
             title: 'Dillom',
@@ -1234,6 +1250,14 @@ const events = [
             link: 'https://www.passline.com/eventos/hinds',
         },
         {
+            title: 'Peces Raros',
+            date: '2024-10-09',
+            time: '8:30 PM',
+            location: 'Fronton Mexico',
+            image: 'imagesEventos/octubre/peces.png',
+            link: 'https://www.ticketmaster.com.mx/peces-raros-ciudad-de-mexico-09-10-2024/event/3D00610CB2A71825',
+        },
+        {
             title: 'The National y The War on Drugs',
             date: '2024-10-10',
             time: '8:00 PM',
@@ -1319,7 +1343,15 @@ const events = [
             time: '9:00 PM',
             location: 'Plaza de Toros México',
             image: 'imagesEventos/octubre/fuerza.png',
-            link: 'https://eventosencdmx.com/eventos/fuerza-regida-en-concierto/',
+            link: 'https://www.ticketmaster.com.mx/fuerza-regida-tickets/artist/2499958?utm_source=TM-google&gad_source=1&gclid=CjwKCAjw6JS3BhBAEiwAO9waF8wuky68SSUPqkItCKE396KUABl7myJqdrbtucpnNLREReqL41g3tBoC3IsQAvD_BwE',
+        },
+        {
+            title: 'Party 101',
+            date: '2024-10-12',
+            time: '8:00 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/octubre/party.png',
+            link: 'https://www.ticketmaster.com.mx/party-101-mexico-12-10-2024/event/1400610703793295?language=en-mx',
         },
         {
             title: 'Good Kid',
@@ -1442,6 +1474,14 @@ const events = [
             link: 'https://www.superboletos.com/landing-evento/G3Nx1VTAUo_oIHPSomsD5Q',
         },
         {
+            title: 'HalloWiplash',
+            date: '2024-10-18',
+            time: '8:30 PM',
+            location: 'Foro Puebla',
+            image: 'imagesEventos/octubre/hallo.png',
+            link: 'https://www.ticketmaster.com.mx/hallowiplash-mexico-18-10-2024/event/3D006102B8DF425E',
+        },
+        {
             title: 'Alfie Templeman',
             date: '2024-10-19',
             time: '8:00 PM',
@@ -1456,6 +1496,14 @@ const events = [
             location: 'Foro Puebla',
             image: 'imagesEventos/octubre/yard.png',
             link: 'https://www.ticketmaster.com.mx/yard-act-mexico-19-10-2024/event/3D00603D810C28C2',
+        },
+        {
+            title: 'El Sonido Live / KEXP',
+            date: '2024-10-19',
+            time: '7:00 PM',
+            location: 'Foro Indie Rock',
+            image: 'imagesEventos/octubre/sonido.png',
+            link: 'https://www.ticketmaster.com.mx/el-sonido-live-kexp-mexico-19-10-2024/event/3D00610CE4192DE5',
         },
         {
             title: 'Poolside',
@@ -1538,6 +1586,14 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/mon-laferte-ciudad-de-mexico-23-10-2024/event/3D006084FD9E4CD2',
         },
         {
+            title: 'Juan Luis Guerra',
+            date: '2024-10-23',
+            time: '9:00 PM',
+            location: 'Palacio de los Deportes',
+            image: 'imagesEventos/octubre/guerra.png',
+            link: 'https://www.ticketmaster.com.mx/juan-luis-guerra-cdmx-23-10-2024/event/1400611CEAAC29F7',
+        },
+        {
             title: 'Infected Rain',
             date: '2024-10-24',
             time: '8:30 PM',
@@ -1568,6 +1624,14 @@ const events = [
             location: 'Plaza de Toros Mexico',
             image: 'imagesEventos/octubre/alejandro.png',
             link: 'https://www.ticketmaster.com.mx/alejandro-fernandez-de-rey-a-rey-mexico-25-10-2024/event/3D0060B681B30804',
+        },
+        {
+            title: 'Eme Malafe',
+            date: '2024-10-25',
+            time: '9:00 PM',
+            location: 'Foro Puebla',
+            image: 'imagesEventos/octubre/eme.png',
+            link: 'https://www.ticketmaster.com.mx/eme-malafe-santos-tour-2024-mexico-25-10-2024/event/3D006085B3603137',
         },
         {
             title: 'Manuel Medrano',
@@ -1616,6 +1680,14 @@ const events = [
             location: 'Auditorio Nacional',
             image: 'imagesEventos/octubre/nathy.png',
             link: 'https://www.ticketmaster.com.mx/nathy-peluso-ciudad-de-mexico-27-10-2024/event/3D0060CBB2E81F0C',
+        },
+        {
+            title: 'Camilo Septimo',
+            date: '2024-10-27',
+            time: '5:00 PM',
+            location: 'Lunario del Auditorio Nacional',
+            image: 'imagesEventos/octubre/septi.png',
+            link: 'https://www.ticketmaster.com.mx/camilo-septimo-ciudad-de-mexico-27-10-2024/event/3D0060F3A9E91FC1?language=en-mx',
         },
         {
             title: 'Drake Bell',
@@ -1693,12 +1765,28 @@ const events = [
             link: 'https://www.ticketmaster.com.mx/aurora-what-happened-to-the-earth-cdmx-02-11-2024/event/140060B898DD0F71?language=en-mx',
         },
         {
+            title: 'Florian',
+            date: '2024-11-02',
+            time: '9:00 PM',
+            location: 'Foro Indie Rocks',
+            image: 'imagesEventos/noviembre/florian.png',
+            link: 'https://www.ticketmaster.com.mx/florian-mexico-02-11-2024/event/3D00610EA8161716',
+        },
+        {
             title: 'Millennium Parade',
             date: '2024-11-02',
             time: '8:00 PM',
             location: 'Lunario del Auditorio Nacional',
             image: 'imagesEventos/noviembre/millenium.png',
             link: 'https://www.ticketmaster.com.mx/millennium-parade-who-and-how-tour-ciudad-de-mexico-02-11-2024/event/3D0060CC9DB917DC',
+        },
+        {
+            title: 'John Summit',
+            date: '2024-11-02',
+            time: '9:00 PM',
+            location: 'Pepsi Center WTC',
+            image: 'imagesEventos/noviembre/summit.png',
+            link: 'https://www.ticketmaster.com.mx/john-summit-mexico-02-11-2024/event/14006122F332248B',
         },
         {
             title: 'Los Cafres',
@@ -1755,6 +1843,14 @@ const events = [
             location: 'Arena CDMX',
             image: 'imagesEventos/noviembre/amon.png',
             link: 'https://www.superboletos.com/landing-evento/DVtBdNioe5kTSJv0nV4s9w',
+        },
+        {
+            title: 'AirBag',
+            date: '2024-11-06',
+            time: '8:30 PM',
+            location: 'Lunario del Auditorio Nacional',
+            image: 'imagesEventos/noviembre/airbag.png',
+            link: 'https://www.ticketmaster.com.mx/airbag-ciudad-de-mexico-06-11-2024/event/3D006122C24E1C87?language=en-mx',
         },
         {
             title: 'Hania Rani',
@@ -1917,6 +2013,22 @@ const events = [
             link: 'https://www.superboletos.com/landing-evento/J007lHjQ8JNCf5ob0WHT6A',
         },
         {
+            title: 'Woosung',
+            date: '2024-11-10',
+            time: '9:00 PM',
+            location: 'Auditorio BB',
+            image: 'imagesEventos/noviembre/woo.png',
+            link: 'https://www.ticketmaster.com.mx/woosung-b4-we-die-tour-mexico-10-11-2024/event/14006122B778183F',
+        },
+        {
+            title: 'Love Of Lesbian',
+            date: '2024-11-11',
+            time: '8:30 PM',
+            location: 'Lunario del Auditorio Nacional',
+            image: 'imagesEventos/noviembre/love.png',
+            link: 'https://www.ticketmaster.com.mx/love-of-lesbian-ciudad-de-mexico-11-11-2024/event/3D00611ED389437A?language=en-mx',
+        },
+        {
             title: 'Paul McCartney ',
             date: '2024-11-12',
             time: '9:00 PM',
@@ -1941,12 +2053,28 @@ const events = [
             link: 'https://www.passline.com/eventos/margarita-siempre-viva-live',
         },
         {
+            title: 'Jimmy Sea',
+            date: '2024-11-13',
+            time: '9:00 PM',
+            location: 'Teatro Metropolitan',
+            image: 'imagesEventos/noviembre/jimmy.png',
+            link: 'https://www.ticketmaster.com.mx/jimmy-sea-1st-fan-meeting-in-mexico-13-11-2024/event/14006110F3DD32CC?language=en-mx',
+        },
+        {
             title: 'Joaquina Mertz & María Centeno',
             date: '2024-11-14',
             time: '9:00 PM',
             location: 'Lunario del Auditorio Nacional',
             image: 'imagesEventos/noviembre/joaquina.png',
             link: 'https://www.ticketmaster.com.mx/joaquina-mertz-maria-centeno-ciudad-de-mexico-14-11-2024/event/3D0060F1DA3B48C3',
+        },
+        {
+            title: 'Miguel Mateos',
+            date: '2024-11-14',
+            time: '8300 PM',
+            location: 'Teatro Metropolitan',
+            image: 'imagesEventos/noviembre/miguel.png',
+            link: 'https://www.ticketmaster.com.mx/miguel-mateos-mexico-14-11-2024/event/140061098F64093E?utm_source=TM-google&gad_source=1&gclid=CjwKCAjw6JS3BhBAEiwAO9waFxdAzCl7fBCNCms5851ARd2vAXQXhjDGmuW78k2r9caJF-s3pcu_mhoCWPkQAvD_BwE',
         },
         {
             title: 'Corona Capital',
@@ -2051,6 +2179,14 @@ const events = [
             location: 'Auditorio Nacional',
             image: 'imagesEventos/noviembre/nanpa.png',
             link: 'https://www.ticketmaster.com.mx/nanpa-basico-ciudad-de-mexico-19-11-2024/event/3D00608F8B26081A',
+        },
+        {
+            title: 'MEUTE',
+            date: '2024-11-19',
+            time: '9:00 PM',
+            location: 'Auditorio BB',
+            image: 'imagesEventos/noviembre/meute.png',
+            link: 'https://www.ticketmaster.com.mx/meute-mexico-19-11-2024/event/1400611A858809E0',
         },
         {
             title: 'Sen Senra',
@@ -2236,6 +2372,14 @@ const events = [
             image: 'imagesEventos/noviembre/sangre.png',
             link: 'https://www.ticketmaster.com.mx/event/14006065EF4E1F49?fbclid=IwZXh0bgNhZW0CMTAAAR19DwAqWrrM3tIqZPr0k7mbI3F5K9VcjEsx5IAFE1Y57tr2US8hF69h88I_aem_GkMIW7GmscV8i637qXxlGQ',
         },
+        {
+            title: 'Sofia Gabana',
+            date: '2024-11-30',
+            time: '4:00 PM',
+            location: 'Foro Puebla',
+            image: 'imagesEventos/noviembre/sofia.png',
+            link: 'https://www.ticketmaster.com.mx/sofia-gabana-mexico-30-11-2024/event/3D006113BDBD1CA5?language=en-mx',
+        },
             //Diciembre
         {
             title: 'División Minúscula',
@@ -2284,6 +2428,14 @@ const events = [
             location: 'Pabellon Oeste',
             image: 'imagesEventos/diciembre/descent.png',
             link: 'https://www.ticketmaster.com.mx/descendents-circle-jerks-mexico-06-12-2024/event/140060B0B0E82782'
+        },
+        {
+            title: 'Maná',
+            date: '2024-12-06',
+            time: '9:00 PM',
+            location: 'Palacio de los Deportes',
+            image: 'imagesEventos/diciembre/mana.png',
+            link: 'https://www.ticketmaster.com.mx/mana-cdmx-06-12-2024/event/1400610DB8F124ED?utm_source=OCESA-performance-max&utm_medium=display_paid&utm_campaign=co%3AMX%20%7C%20boletera%3ATKM%20%7C%20pn%3AOCESA%20%7C%20p%3A304%20%7C%20cat%3AConciertos%20%7C%20source%3AGoogle%20%7C%20chl%3AGoogle%20Performance%20Max%20%7C%20bud%3APromotor%20%7C%20ph%3AOn-Sale%20%7C%20an%3AMANA%20%7C%20a%3A759223%20%7C%20geo%3ACDMX%20%7C%20vn%3APD%20%7C%20v%3A163842%20%7C%20ed%3A061224%20%7C%20obj%3ASales%20%7C%20&utm_content=an%3AMANA%20%7C%20en%3A%20%7C%20aud%3AInterest%20%7C%20%20%20%7C%20mt%3An%2Fa%20%7C%20ed%3A061224%20%7C%20geo%3ACDMX%20%7C%20vn%3APD%20%7C%20a%3A759223%20%7C%20v%3A163842%20%7C%20%20%20%7C%20fg%3Amaxrend%20%7C%20%20&utm_term=an%3AMANA%20%7C%20ph%3AOnS%20%7C%20cn%3Avarios%20%7C%20ct%3Avarios%20%7C%20ff%3Amaxrend&gad_source=1&gclid=CjwKCAjw6JS3BhBAEiwAO9waF2jiyd8l3X_V25UmUJ6aeTShl1wSpszRXRKZpezu6t8i-w_kzdKFXxoCNTsQAvD_BwE'
         },
         {
             title: 'Lupita D´Alessio',
