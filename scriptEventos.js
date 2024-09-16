@@ -2375,7 +2375,7 @@ const events = [
         {
             title: 'Sofia Gabana',
             date: '2024-11-30',
-            time: '4:00 PM',
+            time: '8:00 PM',
             location: 'Foro Puebla',
             image: 'imagesEventos/noviembre/sofia.png',
             link: 'https://www.ticketmaster.com.mx/sofia-gabana-mexico-30-11-2024/event/3D006113BDBD1CA5?language=en-mx',
